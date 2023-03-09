@@ -1,0 +1,190 @@
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+}
+.body-container {
+	margin-top: 50px;
+}
+.navbar-brand {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700; 
+}
+.navbar-light {
+	background: #1c2938 !important;
+	z-index: 3;
+	padding: 10px 10px;
+	border-radius: 0px;
+	-webkit-box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+	-moz-box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+	box-shadow: 0px 5px 20px -17px rgba(0, 0, 0, 0.34);
+	width: inherit; 
+}
+
+/* Info Cards */
+.info-card {
+	padding-bottom: 10px;
+	width: 300px;
+	padding: 15px;
+  }
+  
+   .info-card h6 {
+	font-size: 28px;
+	color: #012970;
+	font-weight: 700;
+	margin: 0;
+	padding: 0;
+  }
+  
+   .card-icon {
+	font-size: 32px;
+	line-height: 0;
+	width: 64px;
+	height: 64px;
+	flex-shrink: 0;
+	flex-grow: 0;
+  }
+  
+   .sales-card .card-icon {
+	color: #4154f1;
+	background: #f6f6fe;
+  }
+  
+   .revenue-card .card-icon {
+	color: #2eca6a;
+	background: #e0f8e9;
+  }
+  
+  .customers-card .card-icon {
+	color: #ff771d;
+	background: #ffecdf;
+  }
+  
+  /* Activity */
+  .dashboard .activity {
+	font-size: 14px;
+  }
+  
+  .dashboard .activity .activity-item .activite-label {
+	color: #888;
+	position: relative;
+	flex-shrink: 0;
+	flex-grow: 0;
+	min-width: 64px;
+  }
+  
+  .dashboard .activity .activity-item .activite-label::before {
+	content: "";
+	position: absolute;
+	right: -11px;
+	width: 4px;
+	top: 0;
+	bottom: 0;
+	background-color: #eceefe;
+  }
+  
+  .dashboard .activity .activity-item .activity-badge {
+	margin-top: 3px;
+	z-index: 1;
+	font-size: 11px;
+	line-height: 0;
+	border-radius: 50%;
+	flex-shrink: 0;
+	border: 3px solid #fff;
+	flex-grow: 0;
+  }
+  
+  .dashboard .activity .activity-item .activity-content {
+	padding-left: 10px;
+	padding-bottom: 20px;
+  }
+  
+  .dashboard .activity .activity-item:first-child .activite-label::before {
+	top: 5px;
+  }
+  
+  .dashboard .activity .activity-item:last-child .activity-content {
+	padding-bottom: 0;
+  }
+  .second-section {
+	margin-top: 100px !important;
+	margin-bottom: 50px;
+  }
+/* News & Updates */
+ .news .post-item+.post-item {
+	margin-top: 15px;
+  }
+  
+  .news img {
+	width: 80px;
+	float: left;
+	border-radius: 5px;
+  }
+  
+   .news h4 {
+	font-size: 15px;
+	margin-left: 95px;
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  .news h4 a {
+	color: #012970;
+	transition: 0.3s;
+  }
+  
+   .news h4 a:hover {
+	color: #4154f1;
+  }
+  
+  .news p {
+	font-size: 14px;
+	color: #777777;
+	margin-left: 95px;
+  }
+  .ny-card {
+	margin-top: 50px;
+  }
+  
+  /* Responsive Media Queries */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) 
+{
+	.body-container {
+		margin-top: 0px;
+	}
+	.info-card {
+		margin-top: 30px;
+	  }    
+}
+   /* For tablets: */
+ @media only screen and (min-width: 600px) and (max-width: 1023px) {
+      
+}
+/* // Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... } */
+
+ /* // Extra large devices (large desktops, 1200px and up) */
+ @media screen and (min-width: 1400px) {
+  
+  }
+  /* @media screen and (min-width: 1600px) {
+	.container {
+	  width: 1570px;
+	}
+  }
+  @media screen and (min-width: 1900px) {
+	.container {
+	  width: 1870px;
+	}
+  } */
+@media (min-width: 1900px)
+{
+		
+}
