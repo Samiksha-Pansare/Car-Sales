@@ -1,0 +1,1441 @@
+model,color,region,month,Predicted Sales
+Maruti Suzuki Alto 800,Black,Mumbai,01-01-2021,924
+Maruti Suzuki Alto 800,Black,Mumbai,01-02-2021,1040
+Maruti Suzuki Alto 800,Black,Mumbai,01-03-2021,1290
+Maruti Suzuki Alto 800,Black,Mumbai,01-04-2021,1313
+Maruti Suzuki Alto 800,Black,Mumbai,01-05-2021,1574
+Maruti Suzuki Alto 800,Black,Mumbai,01-06-2021,1136
+Maruti Suzuki Alto 800,Black,Mumbai,01-07-2021,1166
+Maruti Suzuki Alto 800,Black,Mumbai,01-08-2021,1085
+Maruti Suzuki Alto 800,Black,Mumbai,01-09-2021,850
+Maruti Suzuki Alto 800,Black,Mumbai,01-10-2021,1148
+Maruti Suzuki Alto 800,Black,Mumbai,01-11-2021,987
+Maruti Suzuki Alto 800,Black,Mumbai,01-12-2021,1010
+Maruti Suzuki Alto 800,White,Mumbai,01-01-2021,990
+Maruti Suzuki Alto 800,White,Mumbai,01-02-2021,1104
+Maruti Suzuki Alto 800,White,Mumbai,01-03-2021,1294
+Maruti Suzuki Alto 800,White,Mumbai,01-04-2021,1357
+Maruti Suzuki Alto 800,White,Mumbai,01-05-2021,1412
+Maruti Suzuki Alto 800,White,Mumbai,01-06-2021,1228
+Maruti Suzuki Alto 800,White,Mumbai,01-07-2021,1174
+Maruti Suzuki Alto 800,White,Mumbai,01-08-2021,963
+Maruti Suzuki Alto 800,White,Mumbai,01-09-2021,955
+Maruti Suzuki Alto 800,White,Mumbai,01-10-2021,1262
+Maruti Suzuki Alto 800,White,Mumbai,01-11-2021,1211
+Maruti Suzuki Alto 800,White,Mumbai,01-12-2021,996
+Maruti Suzuki Alto 800,Grey,Mumbai,01-01-2021,987
+Maruti Suzuki Alto 800,Grey,Mumbai,01-02-2021,981
+Maruti Suzuki Alto 800,Grey,Mumbai,01-03-2021,1270
+Maruti Suzuki Alto 800,Grey,Mumbai,01-04-2021,1455
+Maruti Suzuki Alto 800,Grey,Mumbai,01-05-2021,1264
+Maruti Suzuki Alto 800,Grey,Mumbai,01-06-2021,1220
+Maruti Suzuki Alto 800,Grey,Mumbai,01-07-2021,1253
+Maruti Suzuki Alto 800,Grey,Mumbai,01-08-2021,1017
+Maruti Suzuki Alto 800,Grey,Mumbai,01-09-2021,1089
+Maruti Suzuki Alto 800,Grey,Mumbai,01-10-2021,1035
+Maruti Suzuki Alto 800,Grey,Mumbai,01-11-2021,1002
+Maruti Suzuki Alto 800,Grey,Mumbai,01-12-2021,990
+Maruti Suzuki Alto K10,Black,Mumbai,01-01-2021,898
+Maruti Suzuki Alto K10,Black,Mumbai,01-02-2021,837
+Maruti Suzuki Alto K10,Black,Mumbai,01-03-2021,1085
+Maruti Suzuki Alto K10,Black,Mumbai,01-04-2021,1103
+Maruti Suzuki Alto K10,Black,Mumbai,01-05-2021,1282
+Maruti Suzuki Alto K10,Black,Mumbai,01-06-2021,1119
+Maruti Suzuki Alto K10,Black,Mumbai,01-07-2021,1051
+Maruti Suzuki Alto K10,Black,Mumbai,01-08-2021,818
+Maruti Suzuki Alto K10,Black,Mumbai,01-09-2021,794
+Maruti Suzuki Alto K10,Black,Mumbai,01-10-2021,1025
+Maruti Suzuki Alto K10,Black,Mumbai,01-11-2021,1066
+Maruti Suzuki Alto K10,Black,Mumbai,01-12-2021,978
+Maruti Suzuki Alto K10,White,Mumbai,01-01-2021,1073
+Maruti Suzuki Alto K10,White,Mumbai,01-02-2021,1078
+Maruti Suzuki Alto K10,White,Mumbai,01-03-2021,1253
+Maruti Suzuki Alto K10,White,Mumbai,01-04-2021,1386
+Maruti Suzuki Alto K10,White,Mumbai,01-05-2021,1335
+Maruti Suzuki Alto K10,White,Mumbai,01-06-2021,1341
+Maruti Suzuki Alto K10,White,Mumbai,01-07-2021,1181
+Maruti Suzuki Alto K10,White,Mumbai,01-08-2021,994
+Maruti Suzuki Alto K10,White,Mumbai,01-09-2021,1001
+Maruti Suzuki Alto K10,White,Mumbai,01-10-2021,1038
+Maruti Suzuki Alto K10,White,Mumbai,01-11-2021,1138
+Maruti Suzuki Alto K10,White,Mumbai,01-12-2021,1031
+Maruti Suzuki Alto K10,Grey,Mumbai,01-01-2021,936
+Maruti Suzuki Alto K10,Grey,Mumbai,01-02-2021,862
+Maruti Suzuki Alto K10,Grey,Mumbai,01-03-2021,989
+Maruti Suzuki Alto K10,Grey,Mumbai,01-04-2021,1170
+Maruti Suzuki Alto K10,Grey,Mumbai,01-05-2021,1259
+Maruti Suzuki Alto K10,Grey,Mumbai,01-06-2021,1118
+Maruti Suzuki Alto K10,Grey,Mumbai,01-07-2021,1053
+Maruti Suzuki Alto K10,Grey,Mumbai,01-08-2021,1090
+Maruti Suzuki Alto K10,Grey,Mumbai,01-09-2021,946
+Maruti Suzuki Alto K10,Grey,Mumbai,01-10-2021,1178
+Maruti Suzuki Alto K10,Grey,Mumbai,01-11-2021,1160
+Maruti Suzuki Alto K10,Grey,Mumbai,01-12-2021,797
+Maruti Suzuki S-Presso,Black,Mumbai,01-01-2021,936
+Maruti Suzuki S-Presso,Black,Mumbai,01-02-2021,939
+Maruti Suzuki S-Presso,Black,Mumbai,01-03-2021,1084
+Maruti Suzuki S-Presso,Black,Mumbai,01-04-2021,1256
+Maruti Suzuki S-Presso,Black,Mumbai,01-05-2021,1441
+Maruti Suzuki S-Presso,Black,Mumbai,01-06-2021,1153
+Maruti Suzuki S-Presso,Black,Mumbai,01-07-2021,1201
+Maruti Suzuki S-Presso,Black,Mumbai,01-08-2021,1001
+Maruti Suzuki S-Presso,Black,Mumbai,01-09-2021,926
+Maruti Suzuki S-Presso,Black,Mumbai,01-10-2021,1001
+Maruti Suzuki S-Presso,Black,Mumbai,01-11-2021,1007
+Maruti Suzuki S-Presso,Black,Mumbai,01-12-2021,959
+Maruti Suzuki S-Presso,White,Mumbai,01-01-2021,872
+Maruti Suzuki S-Presso,White,Mumbai,01-02-2021,788
+Maruti Suzuki S-Presso,White,Mumbai,01-03-2021,1380
+Maruti Suzuki S-Presso,White,Mumbai,01-04-2021,1323
+Maruti Suzuki S-Presso,White,Mumbai,01-05-2021,1500
+Maruti Suzuki S-Presso,White,Mumbai,01-06-2021,1365
+Maruti Suzuki S-Presso,White,Mumbai,01-07-2021,1203
+Maruti Suzuki S-Presso,White,Mumbai,01-08-2021,993
+Maruti Suzuki S-Presso,White,Mumbai,01-09-2021,840
+Maruti Suzuki S-Presso,White,Mumbai,01-10-2021,1139
+Maruti Suzuki S-Presso,White,Mumbai,01-11-2021,1062
+Maruti Suzuki S-Presso,White,Mumbai,01-12-2021,1118
+Maruti Suzuki S-Presso,Grey,Mumbai,01-01-2021,1061
+Maruti Suzuki S-Presso,Grey,Mumbai,01-02-2021,737
+Maruti Suzuki S-Presso,Grey,Mumbai,01-03-2021,1150
+Maruti Suzuki S-Presso,Grey,Mumbai,01-04-2021,1294
+Maruti Suzuki S-Presso,Grey,Mumbai,01-05-2021,1289
+Maruti Suzuki S-Presso,Grey,Mumbai,01-06-2021,1175
+Maruti Suzuki S-Presso,Grey,Mumbai,01-07-2021,1127
+Maruti Suzuki S-Presso,Grey,Mumbai,01-08-2021,1034
+Maruti Suzuki S-Presso,Grey,Mumbai,01-09-2021,797
+Maruti Suzuki S-Presso,Grey,Mumbai,01-10-2021,1128
+Maruti Suzuki S-Presso,Grey,Mumbai,01-11-2021,1204
+Maruti Suzuki S-Presso,Grey,Mumbai,01-12-2021,1038
+Maruti Suzuki Eeco,Black,Mumbai,01-01-2021,927
+Maruti Suzuki Eeco,Black,Mumbai,01-02-2021,910
+Maruti Suzuki Eeco,Black,Mumbai,01-03-2021,1118
+Maruti Suzuki Eeco,Black,Mumbai,01-04-2021,1171
+Maruti Suzuki Eeco,Black,Mumbai,01-05-2021,1321
+Maruti Suzuki Eeco,Black,Mumbai,01-06-2021,981
+Maruti Suzuki Eeco,Black,Mumbai,01-07-2021,1136
+Maruti Suzuki Eeco,Black,Mumbai,01-08-2021,1006
+Maruti Suzuki Eeco,Black,Mumbai,01-09-2021,884
+Maruti Suzuki Eeco,Black,Mumbai,01-10-2021,1003
+Maruti Suzuki Eeco,Black,Mumbai,01-11-2021,1189
+Maruti Suzuki Eeco,Black,Mumbai,01-12-2021,934
+Maruti Suzuki Eeco,White,Mumbai,01-01-2021,1001
+Maruti Suzuki Eeco,White,Mumbai,01-02-2021,1157
+Maruti Suzuki Eeco,White,Mumbai,01-03-2021,1258
+Maruti Suzuki Eeco,White,Mumbai,01-04-2021,1401
+Maruti Suzuki Eeco,White,Mumbai,01-05-2021,1439
+Maruti Suzuki Eeco,White,Mumbai,01-06-2021,1351
+Maruti Suzuki Eeco,White,Mumbai,01-07-2021,1104
+Maruti Suzuki Eeco,White,Mumbai,01-08-2021,884
+Maruti Suzuki Eeco,White,Mumbai,01-09-2021,915
+Maruti Suzuki Eeco,White,Mumbai,01-10-2021,1071
+Maruti Suzuki Eeco,White,Mumbai,01-11-2021,1211
+Maruti Suzuki Eeco,White,Mumbai,01-12-2021,1088
+Maruti Suzuki Eeco,Grey,Mumbai,01-01-2021,1126
+Maruti Suzuki Eeco,Grey,Mumbai,01-02-2021,1000
+Maruti Suzuki Eeco,Grey,Mumbai,01-03-2021,1142
+Maruti Suzuki Eeco,Grey,Mumbai,01-04-2021,1200
+Maruti Suzuki Eeco,Grey,Mumbai,01-05-2021,1442
+Maruti Suzuki Eeco,Grey,Mumbai,01-06-2021,1295
+Maruti Suzuki Eeco,Grey,Mumbai,01-07-2021,1178
+Maruti Suzuki Eeco,Grey,Mumbai,01-08-2021,905
+Maruti Suzuki Eeco,Grey,Mumbai,01-09-2021,965
+Maruti Suzuki Eeco,Grey,Mumbai,01-10-2021,1138
+Maruti Suzuki Eeco,Grey,Mumbai,01-11-2021,1038
+Maruti Suzuki Eeco,Grey,Mumbai,01-12-2021,1080
+Maruti Suzuki Celerio,Black,Mumbai,01-01-2021,1014
+Maruti Suzuki Celerio,Black,Mumbai,01-02-2021,1124
+Maruti Suzuki Celerio,Black,Mumbai,01-03-2021,1474
+Maruti Suzuki Celerio,Black,Mumbai,01-04-2021,1463
+Maruti Suzuki Celerio,Black,Mumbai,01-05-2021,1505
+Maruti Suzuki Celerio,Black,Mumbai,01-06-2021,1490
+Maruti Suzuki Celerio,Black,Mumbai,01-07-2021,1258
+Maruti Suzuki Celerio,Black,Mumbai,01-08-2021,976
+Maruti Suzuki Celerio,Black,Mumbai,01-09-2021,840
+Maruti Suzuki Celerio,Black,Mumbai,01-10-2021,1368
+Maruti Suzuki Celerio,Black,Mumbai,01-11-2021,1224
+Maruti Suzuki Celerio,Black,Mumbai,01-12-2021,1114
+Maruti Suzuki Celerio,White,Mumbai,01-01-2021,1199
+Maruti Suzuki Celerio,White,Mumbai,01-02-2021,1125
+Maruti Suzuki Celerio,White,Mumbai,01-03-2021,1351
+Maruti Suzuki Celerio,White,Mumbai,01-04-2021,1683
+Maruti Suzuki Celerio,White,Mumbai,01-05-2021,1728
+Maruti Suzuki Celerio,White,Mumbai,01-06-2021,1559
+Maruti Suzuki Celerio,White,Mumbai,01-07-2021,1154
+Maruti Suzuki Celerio,White,Mumbai,01-08-2021,1072
+Maruti Suzuki Celerio,White,Mumbai,01-09-2021,1049
+Maruti Suzuki Celerio,White,Mumbai,01-10-2021,1354
+Maruti Suzuki Celerio,White,Mumbai,01-11-2021,1388
+Maruti Suzuki Celerio,White,Mumbai,01-12-2021,1098
+Maruti Suzuki Celerio,Grey,Mumbai,01-01-2021,1011
+Maruti Suzuki Celerio,Grey,Mumbai,01-02-2021,914
+Maruti Suzuki Celerio,Grey,Mumbai,01-03-2021,1349
+Maruti Suzuki Celerio,Grey,Mumbai,01-04-2021,1585
+Maruti Suzuki Celerio,Grey,Mumbai,01-05-2021,1527
+Maruti Suzuki Celerio,Grey,Mumbai,01-06-2021,1351
+Maruti Suzuki Celerio,Grey,Mumbai,01-07-2021,1234
+Maruti Suzuki Celerio,Grey,Mumbai,01-08-2021,1193
+Maruti Suzuki Celerio,Grey,Mumbai,01-09-2021,953
+Maruti Suzuki Celerio,Grey,Mumbai,01-10-2021,1193
+Maruti Suzuki Celerio,Grey,Mumbai,01-11-2021,1123
+Maruti Suzuki Celerio,Grey,Mumbai,01-12-2021,1138
+Maruti Suzuki Swift,Black,Mumbai,01-01-2021,1066
+Maruti Suzuki Swift,Black,Mumbai,01-02-2021,1228
+Maruti Suzuki Swift,Black,Mumbai,01-03-2021,1408
+Maruti Suzuki Swift,Black,Mumbai,01-04-2021,1565
+Maruti Suzuki Swift,Black,Mumbai,01-05-2021,1591
+Maruti Suzuki Swift,Black,Mumbai,01-06-2021,1402
+Maruti Suzuki Swift,Black,Mumbai,01-07-2021,1228
+Maruti Suzuki Swift,Black,Mumbai,01-08-2021,1052
+Maruti Suzuki Swift,Black,Mumbai,01-09-2021,1093
+Maruti Suzuki Swift,Black,Mumbai,01-10-2021,1162
+Maruti Suzuki Swift,Black,Mumbai,01-11-2021,1332
+Maruti Suzuki Swift,Black,Mumbai,01-12-2021,1166
+Maruti Suzuki Swift,White,Mumbai,01-01-2021,1078
+Maruti Suzuki Swift,White,Mumbai,01-02-2021,1195
+Maruti Suzuki Swift,White,Mumbai,01-03-2021,1553
+Maruti Suzuki Swift,White,Mumbai,01-04-2021,1524
+Maruti Suzuki Swift,White,Mumbai,01-05-2021,1490
+Maruti Suzuki Swift,White,Mumbai,01-06-2021,1441
+Maruti Suzuki Swift,White,Mumbai,01-07-2021,1443
+Maruti Suzuki Swift,White,Mumbai,01-08-2021,1169
+Maruti Suzuki Swift,White,Mumbai,01-09-2021,1074
+Maruti Suzuki Swift,White,Mumbai,01-10-2021,1246
+Maruti Suzuki Swift,White,Mumbai,01-11-2021,1377
+Maruti Suzuki Swift,White,Mumbai,01-12-2021,1037
+Maruti Suzuki Swift,Grey,Mumbai,01-01-2021,1071
+Maruti Suzuki Swift,Grey,Mumbai,01-02-2021,1305
+Maruti Suzuki Swift,Grey,Mumbai,01-03-2021,1695
+Maruti Suzuki Swift,Grey,Mumbai,01-04-2021,1620
+Maruti Suzuki Swift,Grey,Mumbai,01-05-2021,1630
+Maruti Suzuki Swift,Grey,Mumbai,01-06-2021,1479
+Maruti Suzuki Swift,Grey,Mumbai,01-07-2021,1491
+Maruti Suzuki Swift,Grey,Mumbai,01-08-2021,1125
+Maruti Suzuki Swift,Grey,Mumbai,01-09-2021,963
+Maruti Suzuki Swift,Grey,Mumbai,01-10-2021,1289
+Maruti Suzuki Swift,Grey,Mumbai,01-11-2021,1419
+Maruti Suzuki Swift,Grey,Mumbai,01-12-2021,1277
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-01-2021,1076
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-02-2021,1136
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-03-2021,1163
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-04-2021,1506
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-05-2021,1262
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-06-2021,986
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-07-2021,1271
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-08-2021,1171
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-09-2021,856
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-10-2021,1180
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-11-2021,1070
+Maruti Suzuki Grand Vitara,Black,Mumbai,01-12-2021,908
+Maruti Suzuki Grand Vitara,White,Mumbai,01-01-2021,983
+Maruti Suzuki Grand Vitara,White,Mumbai,01-02-2021,842
+Maruti Suzuki Grand Vitara,White,Mumbai,01-03-2021,1124
+Maruti Suzuki Grand Vitara,White,Mumbai,01-04-2021,1181
+Maruti Suzuki Grand Vitara,White,Mumbai,01-05-2021,1219
+Maruti Suzuki Grand Vitara,White,Mumbai,01-06-2021,1228
+Maruti Suzuki Grand Vitara,White,Mumbai,01-07-2021,1043
+Maruti Suzuki Grand Vitara,White,Mumbai,01-08-2021,827
+Maruti Suzuki Grand Vitara,White,Mumbai,01-09-2021,790
+Maruti Suzuki Grand Vitara,White,Mumbai,01-10-2021,978
+Maruti Suzuki Grand Vitara,White,Mumbai,01-11-2021,1103
+Maruti Suzuki Grand Vitara,White,Mumbai,01-12-2021,1089
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-01-2021,884
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-02-2021,1002
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-03-2021,1107
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-04-2021,1302
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-05-2021,1268
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-06-2021,1147
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-07-2021,1101
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-08-2021,857
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-09-2021,855
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-10-2021,936
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-11-2021,1231
+Maruti Suzuki Grand Vitara,Grey,Mumbai,01-12-2021,823
+Maruti Suzuki XL6,Black,Mumbai,01-01-2021,680
+Maruti Suzuki XL6,Black,Mumbai,01-02-2021,878
+Maruti Suzuki XL6,Black,Mumbai,01-03-2021,988
+Maruti Suzuki XL6,Black,Mumbai,01-04-2021,1123
+Maruti Suzuki XL6,Black,Mumbai,01-05-2021,1113
+Maruti Suzuki XL6,Black,Mumbai,01-06-2021,1110
+Maruti Suzuki XL6,Black,Mumbai,01-07-2021,1058
+Maruti Suzuki XL6,Black,Mumbai,01-08-2021,950
+Maruti Suzuki XL6,Black,Mumbai,01-09-2021,786
+Maruti Suzuki XL6,Black,Mumbai,01-10-2021,967
+Maruti Suzuki XL6,Black,Mumbai,01-11-2021,956
+Maruti Suzuki XL6,Black,Mumbai,01-12-2021,813
+Maruti Suzuki XL6,White,Mumbai,01-01-2021,734
+Maruti Suzuki XL6,White,Mumbai,01-02-2021,967
+Maruti Suzuki XL6,White,Mumbai,01-03-2021,1213
+Maruti Suzuki XL6,White,Mumbai,01-04-2021,1243
+Maruti Suzuki XL6,White,Mumbai,01-05-2021,1311
+Maruti Suzuki XL6,White,Mumbai,01-06-2021,1016
+Maruti Suzuki XL6,White,Mumbai,01-07-2021,999
+Maruti Suzuki XL6,White,Mumbai,01-08-2021,944
+Maruti Suzuki XL6,White,Mumbai,01-09-2021,802
+Maruti Suzuki XL6,White,Mumbai,01-10-2021,1132
+Maruti Suzuki XL6,White,Mumbai,01-11-2021,1035
+Maruti Suzuki XL6,White,Mumbai,01-12-2021,848
+Maruti Suzuki XL6,Grey,Mumbai,01-01-2021,985
+Maruti Suzuki XL6,Grey,Mumbai,01-02-2021,895
+Maruti Suzuki XL6,Grey,Mumbai,01-03-2021,1243
+Maruti Suzuki XL6,Grey,Mumbai,01-04-2021,1356
+Maruti Suzuki XL6,Grey,Mumbai,01-05-2021,1362
+Maruti Suzuki XL6,Grey,Mumbai,01-06-2021,1250
+Maruti Suzuki XL6,Grey,Mumbai,01-07-2021,1101
+Maruti Suzuki XL6,Grey,Mumbai,01-08-2021,785
+Maruti Suzuki XL6,Grey,Mumbai,01-09-2021,962
+Maruti Suzuki XL6,Grey,Mumbai,01-10-2021,1057
+Maruti Suzuki XL6,Grey,Mumbai,01-11-2021,1113
+Maruti Suzuki XL6,Grey,Mumbai,01-12-2021,1036
+Maruti Suzuki Brezza,Black,Mumbai,01-01-2021,1162
+Maruti Suzuki Brezza,Black,Mumbai,01-02-2021,913
+Maruti Suzuki Brezza,Black,Mumbai,01-03-2021,1244
+Maruti Suzuki Brezza,Black,Mumbai,01-04-2021,1346
+Maruti Suzuki Brezza,Black,Mumbai,01-05-2021,1322
+Maruti Suzuki Brezza,Black,Mumbai,01-06-2021,1248
+Maruti Suzuki Brezza,Black,Mumbai,01-07-2021,1181
+Maruti Suzuki Brezza,Black,Mumbai,01-08-2021,957
+Maruti Suzuki Brezza,Black,Mumbai,01-09-2021,965
+Maruti Suzuki Brezza,Black,Mumbai,01-10-2021,1020
+Maruti Suzuki Brezza,Black,Mumbai,01-11-2021,1333
+Maruti Suzuki Brezza,Black,Mumbai,01-12-2021,1196
+Maruti Suzuki Brezza,White,Mumbai,01-01-2021,1059
+Maruti Suzuki Brezza,White,Mumbai,01-02-2021,928
+Maruti Suzuki Brezza,White,Mumbai,01-03-2021,1145
+Maruti Suzuki Brezza,White,Mumbai,01-04-2021,1369
+Maruti Suzuki Brezza,White,Mumbai,01-05-2021,1265
+Maruti Suzuki Brezza,White,Mumbai,01-06-2021,1182
+Maruti Suzuki Brezza,White,Mumbai,01-07-2021,1148
+Maruti Suzuki Brezza,White,Mumbai,01-08-2021,1088
+Maruti Suzuki Brezza,White,Mumbai,01-09-2021,1020
+Maruti Suzuki Brezza,White,Mumbai,01-10-2021,1148
+Maruti Suzuki Brezza,White,Mumbai,01-11-2021,1230
+Maruti Suzuki Brezza,White,Mumbai,01-12-2021,1143
+Maruti Suzuki Brezza,Grey,Mumbai,01-01-2021,834
+Maruti Suzuki Brezza,Grey,Mumbai,01-02-2021,993
+Maruti Suzuki Brezza,Grey,Mumbai,01-03-2021,1455
+Maruti Suzuki Brezza,Grey,Mumbai,01-04-2021,1321
+Maruti Suzuki Brezza,Grey,Mumbai,01-05-2021,1558
+Maruti Suzuki Brezza,Grey,Mumbai,01-06-2021,1283
+Maruti Suzuki Brezza,Grey,Mumbai,01-07-2021,1261
+Maruti Suzuki Brezza,Grey,Mumbai,01-08-2021,1082
+Maruti Suzuki Brezza,Grey,Mumbai,01-09-2021,981
+Maruti Suzuki Brezza,Grey,Mumbai,01-10-2021,979
+Maruti Suzuki Brezza,Grey,Mumbai,01-11-2021,1243
+Maruti Suzuki Brezza,Grey,Mumbai,01-12-2021,996
+Maruti Suzuki Dzire,Black,Mumbai,01-01-2021,1254
+Maruti Suzuki Dzire,Black,Mumbai,01-02-2021,1168
+Maruti Suzuki Dzire,Black,Mumbai,01-03-2021,1528
+Maruti Suzuki Dzire,Black,Mumbai,01-04-2021,1567
+Maruti Suzuki Dzire,Black,Mumbai,01-05-2021,1603
+Maruti Suzuki Dzire,Black,Mumbai,01-06-2021,1405
+Maruti Suzuki Dzire,Black,Mumbai,01-07-2021,1233
+Maruti Suzuki Dzire,Black,Mumbai,01-08-2021,1011
+Maruti Suzuki Dzire,Black,Mumbai,01-09-2021,928
+Maruti Suzuki Dzire,Black,Mumbai,01-10-2021,1512
+Maruti Suzuki Dzire,Black,Mumbai,01-11-2021,1375
+Maruti Suzuki Dzire,Black,Mumbai,01-12-2021,1171
+Maruti Suzuki Dzire,White,Mumbai,01-01-2021,1137
+Maruti Suzuki Dzire,White,Mumbai,01-02-2021,1084
+Maruti Suzuki Dzire,White,Mumbai,01-03-2021,1605
+Maruti Suzuki Dzire,White,Mumbai,01-04-2021,1413
+Maruti Suzuki Dzire,White,Mumbai,01-05-2021,1473
+Maruti Suzuki Dzire,White,Mumbai,01-06-2021,1203
+Maruti Suzuki Dzire,White,Mumbai,01-07-2021,1132
+Maruti Suzuki Dzire,White,Mumbai,01-08-2021,1261
+Maruti Suzuki Dzire,White,Mumbai,01-09-2021,977
+Maruti Suzuki Dzire,White,Mumbai,01-10-2021,1193
+Maruti Suzuki Dzire,White,Mumbai,01-11-2021,1254
+Maruti Suzuki Dzire,White,Mumbai,01-12-2021,1120
+Maruti Suzuki Dzire,Grey,Mumbai,01-01-2021,1025
+Maruti Suzuki Dzire,Grey,Mumbai,01-02-2021,1110
+Maruti Suzuki Dzire,Grey,Mumbai,01-03-2021,1366
+Maruti Suzuki Dzire,Grey,Mumbai,01-04-2021,1589
+Maruti Suzuki Dzire,Grey,Mumbai,01-05-2021,1424
+Maruti Suzuki Dzire,Grey,Mumbai,01-06-2021,1359
+Maruti Suzuki Dzire,Grey,Mumbai,01-07-2021,1313
+Maruti Suzuki Dzire,Grey,Mumbai,01-08-2021,1223
+Maruti Suzuki Dzire,Grey,Mumbai,01-09-2021,999
+Maruti Suzuki Dzire,Grey,Mumbai,01-10-2021,1182
+Maruti Suzuki Dzire,Grey,Mumbai,01-11-2021,1363
+Maruti Suzuki Dzire,Grey,Mumbai,01-12-2021,1123
+Maruti Suzuki Alto 800,Black,Pune,01-01-2021,916
+Maruti Suzuki Alto 800,Black,Pune,01-02-2021,822
+Maruti Suzuki Alto 800,Black,Pune,01-03-2021,1218
+Maruti Suzuki Alto 800,Black,Pune,01-04-2021,1141
+Maruti Suzuki Alto 800,Black,Pune,01-05-2021,1387
+Maruti Suzuki Alto 800,Black,Pune,01-06-2021,1155
+Maruti Suzuki Alto 800,Black,Pune,01-07-2021,904
+Maruti Suzuki Alto 800,Black,Pune,01-08-2021,859
+Maruti Suzuki Alto 800,Black,Pune,01-09-2021,792
+Maruti Suzuki Alto 800,Black,Pune,01-10-2021,1094
+Maruti Suzuki Alto 800,Black,Pune,01-11-2021,1138
+Maruti Suzuki Alto 800,Black,Pune,01-12-2021,870
+Maruti Suzuki Alto 800,White,Pune,01-01-2021,888
+Maruti Suzuki Alto 800,White,Pune,01-02-2021,1059
+Maruti Suzuki Alto 800,White,Pune,01-03-2021,1172
+Maruti Suzuki Alto 800,White,Pune,01-04-2021,1150
+Maruti Suzuki Alto 800,White,Pune,01-05-2021,1166
+Maruti Suzuki Alto 800,White,Pune,01-06-2021,1150
+Maruti Suzuki Alto 800,White,Pune,01-07-2021,1127
+Maruti Suzuki Alto 800,White,Pune,01-08-2021,1047
+Maruti Suzuki Alto 800,White,Pune,01-09-2021,797
+Maruti Suzuki Alto 800,White,Pune,01-10-2021,973
+Maruti Suzuki Alto 800,White,Pune,01-11-2021,1158
+Maruti Suzuki Alto 800,White,Pune,01-12-2021,1113
+Maruti Suzuki Alto 800,Grey,Pune,01-01-2021,1121
+Maruti Suzuki Alto 800,Grey,Pune,01-02-2021,1040
+Maruti Suzuki Alto 800,Grey,Pune,01-03-2021,1214
+Maruti Suzuki Alto 800,Grey,Pune,01-04-2021,1287
+Maruti Suzuki Alto 800,Grey,Pune,01-05-2021,1350
+Maruti Suzuki Alto 800,Grey,Pune,01-06-2021,1105
+Maruti Suzuki Alto 800,Grey,Pune,01-07-2021,1217
+Maruti Suzuki Alto 800,Grey,Pune,01-08-2021,999
+Maruti Suzuki Alto 800,Grey,Pune,01-09-2021,878
+Maruti Suzuki Alto 800,Grey,Pune,01-10-2021,1096
+Maruti Suzuki Alto 800,Grey,Pune,01-11-2021,990
+Maruti Suzuki Alto 800,Grey,Pune,01-12-2021,952
+Maruti Suzuki Alto K10,Black,Pune,01-01-2021,838
+Maruti Suzuki Alto K10,Black,Pune,01-02-2021,921
+Maruti Suzuki Alto K10,Black,Pune,01-03-2021,1076
+Maruti Suzuki Alto K10,Black,Pune,01-04-2021,1384
+Maruti Suzuki Alto K10,Black,Pune,01-05-2021,1555
+Maruti Suzuki Alto K10,Black,Pune,01-06-2021,1276
+Maruti Suzuki Alto K10,Black,Pune,01-07-2021,1027
+Maruti Suzuki Alto K10,Black,Pune,01-08-2021,880
+Maruti Suzuki Alto K10,Black,Pune,01-09-2021,886
+Maruti Suzuki Alto K10,Black,Pune,01-10-2021,1060
+Maruti Suzuki Alto K10,Black,Pune,01-11-2021,1123
+Maruti Suzuki Alto K10,Black,Pune,01-12-2021,835
+Maruti Suzuki Alto K10,White,Pune,01-01-2021,925
+Maruti Suzuki Alto K10,White,Pune,01-02-2021,1165
+Maruti Suzuki Alto K10,White,Pune,01-03-2021,1239
+Maruti Suzuki Alto K10,White,Pune,01-04-2021,1360
+Maruti Suzuki Alto K10,White,Pune,01-05-2021,1321
+Maruti Suzuki Alto K10,White,Pune,01-06-2021,1033
+Maruti Suzuki Alto K10,White,Pune,01-07-2021,1221
+Maruti Suzuki Alto K10,White,Pune,01-08-2021,949
+Maruti Suzuki Alto K10,White,Pune,01-09-2021,841
+Maruti Suzuki Alto K10,White,Pune,01-10-2021,1158
+Maruti Suzuki Alto K10,White,Pune,01-11-2021,1180
+Maruti Suzuki Alto K10,White,Pune,01-12-2021,1055
+Maruti Suzuki Alto K10,Grey,Pune,01-01-2021,839
+Maruti Suzuki Alto K10,Grey,Pune,01-02-2021,828
+Maruti Suzuki Alto K10,Grey,Pune,01-03-2021,1071
+Maruti Suzuki Alto K10,Grey,Pune,01-04-2021,1155
+Maruti Suzuki Alto K10,Grey,Pune,01-05-2021,1143
+Maruti Suzuki Alto K10,Grey,Pune,01-06-2021,1129
+Maruti Suzuki Alto K10,Grey,Pune,01-07-2021,1011
+Maruti Suzuki Alto K10,Grey,Pune,01-08-2021,825
+Maruti Suzuki Alto K10,Grey,Pune,01-09-2021,775
+Maruti Suzuki Alto K10,Grey,Pune,01-10-2021,1005
+Maruti Suzuki Alto K10,Grey,Pune,01-11-2021,1073
+Maruti Suzuki Alto K10,Grey,Pune,01-12-2021,849
+Maruti Suzuki S-Presso,Black,Pune,01-01-2021,904
+Maruti Suzuki S-Presso,Black,Pune,01-02-2021,943
+Maruti Suzuki S-Presso,Black,Pune,01-03-2021,1053
+Maruti Suzuki S-Presso,Black,Pune,01-04-2021,1296
+Maruti Suzuki S-Presso,Black,Pune,01-05-2021,1308
+Maruti Suzuki S-Presso,Black,Pune,01-06-2021,1042
+Maruti Suzuki S-Presso,Black,Pune,01-07-2021,1048
+Maruti Suzuki S-Presso,Black,Pune,01-08-2021,840
+Maruti Suzuki S-Presso,Black,Pune,01-09-2021,819
+Maruti Suzuki S-Presso,Black,Pune,01-10-2021,914
+Maruti Suzuki S-Presso,Black,Pune,01-11-2021,990
+Maruti Suzuki S-Presso,Black,Pune,01-12-2021,771
+Maruti Suzuki S-Presso,White,Pune,01-01-2021,829
+Maruti Suzuki S-Presso,White,Pune,01-02-2021,1053
+Maruti Suzuki S-Presso,White,Pune,01-03-2021,1088
+Maruti Suzuki S-Presso,White,Pune,01-04-2021,1250
+Maruti Suzuki S-Presso,White,Pune,01-05-2021,1357
+Maruti Suzuki S-Presso,White,Pune,01-06-2021,1300
+Maruti Suzuki S-Presso,White,Pune,01-07-2021,1156
+Maruti Suzuki S-Presso,White,Pune,01-08-2021,960
+Maruti Suzuki S-Presso,White,Pune,01-09-2021,1144
+Maruti Suzuki S-Presso,White,Pune,01-10-2021,1164
+Maruti Suzuki S-Presso,White,Pune,01-11-2021,1063
+Maruti Suzuki S-Presso,White,Pune,01-12-2021,982
+Maruti Suzuki S-Presso,Grey,Pune,01-01-2021,918
+Maruti Suzuki S-Presso,Grey,Pune,01-02-2021,762
+Maruti Suzuki S-Presso,Grey,Pune,01-03-2021,1081
+Maruti Suzuki S-Presso,Grey,Pune,01-04-2021,1091
+Maruti Suzuki S-Presso,Grey,Pune,01-05-2021,1224
+Maruti Suzuki S-Presso,Grey,Pune,01-06-2021,1089
+Maruti Suzuki S-Presso,Grey,Pune,01-07-2021,1085
+Maruti Suzuki S-Presso,Grey,Pune,01-08-2021,876
+Maruti Suzuki S-Presso,Grey,Pune,01-09-2021,752
+Maruti Suzuki S-Presso,Grey,Pune,01-10-2021,1003
+Maruti Suzuki S-Presso,Grey,Pune,01-11-2021,1071
+Maruti Suzuki S-Presso,Grey,Pune,01-12-2021,819
+Maruti Suzuki Eeco,Black,Pune,01-01-2021,853
+Maruti Suzuki Eeco,Black,Pune,01-02-2021,955
+Maruti Suzuki Eeco,Black,Pune,01-03-2021,1071
+Maruti Suzuki Eeco,Black,Pune,01-04-2021,1342
+Maruti Suzuki Eeco,Black,Pune,01-05-2021,1289
+Maruti Suzuki Eeco,Black,Pune,01-06-2021,1204
+Maruti Suzuki Eeco,Black,Pune,01-07-2021,880
+Maruti Suzuki Eeco,Black,Pune,01-08-2021,874
+Maruti Suzuki Eeco,Black,Pune,01-09-2021,960
+Maruti Suzuki Eeco,Black,Pune,01-10-2021,880
+Maruti Suzuki Eeco,Black,Pune,01-11-2021,1214
+Maruti Suzuki Eeco,Black,Pune,01-12-2021,1034
+Maruti Suzuki Eeco,White,Pune,01-01-2021,858
+Maruti Suzuki Eeco,White,Pune,01-02-2021,705
+Maruti Suzuki Eeco,White,Pune,01-03-2021,1109
+Maruti Suzuki Eeco,White,Pune,01-04-2021,1089
+Maruti Suzuki Eeco,White,Pune,01-05-2021,1236
+Maruti Suzuki Eeco,White,Pune,01-06-2021,1177
+Maruti Suzuki Eeco,White,Pune,01-07-2021,1039
+Maruti Suzuki Eeco,White,Pune,01-08-2021,932
+Maruti Suzuki Eeco,White,Pune,01-09-2021,810
+Maruti Suzuki Eeco,White,Pune,01-10-2021,910
+Maruti Suzuki Eeco,White,Pune,01-11-2021,1142
+Maruti Suzuki Eeco,White,Pune,01-12-2021,960
+Maruti Suzuki Eeco,Grey,Pune,01-01-2021,1060
+Maruti Suzuki Eeco,Grey,Pune,01-02-2021,829
+Maruti Suzuki Eeco,Grey,Pune,01-03-2021,1270
+Maruti Suzuki Eeco,Grey,Pune,01-04-2021,1320
+Maruti Suzuki Eeco,Grey,Pune,01-05-2021,1295
+Maruti Suzuki Eeco,Grey,Pune,01-06-2021,1071
+Maruti Suzuki Eeco,Grey,Pune,01-07-2021,1065
+Maruti Suzuki Eeco,Grey,Pune,01-08-2021,885
+Maruti Suzuki Eeco,Grey,Pune,01-09-2021,727
+Maruti Suzuki Eeco,Grey,Pune,01-10-2021,1001
+Maruti Suzuki Eeco,Grey,Pune,01-11-2021,901
+Maruti Suzuki Eeco,Grey,Pune,01-12-2021,1149
+Maruti Suzuki Celerio,Black,Pune,01-01-2021,1111
+Maruti Suzuki Celerio,Black,Pune,01-02-2021,1081
+Maruti Suzuki Celerio,Black,Pune,01-03-2021,1203
+Maruti Suzuki Celerio,Black,Pune,01-04-2021,1424
+Maruti Suzuki Celerio,Black,Pune,01-05-2021,1470
+Maruti Suzuki Celerio,Black,Pune,01-06-2021,1238
+Maruti Suzuki Celerio,Black,Pune,01-07-2021,1100
+Maruti Suzuki Celerio,Black,Pune,01-08-2021,968
+Maruti Suzuki Celerio,Black,Pune,01-09-2021,878
+Maruti Suzuki Celerio,Black,Pune,01-10-2021,1257
+Maruti Suzuki Celerio,Black,Pune,01-11-2021,1087
+Maruti Suzuki Celerio,Black,Pune,01-12-2021,958
+Maruti Suzuki Celerio,White,Pune,01-01-2021,908
+Maruti Suzuki Celerio,White,Pune,01-02-2021,920
+Maruti Suzuki Celerio,White,Pune,01-03-2021,1212
+Maruti Suzuki Celerio,White,Pune,01-04-2021,1601
+Maruti Suzuki Celerio,White,Pune,01-05-2021,1596
+Maruti Suzuki Celerio,White,Pune,01-06-2021,1238
+Maruti Suzuki Celerio,White,Pune,01-07-2021,1346
+Maruti Suzuki Celerio,White,Pune,01-08-2021,1102
+Maruti Suzuki Celerio,White,Pune,01-09-2021,819
+Maruti Suzuki Celerio,White,Pune,01-10-2021,1155
+Maruti Suzuki Celerio,White,Pune,01-11-2021,1119
+Maruti Suzuki Celerio,White,Pune,01-12-2021,1231
+Maruti Suzuki Celerio,Grey,Pune,01-01-2021,1046
+Maruti Suzuki Celerio,Grey,Pune,01-02-2021,1021
+Maruti Suzuki Celerio,Grey,Pune,01-03-2021,1294
+Maruti Suzuki Celerio,Grey,Pune,01-04-2021,1537
+Maruti Suzuki Celerio,Grey,Pune,01-05-2021,1630
+Maruti Suzuki Celerio,Grey,Pune,01-06-2021,1275
+Maruti Suzuki Celerio,Grey,Pune,01-07-2021,1258
+Maruti Suzuki Celerio,Grey,Pune,01-08-2021,1036
+Maruti Suzuki Celerio,Grey,Pune,01-09-2021,1041
+Maruti Suzuki Celerio,Grey,Pune,01-10-2021,1025
+Maruti Suzuki Celerio,Grey,Pune,01-11-2021,1255
+Maruti Suzuki Celerio,Grey,Pune,01-12-2021,1133
+Maruti Suzuki Swift,Black,Pune,01-01-2021,1013
+Maruti Suzuki Swift,Black,Pune,01-02-2021,1107
+Maruti Suzuki Swift,Black,Pune,01-03-2021,1272
+Maruti Suzuki Swift,Black,Pune,01-04-2021,1568
+Maruti Suzuki Swift,Black,Pune,01-05-2021,1502
+Maruti Suzuki Swift,Black,Pune,01-06-2021,1394
+Maruti Suzuki Swift,Black,Pune,01-07-2021,1208
+Maruti Suzuki Swift,Black,Pune,01-08-2021,1116
+Maruti Suzuki Swift,Black,Pune,01-09-2021,1190
+Maruti Suzuki Swift,Black,Pune,01-10-2021,1382
+Maruti Suzuki Swift,Black,Pune,01-11-2021,1164
+Maruti Suzuki Swift,Black,Pune,01-12-2021,1209
+Maruti Suzuki Swift,White,Pune,01-01-2021,1197
+Maruti Suzuki Swift,White,Pune,01-02-2021,1186
+Maruti Suzuki Swift,White,Pune,01-03-2021,1720
+Maruti Suzuki Swift,White,Pune,01-04-2021,1624
+Maruti Suzuki Swift,White,Pune,01-05-2021,1623
+Maruti Suzuki Swift,White,Pune,01-06-2021,1429
+Maruti Suzuki Swift,White,Pune,01-07-2021,1343
+Maruti Suzuki Swift,White,Pune,01-08-2021,1314
+Maruti Suzuki Swift,White,Pune,01-09-2021,1049
+Maruti Suzuki Swift,White,Pune,01-10-2021,1390
+Maruti Suzuki Swift,White,Pune,01-11-2021,1229
+Maruti Suzuki Swift,White,Pune,01-12-2021,1431
+Maruti Suzuki Swift,Grey,Pune,01-01-2021,1007
+Maruti Suzuki Swift,Grey,Pune,01-02-2021,1111
+Maruti Suzuki Swift,Grey,Pune,01-03-2021,1295
+Maruti Suzuki Swift,Grey,Pune,01-04-2021,1623
+Maruti Suzuki Swift,Grey,Pune,01-05-2021,1641
+Maruti Suzuki Swift,Grey,Pune,01-06-2021,1479
+Maruti Suzuki Swift,Grey,Pune,01-07-2021,1294
+Maruti Suzuki Swift,Grey,Pune,01-08-2021,1047
+Maruti Suzuki Swift,Grey,Pune,01-09-2021,1226
+Maruti Suzuki Swift,Grey,Pune,01-10-2021,1217
+Maruti Suzuki Swift,Grey,Pune,01-11-2021,1452
+Maruti Suzuki Swift,Grey,Pune,01-12-2021,1299
+Maruti Suzuki Grand Vitara,Black,Pune,01-01-2021,861
+Maruti Suzuki Grand Vitara,Black,Pune,01-02-2021,825
+Maruti Suzuki Grand Vitara,Black,Pune,01-03-2021,1090
+Maruti Suzuki Grand Vitara,Black,Pune,01-04-2021,1105
+Maruti Suzuki Grand Vitara,Black,Pune,01-05-2021,1018
+Maruti Suzuki Grand Vitara,Black,Pune,01-06-2021,951
+Maruti Suzuki Grand Vitara,Black,Pune,01-07-2021,846
+Maruti Suzuki Grand Vitara,Black,Pune,01-08-2021,789
+Maruti Suzuki Grand Vitara,Black,Pune,01-09-2021,830
+Maruti Suzuki Grand Vitara,Black,Pune,01-10-2021,865
+Maruti Suzuki Grand Vitara,Black,Pune,01-11-2021,851
+Maruti Suzuki Grand Vitara,Black,Pune,01-12-2021,781
+Maruti Suzuki Grand Vitara,White,Pune,01-01-2021,1051
+Maruti Suzuki Grand Vitara,White,Pune,01-02-2021,1162
+Maruti Suzuki Grand Vitara,White,Pune,01-03-2021,1185
+Maruti Suzuki Grand Vitara,White,Pune,01-04-2021,1117
+Maruti Suzuki Grand Vitara,White,Pune,01-05-2021,1375
+Maruti Suzuki Grand Vitara,White,Pune,01-06-2021,1262
+Maruti Suzuki Grand Vitara,White,Pune,01-07-2021,1067
+Maruti Suzuki Grand Vitara,White,Pune,01-08-2021,977
+Maruti Suzuki Grand Vitara,White,Pune,01-09-2021,918
+Maruti Suzuki Grand Vitara,White,Pune,01-10-2021,901
+Maruti Suzuki Grand Vitara,White,Pune,01-11-2021,1213
+Maruti Suzuki Grand Vitara,White,Pune,01-12-2021,966
+Maruti Suzuki Grand Vitara,Grey,Pune,01-01-2021,651
+Maruti Suzuki Grand Vitara,Grey,Pune,01-02-2021,850
+Maruti Suzuki Grand Vitara,Grey,Pune,01-03-2021,964
+Maruti Suzuki Grand Vitara,Grey,Pune,01-04-2021,1074
+Maruti Suzuki Grand Vitara,Grey,Pune,01-05-2021,1389
+Maruti Suzuki Grand Vitara,Grey,Pune,01-06-2021,1087
+Maruti Suzuki Grand Vitara,Grey,Pune,01-07-2021,1066
+Maruti Suzuki Grand Vitara,Grey,Pune,01-08-2021,983
+Maruti Suzuki Grand Vitara,Grey,Pune,01-09-2021,817
+Maruti Suzuki Grand Vitara,Grey,Pune,01-10-2021,819
+Maruti Suzuki Grand Vitara,Grey,Pune,01-11-2021,1076
+Maruti Suzuki Grand Vitara,Grey,Pune,01-12-2021,957
+Maruti Suzuki XL6,Black,Pune,01-01-2021,884
+Maruti Suzuki XL6,Black,Pune,01-02-2021,693
+Maruti Suzuki XL6,Black,Pune,01-03-2021,1093
+Maruti Suzuki XL6,Black,Pune,01-04-2021,1180
+Maruti Suzuki XL6,Black,Pune,01-05-2021,1172
+Maruti Suzuki XL6,Black,Pune,01-06-2021,960
+Maruti Suzuki XL6,Black,Pune,01-07-2021,1026
+Maruti Suzuki XL6,Black,Pune,01-08-2021,878
+Maruti Suzuki XL6,Black,Pune,01-09-2021,924
+Maruti Suzuki XL6,Black,Pune,01-10-2021,1108
+Maruti Suzuki XL6,Black,Pune,01-11-2021,1012
+Maruti Suzuki XL6,Black,Pune,01-12-2021,836
+Maruti Suzuki XL6,White,Pune,01-01-2021,1006
+Maruti Suzuki XL6,White,Pune,01-02-2021,1169
+Maruti Suzuki XL6,White,Pune,01-03-2021,1255
+Maruti Suzuki XL6,White,Pune,01-04-2021,1370
+Maruti Suzuki XL6,White,Pune,01-05-2021,1460
+Maruti Suzuki XL6,White,Pune,01-06-2021,1191
+Maruti Suzuki XL6,White,Pune,01-07-2021,1188
+Maruti Suzuki XL6,White,Pune,01-08-2021,1054
+Maruti Suzuki XL6,White,Pune,01-09-2021,846
+Maruti Suzuki XL6,White,Pune,01-10-2021,1205
+Maruti Suzuki XL6,White,Pune,01-11-2021,980
+Maruti Suzuki XL6,White,Pune,01-12-2021,901
+Maruti Suzuki XL6,Grey,Pune,01-01-2021,940
+Maruti Suzuki XL6,Grey,Pune,01-02-2021,936
+Maruti Suzuki XL6,Grey,Pune,01-03-2021,1126
+Maruti Suzuki XL6,Grey,Pune,01-04-2021,1301
+Maruti Suzuki XL6,Grey,Pune,01-05-2021,1183
+Maruti Suzuki XL6,Grey,Pune,01-06-2021,1132
+Maruti Suzuki XL6,Grey,Pune,01-07-2021,1069
+Maruti Suzuki XL6,Grey,Pune,01-08-2021,1048
+Maruti Suzuki XL6,Grey,Pune,01-09-2021,912
+Maruti Suzuki XL6,Grey,Pune,01-10-2021,1067
+Maruti Suzuki XL6,Grey,Pune,01-11-2021,952
+Maruti Suzuki XL6,Grey,Pune,01-12-2021,1099
+Maruti Suzuki Brezza,Black,Pune,01-01-2021,912
+Maruti Suzuki Brezza,Black,Pune,01-02-2021,973
+Maruti Suzuki Brezza,Black,Pune,01-03-2021,1110
+Maruti Suzuki Brezza,Black,Pune,01-04-2021,1247
+Maruti Suzuki Brezza,Black,Pune,01-05-2021,1281
+Maruti Suzuki Brezza,Black,Pune,01-06-2021,1139
+Maruti Suzuki Brezza,Black,Pune,01-07-2021,1036
+Maruti Suzuki Brezza,Black,Pune,01-08-2021,904
+Maruti Suzuki Brezza,Black,Pune,01-09-2021,954
+Maruti Suzuki Brezza,Black,Pune,01-10-2021,1090
+Maruti Suzuki Brezza,Black,Pune,01-11-2021,1071
+Maruti Suzuki Brezza,Black,Pune,01-12-2021,882
+Maruti Suzuki Brezza,White,Pune,01-01-2021,1061
+Maruti Suzuki Brezza,White,Pune,01-02-2021,1040
+Maruti Suzuki Brezza,White,Pune,01-03-2021,1254
+Maruti Suzuki Brezza,White,Pune,01-04-2021,1394
+Maruti Suzuki Brezza,White,Pune,01-05-2021,1279
+Maruti Suzuki Brezza,White,Pune,01-06-2021,1313
+Maruti Suzuki Brezza,White,Pune,01-07-2021,1036
+Maruti Suzuki Brezza,White,Pune,01-08-2021,931
+Maruti Suzuki Brezza,White,Pune,01-09-2021,907
+Maruti Suzuki Brezza,White,Pune,01-10-2021,1003
+Maruti Suzuki Brezza,White,Pune,01-11-2021,1313
+Maruti Suzuki Brezza,White,Pune,01-12-2021,1016
+Maruti Suzuki Brezza,Grey,Pune,01-01-2021,1019
+Maruti Suzuki Brezza,Grey,Pune,01-02-2021,1174
+Maruti Suzuki Brezza,Grey,Pune,01-03-2021,1345
+Maruti Suzuki Brezza,Grey,Pune,01-04-2021,1395
+Maruti Suzuki Brezza,Grey,Pune,01-05-2021,1443
+Maruti Suzuki Brezza,Grey,Pune,01-06-2021,1127
+Maruti Suzuki Brezza,Grey,Pune,01-07-2021,1039
+Maruti Suzuki Brezza,Grey,Pune,01-08-2021,920
+Maruti Suzuki Brezza,Grey,Pune,01-09-2021,810
+Maruti Suzuki Brezza,Grey,Pune,01-10-2021,1140
+Maruti Suzuki Brezza,Grey,Pune,01-11-2021,1101
+Maruti Suzuki Brezza,Grey,Pune,01-12-2021,999
+Maruti Suzuki Dzire,Black,Pune,01-01-2021,920
+Maruti Suzuki Dzire,Black,Pune,01-02-2021,1138
+Maruti Suzuki Dzire,Black,Pune,01-03-2021,1130
+Maruti Suzuki Dzire,Black,Pune,01-04-2021,1545
+Maruti Suzuki Dzire,Black,Pune,01-05-2021,1552
+Maruti Suzuki Dzire,Black,Pune,01-06-2021,1193
+Maruti Suzuki Dzire,Black,Pune,01-07-2021,1242
+Maruti Suzuki Dzire,Black,Pune,01-08-2021,1121
+Maruti Suzuki Dzire,Black,Pune,01-09-2021,858
+Maruti Suzuki Dzire,Black,Pune,01-10-2021,1085
+Maruti Suzuki Dzire,Black,Pune,01-11-2021,1195
+Maruti Suzuki Dzire,Black,Pune,01-12-2021,1062
+Maruti Suzuki Dzire,White,Pune,01-01-2021,1192
+Maruti Suzuki Dzire,White,Pune,01-02-2021,1182
+Maruti Suzuki Dzire,White,Pune,01-03-2021,1315
+Maruti Suzuki Dzire,White,Pune,01-04-2021,1542
+Maruti Suzuki Dzire,White,Pune,01-05-2021,1548
+Maruti Suzuki Dzire,White,Pune,01-06-2021,1391
+Maruti Suzuki Dzire,White,Pune,01-07-2021,1227
+Maruti Suzuki Dzire,White,Pune,01-08-2021,854
+Maruti Suzuki Dzire,White,Pune,01-09-2021,909
+Maruti Suzuki Dzire,White,Pune,01-10-2021,1243
+Maruti Suzuki Dzire,White,Pune,01-11-2021,1182
+Maruti Suzuki Dzire,White,Pune,01-12-2021,1067
+Maruti Suzuki Dzire,Grey,Pune,01-01-2021,1106
+Maruti Suzuki Dzire,Grey,Pune,01-02-2021,1148
+Maruti Suzuki Dzire,Grey,Pune,01-03-2021,1331
+Maruti Suzuki Dzire,Grey,Pune,01-04-2021,1517
+Maruti Suzuki Dzire,Grey,Pune,01-05-2021,1564
+Maruti Suzuki Dzire,Grey,Pune,01-06-2021,1358
+Maruti Suzuki Dzire,Grey,Pune,01-07-2021,1180
+Maruti Suzuki Dzire,Grey,Pune,01-08-2021,1070
+Maruti Suzuki Dzire,Grey,Pune,01-09-2021,945
+Maruti Suzuki Dzire,Grey,Pune,01-10-2021,1207
+Maruti Suzuki Dzire,Grey,Pune,01-11-2021,1061
+Maruti Suzuki Dzire,Grey,Pune,01-12-2021,1250
+Maruti Suzuki Alto 800,Black,Nagpur,01-01-2021,759
+Maruti Suzuki Alto 800,Black,Nagpur,01-02-2021,782
+Maruti Suzuki Alto 800,Black,Nagpur,01-03-2021,877
+Maruti Suzuki Alto 800,Black,Nagpur,01-04-2021,931
+Maruti Suzuki Alto 800,Black,Nagpur,01-05-2021,1006
+Maruti Suzuki Alto 800,Black,Nagpur,01-06-2021,798
+Maruti Suzuki Alto 800,Black,Nagpur,01-07-2021,741
+Maruti Suzuki Alto 800,Black,Nagpur,01-08-2021,727
+Maruti Suzuki Alto 800,Black,Nagpur,01-09-2021,688
+Maruti Suzuki Alto 800,Black,Nagpur,01-10-2021,714
+Maruti Suzuki Alto 800,Black,Nagpur,01-11-2021,914
+Maruti Suzuki Alto 800,Black,Nagpur,01-12-2021,829
+Maruti Suzuki Alto 800,White,Nagpur,01-01-2021,777
+Maruti Suzuki Alto 800,White,Nagpur,01-02-2021,1011
+Maruti Suzuki Alto 800,White,Nagpur,01-03-2021,1158
+Maruti Suzuki Alto 800,White,Nagpur,01-04-2021,1168
+Maruti Suzuki Alto 800,White,Nagpur,01-05-2021,1231
+Maruti Suzuki Alto 800,White,Nagpur,01-06-2021,1138
+Maruti Suzuki Alto 800,White,Nagpur,01-07-2021,1077
+Maruti Suzuki Alto 800,White,Nagpur,01-08-2021,788
+Maruti Suzuki Alto 800,White,Nagpur,01-09-2021,832
+Maruti Suzuki Alto 800,White,Nagpur,01-10-2021,986
+Maruti Suzuki Alto 800,White,Nagpur,01-11-2021,959
+Maruti Suzuki Alto 800,White,Nagpur,01-12-2021,1099
+Maruti Suzuki Alto 800,Grey,Nagpur,01-01-2021,992
+Maruti Suzuki Alto 800,Grey,Nagpur,01-02-2021,881
+Maruti Suzuki Alto 800,Grey,Nagpur,01-03-2021,1028
+Maruti Suzuki Alto 800,Grey,Nagpur,01-04-2021,1101
+Maruti Suzuki Alto 800,Grey,Nagpur,01-05-2021,1082
+Maruti Suzuki Alto 800,Grey,Nagpur,01-06-2021,988
+Maruti Suzuki Alto 800,Grey,Nagpur,01-07-2021,970
+Maruti Suzuki Alto 800,Grey,Nagpur,01-08-2021,953
+Maruti Suzuki Alto 800,Grey,Nagpur,01-09-2021,751
+Maruti Suzuki Alto 800,Grey,Nagpur,01-10-2021,901
+Maruti Suzuki Alto 800,Grey,Nagpur,01-11-2021,1035
+Maruti Suzuki Alto 800,Grey,Nagpur,01-12-2021,1057
+Maruti Suzuki Alto K10,Black,Nagpur,01-01-2021,891
+Maruti Suzuki Alto K10,Black,Nagpur,01-02-2021,931
+Maruti Suzuki Alto K10,Black,Nagpur,01-03-2021,954
+Maruti Suzuki Alto K10,Black,Nagpur,01-04-2021,1106
+Maruti Suzuki Alto K10,Black,Nagpur,01-05-2021,1015
+Maruti Suzuki Alto K10,Black,Nagpur,01-06-2021,1051
+Maruti Suzuki Alto K10,Black,Nagpur,01-07-2021,1059
+Maruti Suzuki Alto K10,Black,Nagpur,01-08-2021,734
+Maruti Suzuki Alto K10,Black,Nagpur,01-09-2021,669
+Maruti Suzuki Alto K10,Black,Nagpur,01-10-2021,953
+Maruti Suzuki Alto K10,Black,Nagpur,01-11-2021,950
+Maruti Suzuki Alto K10,Black,Nagpur,01-12-2021,868
+Maruti Suzuki Alto K10,White,Nagpur,01-01-2021,822
+Maruti Suzuki Alto K10,White,Nagpur,01-02-2021,889
+Maruti Suzuki Alto K10,White,Nagpur,01-03-2021,1030
+Maruti Suzuki Alto K10,White,Nagpur,01-04-2021,1118
+Maruti Suzuki Alto K10,White,Nagpur,01-05-2021,1242
+Maruti Suzuki Alto K10,White,Nagpur,01-06-2021,1073
+Maruti Suzuki Alto K10,White,Nagpur,01-07-2021,955
+Maruti Suzuki Alto K10,White,Nagpur,01-08-2021,976
+Maruti Suzuki Alto K10,White,Nagpur,01-09-2021,730
+Maruti Suzuki Alto K10,White,Nagpur,01-10-2021,945
+Maruti Suzuki Alto K10,White,Nagpur,01-11-2021,1028
+Maruti Suzuki Alto K10,White,Nagpur,01-12-2021,711
+Maruti Suzuki Alto K10,Grey,Nagpur,01-01-2021,946
+Maruti Suzuki Alto K10,Grey,Nagpur,01-02-2021,1038
+Maruti Suzuki Alto K10,Grey,Nagpur,01-03-2021,1040
+Maruti Suzuki Alto K10,Grey,Nagpur,01-04-2021,1294
+Maruti Suzuki Alto K10,Grey,Nagpur,01-05-2021,1279
+Maruti Suzuki Alto K10,Grey,Nagpur,01-06-2021,1137
+Maruti Suzuki Alto K10,Grey,Nagpur,01-07-2021,1056
+Maruti Suzuki Alto K10,Grey,Nagpur,01-08-2021,907
+Maruti Suzuki Alto K10,Grey,Nagpur,01-09-2021,1016
+Maruti Suzuki Alto K10,Grey,Nagpur,01-10-2021,951
+Maruti Suzuki Alto K10,Grey,Nagpur,01-11-2021,1126
+Maruti Suzuki Alto K10,Grey,Nagpur,01-12-2021,730
+Maruti Suzuki S-Presso,Black,Nagpur,01-01-2021,759
+Maruti Suzuki S-Presso,Black,Nagpur,01-02-2021,827
+Maruti Suzuki S-Presso,Black,Nagpur,01-03-2021,1098
+Maruti Suzuki S-Presso,Black,Nagpur,01-04-2021,1197
+Maruti Suzuki S-Presso,Black,Nagpur,01-05-2021,1256
+Maruti Suzuki S-Presso,Black,Nagpur,01-06-2021,816
+Maruti Suzuki S-Presso,Black,Nagpur,01-07-2021,1005
+Maruti Suzuki S-Presso,Black,Nagpur,01-08-2021,800
+Maruti Suzuki S-Presso,Black,Nagpur,01-09-2021,696
+Maruti Suzuki S-Presso,Black,Nagpur,01-10-2021,946
+Maruti Suzuki S-Presso,Black,Nagpur,01-11-2021,863
+Maruti Suzuki S-Presso,Black,Nagpur,01-12-2021,818
+Maruti Suzuki S-Presso,White,Nagpur,01-01-2021,863
+Maruti Suzuki S-Presso,White,Nagpur,01-02-2021,1012
+Maruti Suzuki S-Presso,White,Nagpur,01-03-2021,1257
+Maruti Suzuki S-Presso,White,Nagpur,01-04-2021,1329
+Maruti Suzuki S-Presso,White,Nagpur,01-05-2021,1168
+Maruti Suzuki S-Presso,White,Nagpur,01-06-2021,1146
+Maruti Suzuki S-Presso,White,Nagpur,01-07-2021,1077
+Maruti Suzuki S-Presso,White,Nagpur,01-08-2021,1040
+Maruti Suzuki S-Presso,White,Nagpur,01-09-2021,820
+Maruti Suzuki S-Presso,White,Nagpur,01-10-2021,984
+Maruti Suzuki S-Presso,White,Nagpur,01-11-2021,973
+Maruti Suzuki S-Presso,White,Nagpur,01-12-2021,958
+Maruti Suzuki S-Presso,Grey,Nagpur,01-01-2021,1141
+Maruti Suzuki S-Presso,Grey,Nagpur,01-02-2021,890
+Maruti Suzuki S-Presso,Grey,Nagpur,01-03-2021,1176
+Maruti Suzuki S-Presso,Grey,Nagpur,01-04-2021,1370
+Maruti Suzuki S-Presso,Grey,Nagpur,01-05-2021,1420
+Maruti Suzuki S-Presso,Grey,Nagpur,01-06-2021,1091
+Maruti Suzuki S-Presso,Grey,Nagpur,01-07-2021,1028
+Maruti Suzuki S-Presso,Grey,Nagpur,01-08-2021,905
+Maruti Suzuki S-Presso,Grey,Nagpur,01-09-2021,912
+Maruti Suzuki S-Presso,Grey,Nagpur,01-10-2021,985
+Maruti Suzuki S-Presso,Grey,Nagpur,01-11-2021,1048
+Maruti Suzuki S-Presso,Grey,Nagpur,01-12-2021,890
+Maruti Suzuki Eeco,Black,Nagpur,01-01-2021,996
+Maruti Suzuki Eeco,Black,Nagpur,01-02-2021,1120
+Maruti Suzuki Eeco,Black,Nagpur,01-03-2021,1079
+Maruti Suzuki Eeco,Black,Nagpur,01-04-2021,1411
+Maruti Suzuki Eeco,Black,Nagpur,01-05-2021,1262
+Maruti Suzuki Eeco,Black,Nagpur,01-06-2021,1291
+Maruti Suzuki Eeco,Black,Nagpur,01-07-2021,1081
+Maruti Suzuki Eeco,Black,Nagpur,01-08-2021,788
+Maruti Suzuki Eeco,Black,Nagpur,01-09-2021,1000
+Maruti Suzuki Eeco,Black,Nagpur,01-10-2021,1075
+Maruti Suzuki Eeco,Black,Nagpur,01-11-2021,1025
+Maruti Suzuki Eeco,Black,Nagpur,01-12-2021,974
+Maruti Suzuki Eeco,White,Nagpur,01-01-2021,868
+Maruti Suzuki Eeco,White,Nagpur,01-02-2021,1113
+Maruti Suzuki Eeco,White,Nagpur,01-03-2021,1303
+Maruti Suzuki Eeco,White,Nagpur,01-04-2021,1403
+Maruti Suzuki Eeco,White,Nagpur,01-05-2021,1342
+Maruti Suzuki Eeco,White,Nagpur,01-06-2021,1128
+Maruti Suzuki Eeco,White,Nagpur,01-07-2021,1118
+Maruti Suzuki Eeco,White,Nagpur,01-08-2021,1047
+Maruti Suzuki Eeco,White,Nagpur,01-09-2021,990
+Maruti Suzuki Eeco,White,Nagpur,01-10-2021,1173
+Maruti Suzuki Eeco,White,Nagpur,01-11-2021,1161
+Maruti Suzuki Eeco,White,Nagpur,01-12-2021,1158
+Maruti Suzuki Eeco,Grey,Nagpur,01-01-2021,824
+Maruti Suzuki Eeco,Grey,Nagpur,01-02-2021,910
+Maruti Suzuki Eeco,Grey,Nagpur,01-03-2021,1236
+Maruti Suzuki Eeco,Grey,Nagpur,01-04-2021,1142
+Maruti Suzuki Eeco,Grey,Nagpur,01-05-2021,1472
+Maruti Suzuki Eeco,Grey,Nagpur,01-06-2021,1077
+Maruti Suzuki Eeco,Grey,Nagpur,01-07-2021,1062
+Maruti Suzuki Eeco,Grey,Nagpur,01-08-2021,1087
+Maruti Suzuki Eeco,Grey,Nagpur,01-09-2021,767
+Maruti Suzuki Eeco,Grey,Nagpur,01-10-2021,948
+Maruti Suzuki Eeco,Grey,Nagpur,01-11-2021,1039
+Maruti Suzuki Eeco,Grey,Nagpur,01-12-2021,991
+Maruti Suzuki Celerio,Black,Nagpur,01-01-2021,1044
+Maruti Suzuki Celerio,Black,Nagpur,01-02-2021,999
+Maruti Suzuki Celerio,Black,Nagpur,01-03-2021,1427
+Maruti Suzuki Celerio,Black,Nagpur,01-04-2021,1498
+Maruti Suzuki Celerio,Black,Nagpur,01-05-2021,1345
+Maruti Suzuki Celerio,Black,Nagpur,01-06-2021,1259
+Maruti Suzuki Celerio,Black,Nagpur,01-07-2021,1389
+Maruti Suzuki Celerio,Black,Nagpur,01-08-2021,915
+Maruti Suzuki Celerio,Black,Nagpur,01-09-2021,993
+Maruti Suzuki Celerio,Black,Nagpur,01-10-2021,1162
+Maruti Suzuki Celerio,Black,Nagpur,01-11-2021,1278
+Maruti Suzuki Celerio,Black,Nagpur,01-12-2021,1325
+Maruti Suzuki Celerio,White,Nagpur,01-01-2021,967
+Maruti Suzuki Celerio,White,Nagpur,01-02-2021,1115
+Maruti Suzuki Celerio,White,Nagpur,01-03-2021,1373
+Maruti Suzuki Celerio,White,Nagpur,01-04-2021,1539
+Maruti Suzuki Celerio,White,Nagpur,01-05-2021,1565
+Maruti Suzuki Celerio,White,Nagpur,01-06-2021,1286
+Maruti Suzuki Celerio,White,Nagpur,01-07-2021,1318
+Maruti Suzuki Celerio,White,Nagpur,01-08-2021,1027
+Maruti Suzuki Celerio,White,Nagpur,01-09-2021,1120
+Maruti Suzuki Celerio,White,Nagpur,01-10-2021,1141
+Maruti Suzuki Celerio,White,Nagpur,01-11-2021,1205
+Maruti Suzuki Celerio,White,Nagpur,01-12-2021,1032
+Maruti Suzuki Celerio,Grey,Nagpur,01-01-2021,1079
+Maruti Suzuki Celerio,Grey,Nagpur,01-02-2021,926
+Maruti Suzuki Celerio,Grey,Nagpur,01-03-2021,1298
+Maruti Suzuki Celerio,Grey,Nagpur,01-04-2021,1304
+Maruti Suzuki Celerio,Grey,Nagpur,01-05-2021,1428
+Maruti Suzuki Celerio,Grey,Nagpur,01-06-2021,1224
+Maruti Suzuki Celerio,Grey,Nagpur,01-07-2021,1287
+Maruti Suzuki Celerio,Grey,Nagpur,01-08-2021,1072
+Maruti Suzuki Celerio,Grey,Nagpur,01-09-2021,780
+Maruti Suzuki Celerio,Grey,Nagpur,01-10-2021,1131
+Maruti Suzuki Celerio,Grey,Nagpur,01-11-2021,1157
+Maruti Suzuki Celerio,Grey,Nagpur,01-12-2021,1167
+Maruti Suzuki Swift,Black,Nagpur,01-01-2021,941
+Maruti Suzuki Swift,Black,Nagpur,01-02-2021,1004
+Maruti Suzuki Swift,Black,Nagpur,01-03-2021,1168
+Maruti Suzuki Swift,Black,Nagpur,01-04-2021,1357
+Maruti Suzuki Swift,Black,Nagpur,01-05-2021,1468
+Maruti Suzuki Swift,Black,Nagpur,01-06-2021,1228
+Maruti Suzuki Swift,Black,Nagpur,01-07-2021,1253
+Maruti Suzuki Swift,Black,Nagpur,01-08-2021,1042
+Maruti Suzuki Swift,Black,Nagpur,01-09-2021,828
+Maruti Suzuki Swift,Black,Nagpur,01-10-2021,1194
+Maruti Suzuki Swift,Black,Nagpur,01-11-2021,1064
+Maruti Suzuki Swift,Black,Nagpur,01-12-2021,1044
+Maruti Suzuki Swift,White,Nagpur,01-01-2021,931
+Maruti Suzuki Swift,White,Nagpur,01-02-2021,905
+Maruti Suzuki Swift,White,Nagpur,01-03-2021,1349
+Maruti Suzuki Swift,White,Nagpur,01-04-2021,1432
+Maruti Suzuki Swift,White,Nagpur,01-05-2021,1512
+Maruti Suzuki Swift,White,Nagpur,01-06-2021,1238
+Maruti Suzuki Swift,White,Nagpur,01-07-2021,1154
+Maruti Suzuki Swift,White,Nagpur,01-08-2021,1167
+Maruti Suzuki Swift,White,Nagpur,01-09-2021,945
+Maruti Suzuki Swift,White,Nagpur,01-10-2021,1028
+Maruti Suzuki Swift,White,Nagpur,01-11-2021,1161
+Maruti Suzuki Swift,White,Nagpur,01-12-2021,1070
+Maruti Suzuki Swift,Grey,Nagpur,01-01-2021,920
+Maruti Suzuki Swift,Grey,Nagpur,01-02-2021,1155
+Maruti Suzuki Swift,Grey,Nagpur,01-03-2021,1396
+Maruti Suzuki Swift,Grey,Nagpur,01-04-2021,1516
+Maruti Suzuki Swift,Grey,Nagpur,01-05-2021,1446
+Maruti Suzuki Swift,Grey,Nagpur,01-06-2021,1129
+Maruti Suzuki Swift,Grey,Nagpur,01-07-2021,1349
+Maruti Suzuki Swift,Grey,Nagpur,01-08-2021,1212
+Maruti Suzuki Swift,Grey,Nagpur,01-09-2021,833
+Maruti Suzuki Swift,Grey,Nagpur,01-10-2021,1139
+Maruti Suzuki Swift,Grey,Nagpur,01-11-2021,1425
+Maruti Suzuki Swift,Grey,Nagpur,01-12-2021,1074
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-01-2021,809
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-02-2021,812
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-03-2021,1208
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-04-2021,1056
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-05-2021,1136
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-06-2021,982
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-07-2021,1181
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-08-2021,910
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-09-2021,781
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-10-2021,989
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-11-2021,897
+Maruti Suzuki Grand Vitara,Black,Nagpur,01-12-2021,934
+Maruti Suzuki Grand Vitara,White,Nagpur,01-01-2021,803
+Maruti Suzuki Grand Vitara,White,Nagpur,01-02-2021,944
+Maruti Suzuki Grand Vitara,White,Nagpur,01-03-2021,1155
+Maruti Suzuki Grand Vitara,White,Nagpur,01-04-2021,1182
+Maruti Suzuki Grand Vitara,White,Nagpur,01-05-2021,1142
+Maruti Suzuki Grand Vitara,White,Nagpur,01-06-2021,1010
+Maruti Suzuki Grand Vitara,White,Nagpur,01-07-2021,1058
+Maruti Suzuki Grand Vitara,White,Nagpur,01-08-2021,723
+Maruti Suzuki Grand Vitara,White,Nagpur,01-09-2021,800
+Maruti Suzuki Grand Vitara,White,Nagpur,01-10-2021,1035
+Maruti Suzuki Grand Vitara,White,Nagpur,01-11-2021,1100
+Maruti Suzuki Grand Vitara,White,Nagpur,01-12-2021,1148
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-01-2021,634
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-02-2021,652
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-03-2021,1145
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-04-2021,1212
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-05-2021,1147
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-06-2021,873
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-07-2021,926
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-08-2021,919
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-09-2021,731
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-10-2021,931
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-11-2021,765
+Maruti Suzuki Grand Vitara,Grey,Nagpur,01-12-2021,894
+Maruti Suzuki XL6,Black,Nagpur,01-01-2021,951
+Maruti Suzuki XL6,Black,Nagpur,01-02-2021,801
+Maruti Suzuki XL6,Black,Nagpur,01-03-2021,1107
+Maruti Suzuki XL6,Black,Nagpur,01-04-2021,1179
+Maruti Suzuki XL6,Black,Nagpur,01-05-2021,1265
+Maruti Suzuki XL6,Black,Nagpur,01-06-2021,1110
+Maruti Suzuki XL6,Black,Nagpur,01-07-2021,949
+Maruti Suzuki XL6,Black,Nagpur,01-08-2021,786
+Maruti Suzuki XL6,Black,Nagpur,01-09-2021,768
+Maruti Suzuki XL6,Black,Nagpur,01-10-2021,1054
+Maruti Suzuki XL6,Black,Nagpur,01-11-2021,1005
+Maruti Suzuki XL6,Black,Nagpur,01-12-2021,1012
+Maruti Suzuki XL6,White,Nagpur,01-01-2021,854
+Maruti Suzuki XL6,White,Nagpur,01-02-2021,783
+Maruti Suzuki XL6,White,Nagpur,01-03-2021,1164
+Maruti Suzuki XL6,White,Nagpur,01-04-2021,1216
+Maruti Suzuki XL6,White,Nagpur,01-05-2021,1108
+Maruti Suzuki XL6,White,Nagpur,01-06-2021,869
+Maruti Suzuki XL6,White,Nagpur,01-07-2021,865
+Maruti Suzuki XL6,White,Nagpur,01-08-2021,876
+Maruti Suzuki XL6,White,Nagpur,01-09-2021,758
+Maruti Suzuki XL6,White,Nagpur,01-10-2021,1081
+Maruti Suzuki XL6,White,Nagpur,01-11-2021,852
+Maruti Suzuki XL6,White,Nagpur,01-12-2021,1035
+Maruti Suzuki XL6,Grey,Nagpur,01-01-2021,772
+Maruti Suzuki XL6,Grey,Nagpur,01-02-2021,822
+Maruti Suzuki XL6,Grey,Nagpur,01-03-2021,1136
+Maruti Suzuki XL6,Grey,Nagpur,01-04-2021,1045
+Maruti Suzuki XL6,Grey,Nagpur,01-05-2021,1368
+Maruti Suzuki XL6,Grey,Nagpur,01-06-2021,1093
+Maruti Suzuki XL6,Grey,Nagpur,01-07-2021,1118
+Maruti Suzuki XL6,Grey,Nagpur,01-08-2021,949
+Maruti Suzuki XL6,Grey,Nagpur,01-09-2021,803
+Maruti Suzuki XL6,Grey,Nagpur,01-10-2021,1054
+Maruti Suzuki XL6,Grey,Nagpur,01-11-2021,1012
+Maruti Suzuki XL6,Grey,Nagpur,01-12-2021,867
+Maruti Suzuki Brezza,Black,Nagpur,01-01-2021,819
+Maruti Suzuki Brezza,Black,Nagpur,01-02-2021,873
+Maruti Suzuki Brezza,Black,Nagpur,01-03-2021,1109
+Maruti Suzuki Brezza,Black,Nagpur,01-04-2021,1174
+Maruti Suzuki Brezza,Black,Nagpur,01-05-2021,1090
+Maruti Suzuki Brezza,Black,Nagpur,01-06-2021,952
+Maruti Suzuki Brezza,Black,Nagpur,01-07-2021,1088
+Maruti Suzuki Brezza,Black,Nagpur,01-08-2021,972
+Maruti Suzuki Brezza,Black,Nagpur,01-09-2021,818
+Maruti Suzuki Brezza,Black,Nagpur,01-10-2021,832
+Maruti Suzuki Brezza,Black,Nagpur,01-11-2021,1008
+Maruti Suzuki Brezza,Black,Nagpur,01-12-2021,925
+Maruti Suzuki Brezza,White,Nagpur,01-01-2021,746
+Maruti Suzuki Brezza,White,Nagpur,01-02-2021,736
+Maruti Suzuki Brezza,White,Nagpur,01-03-2021,1218
+Maruti Suzuki Brezza,White,Nagpur,01-04-2021,1190
+Maruti Suzuki Brezza,White,Nagpur,01-05-2021,1237
+Maruti Suzuki Brezza,White,Nagpur,01-06-2021,1190
+Maruti Suzuki Brezza,White,Nagpur,01-07-2021,1102
+Maruti Suzuki Brezza,White,Nagpur,01-08-2021,915
+Maruti Suzuki Brezza,White,Nagpur,01-09-2021,811
+Maruti Suzuki Brezza,White,Nagpur,01-10-2021,916
+Maruti Suzuki Brezza,White,Nagpur,01-11-2021,983
+Maruti Suzuki Brezza,White,Nagpur,01-12-2021,1094
+Maruti Suzuki Brezza,Grey,Nagpur,01-01-2021,888
+Maruti Suzuki Brezza,Grey,Nagpur,01-02-2021,977
+Maruti Suzuki Brezza,Grey,Nagpur,01-03-2021,975
+Maruti Suzuki Brezza,Grey,Nagpur,01-04-2021,1162
+Maruti Suzuki Brezza,Grey,Nagpur,01-05-2021,1088
+Maruti Suzuki Brezza,Grey,Nagpur,01-06-2021,999
+Maruti Suzuki Brezza,Grey,Nagpur,01-07-2021,1192
+Maruti Suzuki Brezza,Grey,Nagpur,01-08-2021,1017
+Maruti Suzuki Brezza,Grey,Nagpur,01-09-2021,821
+Maruti Suzuki Brezza,Grey,Nagpur,01-10-2021,1138
+Maruti Suzuki Brezza,Grey,Nagpur,01-11-2021,902
+Maruti Suzuki Brezza,Grey,Nagpur,01-12-2021,946
+Maruti Suzuki Dzire,Black,Nagpur,01-01-2021,1015
+Maruti Suzuki Dzire,Black,Nagpur,01-02-2021,846
+Maruti Suzuki Dzire,Black,Nagpur,01-03-2021,1307
+Maruti Suzuki Dzire,Black,Nagpur,01-04-2021,1365
+Maruti Suzuki Dzire,Black,Nagpur,01-05-2021,1397
+Maruti Suzuki Dzire,Black,Nagpur,01-06-2021,1072
+Maruti Suzuki Dzire,Black,Nagpur,01-07-2021,1271
+Maruti Suzuki Dzire,Black,Nagpur,01-08-2021,1003
+Maruti Suzuki Dzire,Black,Nagpur,01-09-2021,808
+Maruti Suzuki Dzire,Black,Nagpur,01-10-2021,1102
+Maruti Suzuki Dzire,Black,Nagpur,01-11-2021,1089
+Maruti Suzuki Dzire,Black,Nagpur,01-12-2021,1181
+Maruti Suzuki Dzire,White,Nagpur,01-01-2021,1015
+Maruti Suzuki Dzire,White,Nagpur,01-02-2021,1131
+Maruti Suzuki Dzire,White,Nagpur,01-03-2021,1336
+Maruti Suzuki Dzire,White,Nagpur,01-04-2021,1359
+Maruti Suzuki Dzire,White,Nagpur,01-05-2021,1336
+Maruti Suzuki Dzire,White,Nagpur,01-06-2021,1270
+Maruti Suzuki Dzire,White,Nagpur,01-07-2021,1068
+Maruti Suzuki Dzire,White,Nagpur,01-08-2021,1064
+Maruti Suzuki Dzire,White,Nagpur,01-09-2021,1005
+Maruti Suzuki Dzire,White,Nagpur,01-10-2021,1227
+Maruti Suzuki Dzire,White,Nagpur,01-11-2021,1083
+Maruti Suzuki Dzire,White,Nagpur,01-12-2021,929
+Maruti Suzuki Dzire,Grey,Nagpur,01-01-2021,842
+Maruti Suzuki Dzire,Grey,Nagpur,01-02-2021,1089
+Maruti Suzuki Dzire,Grey,Nagpur,01-03-2021,1090
+Maruti Suzuki Dzire,Grey,Nagpur,01-04-2021,1271
+Maruti Suzuki Dzire,Grey,Nagpur,01-05-2021,1438
+Maruti Suzuki Dzire,Grey,Nagpur,01-06-2021,1277
+Maruti Suzuki Dzire,Grey,Nagpur,01-07-2021,1158
+Maruti Suzuki Dzire,Grey,Nagpur,01-08-2021,983
+Maruti Suzuki Dzire,Grey,Nagpur,01-09-2021,831
+Maruti Suzuki Dzire,Grey,Nagpur,01-10-2021,1201
+Maruti Suzuki Dzire,Grey,Nagpur,01-11-2021,1089
+Maruti Suzuki Dzire,Grey,Nagpur,01-12-2021,1024
+Maruti Suzuki Alto 800,Black,Nashik,01-01-2021,689
+Maruti Suzuki Alto 800,Black,Nashik,01-02-2021,758
+Maruti Suzuki Alto 800,Black,Nashik,01-03-2021,973
+Maruti Suzuki Alto 800,Black,Nashik,01-04-2021,1044
+Maruti Suzuki Alto 800,Black,Nashik,01-05-2021,1057
+Maruti Suzuki Alto 800,Black,Nashik,01-06-2021,963
+Maruti Suzuki Alto 800,Black,Nashik,01-07-2021,894
+Maruti Suzuki Alto 800,Black,Nashik,01-08-2021,848
+Maruti Suzuki Alto 800,Black,Nashik,01-09-2021,663
+Maruti Suzuki Alto 800,Black,Nashik,01-10-2021,828
+Maruti Suzuki Alto 800,Black,Nashik,01-11-2021,969
+Maruti Suzuki Alto 800,Black,Nashik,01-12-2021,944
+Maruti Suzuki Alto 800,White,Nashik,01-01-2021,931
+Maruti Suzuki Alto 800,White,Nashik,01-02-2021,1016
+Maruti Suzuki Alto 800,White,Nashik,01-03-2021,1066
+Maruti Suzuki Alto 800,White,Nashik,01-04-2021,1189
+Maruti Suzuki Alto 800,White,Nashik,01-05-2021,1216
+Maruti Suzuki Alto 800,White,Nashik,01-06-2021,1008
+Maruti Suzuki Alto 800,White,Nashik,01-07-2021,997
+Maruti Suzuki Alto 800,White,Nashik,01-08-2021,970
+Maruti Suzuki Alto 800,White,Nashik,01-09-2021,789
+Maruti Suzuki Alto 800,White,Nashik,01-10-2021,990
+Maruti Suzuki Alto 800,White,Nashik,01-11-2021,1179
+Maruti Suzuki Alto 800,White,Nashik,01-12-2021,916
+Maruti Suzuki Alto 800,Grey,Nashik,01-01-2021,717
+Maruti Suzuki Alto 800,Grey,Nashik,01-02-2021,650
+Maruti Suzuki Alto 800,Grey,Nashik,01-03-2021,1127
+Maruti Suzuki Alto 800,Grey,Nashik,01-04-2021,1092
+Maruti Suzuki Alto 800,Grey,Nashik,01-05-2021,1024
+Maruti Suzuki Alto 800,Grey,Nashik,01-06-2021,1013
+Maruti Suzuki Alto 800,Grey,Nashik,01-07-2021,1079
+Maruti Suzuki Alto 800,Grey,Nashik,01-08-2021,882
+Maruti Suzuki Alto 800,Grey,Nashik,01-09-2021,820
+Maruti Suzuki Alto 800,Grey,Nashik,01-10-2021,906
+Maruti Suzuki Alto 800,Grey,Nashik,01-11-2021,850
+Maruti Suzuki Alto 800,Grey,Nashik,01-12-2021,875
+Maruti Suzuki Alto K10,Black,Nashik,01-01-2021,729
+Maruti Suzuki Alto K10,Black,Nashik,01-02-2021,894
+Maruti Suzuki Alto K10,Black,Nashik,01-03-2021,820
+Maruti Suzuki Alto K10,Black,Nashik,01-04-2021,1140
+Maruti Suzuki Alto K10,Black,Nashik,01-05-2021,1053
+Maruti Suzuki Alto K10,Black,Nashik,01-06-2021,784
+Maruti Suzuki Alto K10,Black,Nashik,01-07-2021,794
+Maruti Suzuki Alto K10,Black,Nashik,01-08-2021,602
+Maruti Suzuki Alto K10,Black,Nashik,01-09-2021,769
+Maruti Suzuki Alto K10,Black,Nashik,01-10-2021,963
+Maruti Suzuki Alto K10,Black,Nashik,01-11-2021,988
+Maruti Suzuki Alto K10,Black,Nashik,01-12-2021,789
+Maruti Suzuki Alto K10,White,Nashik,01-01-2021,886
+Maruti Suzuki Alto K10,White,Nashik,01-02-2021,895
+Maruti Suzuki Alto K10,White,Nashik,01-03-2021,1110
+Maruti Suzuki Alto K10,White,Nashik,01-04-2021,1148
+Maruti Suzuki Alto K10,White,Nashik,01-05-2021,1282
+Maruti Suzuki Alto K10,White,Nashik,01-06-2021,1034
+Maruti Suzuki Alto K10,White,Nashik,01-07-2021,917
+Maruti Suzuki Alto K10,White,Nashik,01-08-2021,865
+Maruti Suzuki Alto K10,White,Nashik,01-09-2021,829
+Maruti Suzuki Alto K10,White,Nashik,01-10-2021,969
+Maruti Suzuki Alto K10,White,Nashik,01-11-2021,1212
+Maruti Suzuki Alto K10,White,Nashik,01-12-2021,919
+Maruti Suzuki Alto K10,Grey,Nashik,01-01-2021,831
+Maruti Suzuki Alto K10,Grey,Nashik,01-02-2021,808
+Maruti Suzuki Alto K10,Grey,Nashik,01-03-2021,990
+Maruti Suzuki Alto K10,Grey,Nashik,01-04-2021,1192
+Maruti Suzuki Alto K10,Grey,Nashik,01-05-2021,1085
+Maruti Suzuki Alto K10,Grey,Nashik,01-06-2021,813
+Maruti Suzuki Alto K10,Grey,Nashik,01-07-2021,968
+Maruti Suzuki Alto K10,Grey,Nashik,01-08-2021,683
+Maruti Suzuki Alto K10,Grey,Nashik,01-09-2021,813
+Maruti Suzuki Alto K10,Grey,Nashik,01-10-2021,887
+Maruti Suzuki Alto K10,Grey,Nashik,01-11-2021,1020
+Maruti Suzuki Alto K10,Grey,Nashik,01-12-2021,952
+Maruti Suzuki S-Presso,Black,Nashik,01-01-2021,774
+Maruti Suzuki S-Presso,Black,Nashik,01-02-2021,797
+Maruti Suzuki S-Presso,Black,Nashik,01-03-2021,1095
+Maruti Suzuki S-Presso,Black,Nashik,01-04-2021,1271
+Maruti Suzuki S-Presso,Black,Nashik,01-05-2021,1211
+Maruti Suzuki S-Presso,Black,Nashik,01-06-2021,944
+Maruti Suzuki S-Presso,Black,Nashik,01-07-2021,1143
+Maruti Suzuki S-Presso,Black,Nashik,01-08-2021,1026
+Maruti Suzuki S-Presso,Black,Nashik,01-09-2021,796
+Maruti Suzuki S-Presso,Black,Nashik,01-10-2021,1186
+Maruti Suzuki S-Presso,Black,Nashik,01-11-2021,1003
+Maruti Suzuki S-Presso,Black,Nashik,01-12-2021,1011
+Maruti Suzuki S-Presso,White,Nashik,01-01-2021,908
+Maruti Suzuki S-Presso,White,Nashik,01-02-2021,917
+Maruti Suzuki S-Presso,White,Nashik,01-03-2021,1096
+Maruti Suzuki S-Presso,White,Nashik,01-04-2021,1187
+Maruti Suzuki S-Presso,White,Nashik,01-05-2021,1116
+Maruti Suzuki S-Presso,White,Nashik,01-06-2021,1134
+Maruti Suzuki S-Presso,White,Nashik,01-07-2021,900
+Maruti Suzuki S-Presso,White,Nashik,01-08-2021,984
+Maruti Suzuki S-Presso,White,Nashik,01-09-2021,638
+Maruti Suzuki S-Presso,White,Nashik,01-10-2021,1099
+Maruti Suzuki S-Presso,White,Nashik,01-11-2021,1065
+Maruti Suzuki S-Presso,White,Nashik,01-12-2021,932
+Maruti Suzuki S-Presso,Grey,Nashik,01-01-2021,905
+Maruti Suzuki S-Presso,Grey,Nashik,01-02-2021,785
+Maruti Suzuki S-Presso,Grey,Nashik,01-03-2021,1204
+Maruti Suzuki S-Presso,Grey,Nashik,01-04-2021,1147
+Maruti Suzuki S-Presso,Grey,Nashik,01-05-2021,1300
+Maruti Suzuki S-Presso,Grey,Nashik,01-06-2021,1152
+Maruti Suzuki S-Presso,Grey,Nashik,01-07-2021,1022
+Maruti Suzuki S-Presso,Grey,Nashik,01-08-2021,901
+Maruti Suzuki S-Presso,Grey,Nashik,01-09-2021,703
+Maruti Suzuki S-Presso,Grey,Nashik,01-10-2021,1015
+Maruti Suzuki S-Presso,Grey,Nashik,01-11-2021,1071
+Maruti Suzuki S-Presso,Grey,Nashik,01-12-2021,995
+Maruti Suzuki Eeco,Black,Nashik,01-01-2021,935
+Maruti Suzuki Eeco,Black,Nashik,01-02-2021,944
+Maruti Suzuki Eeco,Black,Nashik,01-03-2021,1225
+Maruti Suzuki Eeco,Black,Nashik,01-04-2021,1209
+Maruti Suzuki Eeco,Black,Nashik,01-05-2021,1109
+Maruti Suzuki Eeco,Black,Nashik,01-06-2021,1136
+Maruti Suzuki Eeco,Black,Nashik,01-07-2021,1010
+Maruti Suzuki Eeco,Black,Nashik,01-08-2021,937
+Maruti Suzuki Eeco,Black,Nashik,01-09-2021,814
+Maruti Suzuki Eeco,Black,Nashik,01-10-2021,901
+Maruti Suzuki Eeco,Black,Nashik,01-11-2021,1196
+Maruti Suzuki Eeco,Black,Nashik,01-12-2021,1095
+Maruti Suzuki Eeco,White,Nashik,01-01-2021,969
+Maruti Suzuki Eeco,White,Nashik,01-02-2021,826
+Maruti Suzuki Eeco,White,Nashik,01-03-2021,1153
+Maruti Suzuki Eeco,White,Nashik,01-04-2021,1230
+Maruti Suzuki Eeco,White,Nashik,01-05-2021,1239
+Maruti Suzuki Eeco,White,Nashik,01-06-2021,1173
+Maruti Suzuki Eeco,White,Nashik,01-07-2021,1015
+Maruti Suzuki Eeco,White,Nashik,01-08-2021,705
+Maruti Suzuki Eeco,White,Nashik,01-09-2021,778
+Maruti Suzuki Eeco,White,Nashik,01-10-2021,797
+Maruti Suzuki Eeco,White,Nashik,01-11-2021,991
+Maruti Suzuki Eeco,White,Nashik,01-12-2021,864
+Maruti Suzuki Eeco,Grey,Nashik,01-01-2021,890
+Maruti Suzuki Eeco,Grey,Nashik,01-02-2021,818
+Maruti Suzuki Eeco,Grey,Nashik,01-03-2021,964
+Maruti Suzuki Eeco,Grey,Nashik,01-04-2021,1086
+Maruti Suzuki Eeco,Grey,Nashik,01-05-2021,1032
+Maruti Suzuki Eeco,Grey,Nashik,01-06-2021,1119
+Maruti Suzuki Eeco,Grey,Nashik,01-07-2021,978
+Maruti Suzuki Eeco,Grey,Nashik,01-08-2021,810
+Maruti Suzuki Eeco,Grey,Nashik,01-09-2021,921
+Maruti Suzuki Eeco,Grey,Nashik,01-10-2021,1115
+Maruti Suzuki Eeco,Grey,Nashik,01-11-2021,919
+Maruti Suzuki Eeco,Grey,Nashik,01-12-2021,920
+Maruti Suzuki Celerio,Black,Nashik,01-01-2021,920
+Maruti Suzuki Celerio,Black,Nashik,01-02-2021,907
+Maruti Suzuki Celerio,Black,Nashik,01-03-2021,1209
+Maruti Suzuki Celerio,Black,Nashik,01-04-2021,1327
+Maruti Suzuki Celerio,Black,Nashik,01-05-2021,1213
+Maruti Suzuki Celerio,Black,Nashik,01-06-2021,1133
+Maruti Suzuki Celerio,Black,Nashik,01-07-2021,885
+Maruti Suzuki Celerio,Black,Nashik,01-08-2021,955
+Maruti Suzuki Celerio,Black,Nashik,01-09-2021,849
+Maruti Suzuki Celerio,Black,Nashik,01-10-2021,978
+Maruti Suzuki Celerio,Black,Nashik,01-11-2021,1108
+Maruti Suzuki Celerio,Black,Nashik,01-12-2021,829
+Maruti Suzuki Celerio,White,Nashik,01-01-2021,936
+Maruti Suzuki Celerio,White,Nashik,01-02-2021,1219
+Maruti Suzuki Celerio,White,Nashik,01-03-2021,1330
+Maruti Suzuki Celerio,White,Nashik,01-04-2021,1436
+Maruti Suzuki Celerio,White,Nashik,01-05-2021,1561
+Maruti Suzuki Celerio,White,Nashik,01-06-2021,1376
+Maruti Suzuki Celerio,White,Nashik,01-07-2021,1139
+Maruti Suzuki Celerio,White,Nashik,01-08-2021,1159
+Maruti Suzuki Celerio,White,Nashik,01-09-2021,809
+Maruti Suzuki Celerio,White,Nashik,01-10-2021,1123
+Maruti Suzuki Celerio,White,Nashik,01-11-2021,1170
+Maruti Suzuki Celerio,White,Nashik,01-12-2021,1108
+Maruti Suzuki Celerio,Grey,Nashik,01-01-2021,1050
+Maruti Suzuki Celerio,Grey,Nashik,01-02-2021,901
+Maruti Suzuki Celerio,Grey,Nashik,01-03-2021,1457
+Maruti Suzuki Celerio,Grey,Nashik,01-04-2021,1325
+Maruti Suzuki Celerio,Grey,Nashik,01-05-2021,1484
+Maruti Suzuki Celerio,Grey,Nashik,01-06-2021,1315
+Maruti Suzuki Celerio,Grey,Nashik,01-07-2021,1096
+Maruti Suzuki Celerio,Grey,Nashik,01-08-2021,1014
+Maruti Suzuki Celerio,Grey,Nashik,01-09-2021,979
+Maruti Suzuki Celerio,Grey,Nashik,01-10-2021,1090
+Maruti Suzuki Celerio,Grey,Nashik,01-11-2021,1156
+Maruti Suzuki Celerio,Grey,Nashik,01-12-2021,1095
+Maruti Suzuki Swift,Black,Nashik,01-01-2021,1033
+Maruti Suzuki Swift,Black,Nashik,01-02-2021,1113
+Maruti Suzuki Swift,Black,Nashik,01-03-2021,1237
+Maruti Suzuki Swift,Black,Nashik,01-04-2021,1499
+Maruti Suzuki Swift,Black,Nashik,01-05-2021,1529
+Maruti Suzuki Swift,Black,Nashik,01-06-2021,1313
+Maruti Suzuki Swift,Black,Nashik,01-07-2021,1184
+Maruti Suzuki Swift,Black,Nashik,01-08-2021,1124
+Maruti Suzuki Swift,Black,Nashik,01-09-2021,881
+Maruti Suzuki Swift,Black,Nashik,01-10-2021,1160
+Maruti Suzuki Swift,Black,Nashik,01-11-2021,1311
+Maruti Suzuki Swift,Black,Nashik,01-12-2021,1118
+Maruti Suzuki Swift,White,Nashik,01-01-2021,1098
+Maruti Suzuki Swift,White,Nashik,01-02-2021,1106
+Maruti Suzuki Swift,White,Nashik,01-03-2021,1563
+Maruti Suzuki Swift,White,Nashik,01-04-2021,1635
+Maruti Suzuki Swift,White,Nashik,01-05-2021,1695
+Maruti Suzuki Swift,White,Nashik,01-06-2021,1542
+Maruti Suzuki Swift,White,Nashik,01-07-2021,1332
+Maruti Suzuki Swift,White,Nashik,01-08-2021,919
+Maruti Suzuki Swift,White,Nashik,01-09-2021,1193
+Maruti Suzuki Swift,White,Nashik,01-10-2021,1403
+Maruti Suzuki Swift,White,Nashik,01-11-2021,1279
+Maruti Suzuki Swift,White,Nashik,01-12-2021,1245
+Maruti Suzuki Swift,Grey,Nashik,01-01-2021,1027
+Maruti Suzuki Swift,Grey,Nashik,01-02-2021,1082
+Maruti Suzuki Swift,Grey,Nashik,01-03-2021,1466
+Maruti Suzuki Swift,Grey,Nashik,01-04-2021,1282
+Maruti Suzuki Swift,Grey,Nashik,01-05-2021,1349
+Maruti Suzuki Swift,Grey,Nashik,01-06-2021,1142
+Maruti Suzuki Swift,Grey,Nashik,01-07-2021,1183
+Maruti Suzuki Swift,Grey,Nashik,01-08-2021,994
+Maruti Suzuki Swift,Grey,Nashik,01-09-2021,808
+Maruti Suzuki Swift,Grey,Nashik,01-10-2021,1266
+Maruti Suzuki Swift,Grey,Nashik,01-11-2021,1223
+Maruti Suzuki Swift,Grey,Nashik,01-12-2021,1063
+Maruti Suzuki Grand Vitara,Black,Nashik,01-01-2021,706
+Maruti Suzuki Grand Vitara,Black,Nashik,01-02-2021,697
+Maruti Suzuki Grand Vitara,Black,Nashik,01-03-2021,749
+Maruti Suzuki Grand Vitara,Black,Nashik,01-04-2021,881
+Maruti Suzuki Grand Vitara,Black,Nashik,01-05-2021,828
+Maruti Suzuki Grand Vitara,Black,Nashik,01-06-2021,756
+Maruti Suzuki Grand Vitara,Black,Nashik,01-07-2021,774
+Maruti Suzuki Grand Vitara,Black,Nashik,01-08-2021,752
+Maruti Suzuki Grand Vitara,Black,Nashik,01-09-2021,657
+Maruti Suzuki Grand Vitara,Black,Nashik,01-10-2021,739
+Maruti Suzuki Grand Vitara,Black,Nashik,01-11-2021,730
+Maruti Suzuki Grand Vitara,Black,Nashik,01-12-2021,708
+Maruti Suzuki Grand Vitara,White,Nashik,01-01-2021,811
+Maruti Suzuki Grand Vitara,White,Nashik,01-02-2021,830
+Maruti Suzuki Grand Vitara,White,Nashik,01-03-2021,856
+Maruti Suzuki Grand Vitara,White,Nashik,01-04-2021,1102
+Maruti Suzuki Grand Vitara,White,Nashik,01-05-2021,1099
+Maruti Suzuki Grand Vitara,White,Nashik,01-06-2021,1067
+Maruti Suzuki Grand Vitara,White,Nashik,01-07-2021,942
+Maruti Suzuki Grand Vitara,White,Nashik,01-08-2021,786
+Maruti Suzuki Grand Vitara,White,Nashik,01-09-2021,731
+Maruti Suzuki Grand Vitara,White,Nashik,01-10-2021,808
+Maruti Suzuki Grand Vitara,White,Nashik,01-11-2021,863
+Maruti Suzuki Grand Vitara,White,Nashik,01-12-2021,762
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-01-2021,847
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-02-2021,1087
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-03-2021,965
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-04-2021,1115
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-05-2021,1364
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-06-2021,983
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-07-2021,882
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-08-2021,735
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-09-2021,820
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-10-2021,880
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-11-2021,1000
+Maruti Suzuki Grand Vitara,Grey,Nashik,01-12-2021,920
+Maruti Suzuki XL6,Black,Nashik,01-01-2021,744
+Maruti Suzuki XL6,Black,Nashik,01-02-2021,832
+Maruti Suzuki XL6,Black,Nashik,01-03-2021,1080
+Maruti Suzuki XL6,Black,Nashik,01-04-2021,979
+Maruti Suzuki XL6,Black,Nashik,01-05-2021,1081
+Maruti Suzuki XL6,Black,Nashik,01-06-2021,821
+Maruti Suzuki XL6,Black,Nashik,01-07-2021,960
+Maruti Suzuki XL6,Black,Nashik,01-08-2021,780
+Maruti Suzuki XL6,Black,Nashik,01-09-2021,867
+Maruti Suzuki XL6,Black,Nashik,01-10-2021,1124
+Maruti Suzuki XL6,Black,Nashik,01-11-2021,920
+Maruti Suzuki XL6,Black,Nashik,01-12-2021,812
+Maruti Suzuki XL6,White,Nashik,01-01-2021,887
+Maruti Suzuki XL6,White,Nashik,01-02-2021,971
+Maruti Suzuki XL6,White,Nashik,01-03-2021,1278
+Maruti Suzuki XL6,White,Nashik,01-04-2021,1189
+Maruti Suzuki XL6,White,Nashik,01-05-2021,1244
+Maruti Suzuki XL6,White,Nashik,01-06-2021,1192
+Maruti Suzuki XL6,White,Nashik,01-07-2021,981
+Maruti Suzuki XL6,White,Nashik,01-08-2021,1088
+Maruti Suzuki XL6,White,Nashik,01-09-2021,711
+Maruti Suzuki XL6,White,Nashik,01-10-2021,1119
+Maruti Suzuki XL6,White,Nashik,01-11-2021,993
+Maruti Suzuki XL6,White,Nashik,01-12-2021,933
+Maruti Suzuki XL6,Grey,Nashik,01-01-2021,763
+Maruti Suzuki XL6,Grey,Nashik,01-02-2021,701
+Maruti Suzuki XL6,Grey,Nashik,01-03-2021,1047
+Maruti Suzuki XL6,Grey,Nashik,01-04-2021,856
+Maruti Suzuki XL6,Grey,Nashik,01-05-2021,951
+Maruti Suzuki XL6,Grey,Nashik,01-06-2021,897
+Maruti Suzuki XL6,Grey,Nashik,01-07-2021,900
+Maruti Suzuki XL6,Grey,Nashik,01-08-2021,797
+Maruti Suzuki XL6,Grey,Nashik,01-09-2021,652
+Maruti Suzuki XL6,Grey,Nashik,01-10-2021,797
+Maruti Suzuki XL6,Grey,Nashik,01-11-2021,961
+Maruti Suzuki XL6,Grey,Nashik,01-12-2021,808
+Maruti Suzuki Brezza,Black,Nashik,01-01-2021,901
+Maruti Suzuki Brezza,Black,Nashik,01-02-2021,914
+Maruti Suzuki Brezza,Black,Nashik,01-03-2021,1072
+Maruti Suzuki Brezza,Black,Nashik,01-04-2021,1176
+Maruti Suzuki Brezza,Black,Nashik,01-05-2021,1182
+Maruti Suzuki Brezza,Black,Nashik,01-06-2021,1050
+Maruti Suzuki Brezza,Black,Nashik,01-07-2021,999
+Maruti Suzuki Brezza,Black,Nashik,01-08-2021,840
+Maruti Suzuki Brezza,Black,Nashik,01-09-2021,718
+Maruti Suzuki Brezza,Black,Nashik,01-10-2021,898
+Maruti Suzuki Brezza,Black,Nashik,01-11-2021,1030
+Maruti Suzuki Brezza,Black,Nashik,01-12-2021,851
+Maruti Suzuki Brezza,White,Nashik,01-01-2021,675
+Maruti Suzuki Brezza,White,Nashik,01-02-2021,980
+Maruti Suzuki Brezza,White,Nashik,01-03-2021,993
+Maruti Suzuki Brezza,White,Nashik,01-04-2021,1214
+Maruti Suzuki Brezza,White,Nashik,01-05-2021,1319
+Maruti Suzuki Brezza,White,Nashik,01-06-2021,1147
+Maruti Suzuki Brezza,White,Nashik,01-07-2021,1025
+Maruti Suzuki Brezza,White,Nashik,01-08-2021,908
+Maruti Suzuki Brezza,White,Nashik,01-09-2021,938
+Maruti Suzuki Brezza,White,Nashik,01-10-2021,1149
+Maruti Suzuki Brezza,White,Nashik,01-11-2021,1161
+Maruti Suzuki Brezza,White,Nashik,01-12-2021,906
+Maruti Suzuki Brezza,Grey,Nashik,01-01-2021,880
+Maruti Suzuki Brezza,Grey,Nashik,01-02-2021,914
+Maruti Suzuki Brezza,Grey,Nashik,01-03-2021,1069
+Maruti Suzuki Brezza,Grey,Nashik,01-04-2021,1220
+Maruti Suzuki Brezza,Grey,Nashik,01-05-2021,1163
+Maruti Suzuki Brezza,Grey,Nashik,01-06-2021,1152
+Maruti Suzuki Brezza,Grey,Nashik,01-07-2021,964
+Maruti Suzuki Brezza,Grey,Nashik,01-08-2021,893
+Maruti Suzuki Brezza,Grey,Nashik,01-09-2021,818
+Maruti Suzuki Brezza,Grey,Nashik,01-10-2021,867
+Maruti Suzuki Brezza,Grey,Nashik,01-11-2021,978
+Maruti Suzuki Brezza,Grey,Nashik,01-12-2021,861
+Maruti Suzuki Dzire,Black,Nashik,01-01-2021,948
+Maruti Suzuki Dzire,Black,Nashik,01-02-2021,882
+Maruti Suzuki Dzire,Black,Nashik,01-03-2021,1155
+Maruti Suzuki Dzire,Black,Nashik,01-04-2021,1287
+Maruti Suzuki Dzire,Black,Nashik,01-05-2021,1334
+Maruti Suzuki Dzire,Black,Nashik,01-06-2021,1056
+Maruti Suzuki Dzire,Black,Nashik,01-07-2021,970
+Maruti Suzuki Dzire,Black,Nashik,01-08-2021,936
+Maruti Suzuki Dzire,Black,Nashik,01-09-2021,849
+Maruti Suzuki Dzire,Black,Nashik,01-10-2021,1039
+Maruti Suzuki Dzire,Black,Nashik,01-11-2021,1082
+Maruti Suzuki Dzire,Black,Nashik,01-12-2021,867
+Maruti Suzuki Dzire,White,Nashik,01-01-2021,1107
+Maruti Suzuki Dzire,White,Nashik,01-02-2021,1008
+Maruti Suzuki Dzire,White,Nashik,01-03-2021,1252
+Maruti Suzuki Dzire,White,Nashik,01-04-2021,1423
+Maruti Suzuki Dzire,White,Nashik,01-05-2021,1413
+Maruti Suzuki Dzire,White,Nashik,01-06-2021,1232
+Maruti Suzuki Dzire,White,Nashik,01-07-2021,1218
+Maruti Suzuki Dzire,White,Nashik,01-08-2021,1206
+Maruti Suzuki Dzire,White,Nashik,01-09-2021,893
+Maruti Suzuki Dzire,White,Nashik,01-10-2021,1137
+Maruti Suzuki Dzire,White,Nashik,01-11-2021,1311
+Maruti Suzuki Dzire,White,Nashik,01-12-2021,1003
+Maruti Suzuki Dzire,Grey,Nashik,01-01-2021,1007
+Maruti Suzuki Dzire,Grey,Nashik,01-02-2021,1000
+Maruti Suzuki Dzire,Grey,Nashik,01-03-2021,1076
+Maruti Suzuki Dzire,Grey,Nashik,01-04-2021,1262
+Maruti Suzuki Dzire,Grey,Nashik,01-05-2021,1203
+Maruti Suzuki Dzire,Grey,Nashik,01-06-2021,1210
+Maruti Suzuki Dzire,Grey,Nashik,01-07-2021,983
+Maruti Suzuki Dzire,Grey,Nashik,01-08-2021,1033
+Maruti Suzuki Dzire,Grey,Nashik,01-09-2021,908
+Maruti Suzuki Dzire,Grey,Nashik,01-10-2021,931
+Maruti Suzuki Dzire,Grey,Nashik,01-11-2021,1231
+Maruti Suzuki Dzire,Grey,Nashik,01-12-2021,989
