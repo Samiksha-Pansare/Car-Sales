@@ -74,3 +74,67 @@ def addpredictions(request):
         db.save()
     print("Prediction Data Added")
     return HttpResponse("Prediction Data Added")
+
+def groupingdata(request):
+
+    # Prediction Data Month-wise
+
+    prediction_data_month_wise_query = Predictions.objects.values('month').annotate(total_sales=Sum('prediction'))
+    prediction_data_month_wise = []
+    for i in range(0,12):
+        prediction_data_month_wise.append(prediction_data_month_wise_query[i]["total_sales"])
+    print(prediction_data_month_wise)
+
+    # Prediction Data Color-wise
+
+    prediction_data_color_wise_query = Predictions.objects.values('color').annotate(total_sales=Sum('prediction'))
+    prediction_data_color_wise = []
+    for i in range(0,3):
+        prediction_data_color_wise.append(prediction_data_color_wise_query[i]["total_sales"])
+    print(prediction_data_color_wise)
+
+    # Prediction Data Region-wise
+
+    prediction_data_region_wise_query = Predictions.objects.values('region').annotate(total_sales=Sum('prediction'))
+    prediction_data_region_wise = []
+    for i in range(0,4):
+        prediction_data_region_wise.append(prediction_data_region_wise_query[i]["total_sales"])
+    print(prediction_data_region_wise)
+
+    # Prediction Data Model-wise Color-wise Region-wise Month-wise
+
+    m = 0
+    c = 0
+    r = 0
+    models = ["Maruti Suzuki Alto 800","Maruti Suzuki Alto K10","Maruti Suzuki S-Presso","Maruti Suzuki Eeco","Maruti Suzuki Celerio","Maruti Suzuki Swift","Maruti Suzuki Grand Vitara","Maruti Suzuki XL6","Maruti Suzuki Brezza","Maruti Suzuki Dzire"]
+    regions = ['Mumbai','Pune','Nagpur','Nashik']
+    colors = ["Black","Grey","White"]
+    prediction_query = Predictions.objects.filter(model = models[m], color = colors[c], region = regions[r]).all()
+    prediction = []
+    for i in range(0,12):
+        prediction.append(prediction_query[i].prediction)
+    print(prediction)
+
+    # Prediction Data Region-wise Month-wise
+
+    prediction_region_month_wise = []
+    for r in regions:
+        prediction_region_month_wise_query = Predictions.objects.filter(region = r).values('month').annotate(total_sales=Sum('prediction'))
+        p = []
+        for i in range(0,12):
+            p.append(prediction_region_month_wise_query[i]["total_sales"])
+        prediction_region_month_wise.append(p)
+    print(prediction_region_month_wise)
+
+    # Prediction Data Color-wise Month-wise
+
+    prediction_color_month_wise = []
+    for c in colors:
+        prediction_color_month_wise_query = Predictions.objects.filter(color = c).values('month').annotate(total_sales=Sum('prediction'))
+        p = []
+        for i in range(0,12):
+            p.append(prediction_color_month_wise_query[i]["total_sales"])
+        prediction_color_month_wise.append(p)
+    print(prediction_color_month_wise)
+
+    return HttpResponse("Done")
