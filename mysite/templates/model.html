@@ -12,7 +12,7 @@
 
       <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">Car Sales</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,7 +39,7 @@
             <div class="">
               <div class="card info-card sales-card">
                 <div class="card-body">
-                  <h5 class="card-title">Sales <span>| Today</span></h5>
+                  <h5 class="card-title">Sales <span>| This Year</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
@@ -63,14 +63,14 @@
             <div class="">
               <div class="card info-card revenue-card">
                 <div class="card-body">
-                  <h5 class="card-title">Revenue <span>| This Month</span></h5>
+                  <h5 class="card-title">Regions <span>| This Year</span></h5>
 
                   <div class="d-flex align-items-center">
                     <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                       <i class="bi bi-currency-dollar"></i>
                     </div>
                     <div class="ps-3">
-                      <h6>$3,264</h6>
+                      <h6>4</h6>
                       <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
 
                     </div>
@@ -204,6 +204,99 @@
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-      <script src="../static/js/model.js"></script>
+      <!-- <script src="../static/js/model.js"></script> -->
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        var sales_2021 = JSON.parse("{{sales_2021|safe}}".replaceAll("'", '"'));
+        var sales_2022 = JSON.parse("{{sales_2022|safe}}".replaceAll("'", '"'));
+        
+        var months = Object.keys(sales_2021); // xArray needs to have Python Dictionary's keys
+        var sales_val_2021 = Object.values(sales_2021) // yArray needs to have Python Dictionary's values
+        var sales_val_2022 = Object.values(sales_2022)
+        console.log("Heyy")
+        console.log("Xarray: ",months)
+        console.log("yarray: ",sales_val_2021)
+        new Chart(document.querySelector('#lineChart'), {
+          type: 'line',
+          data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'],
+            datasets: [{
+              label: 'Line Chart',
+              data: sales_val_2021,
+              fill: false,
+              borderColor: 'rgb(75, 192, 192)',
+              tension: 0.1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+        new Chart(document.querySelector('#nyChart'), {
+            type: 'line',
+            data: {
+              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October','November', 'December'],
+              datasets: [{
+                label: 'Line Chart',
+                data: sales_2022,
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+          new Chart(document.querySelector('#pieChart'), {
+            type: 'pie',
+            data: {
+              labels: [
+                'White',
+                'Black',
+                'Grey'
+              ],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [300, 50, 100],
+                backgroundColor: [
+                  'rgb(255, 99, 132)',
+                  'rgb(54, 162, 235)',
+                  'rgb(255, 205, 86)'
+                ],
+                hoverOffset: 4
+              }]
+            }
+          });
+          new Chart(document.querySelector('#doughnutChart'), {
+            type: 'doughnut',
+            data: {
+              labels: [
+                'White',
+                'Black',
+                'Grey'
+              ],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [300, 50, 100],
+                backgroundColor: [
+                  'rgb(255, 99, 132)',
+                  'rgb(54, 162, 235)',
+                  'rgb(255, 205, 86)'
+                ],
+                hoverOffset: 4
+              }]
+            }
+          });
+      });
+      </script>
     </body>
 </html>

@@ -2,6 +2,7 @@ from django.shortcuts import render
 from openpyxl import Workbook, load_workbook
 from .models import Sales, Predictions
 from django.http import HttpResponse
+from django.db.models import Sum
 
 # Create your views here.
 def home(request):
@@ -13,7 +14,23 @@ def home(request):
     #     context = {
     #         'username':None
     #     }
-    return render(request,'index.html')
+    last_year_data_ungroup = Sales.objects.filter(date__iregex=r'2021$').all()
+    lyd_group_date = last_year_data_ungroup.values('date').annotate(total_sales=Sum('sales'))
+    sales_2021 = []
+    for i in range(0,12):
+        sales_2021.append(lyd_group_date[i]["total_sales"])
+    total_sales_2021 = sum(sales_2021)
+    current_year_data_ungroup = Predictions.objects.all()
+    cyd_group_date = current_year_data_ungroup.values('month').annotate(total_sales=Sum('prediction'))
+    sales_2022 = []
+    for i in range(0,12):
+        sales_2022.append(cyd_group_date[i]["total_sales"])
+    context = {
+        'sales_2021' : sales_2021,
+        'total_sales_2021' : total_sales_2021,
+        'sales_2022' : sales_2022
+    }
+    return render(request,'model.html', context)
 
 def modelview(request):
     return render(request,"model.html")
