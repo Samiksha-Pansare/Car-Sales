@@ -75,6 +75,7 @@ def addpredictions(request):
     print("Prediction Data Added")
     return HttpResponse("Prediction Data Added")
 
+
 def groupingdata(request):
 
     # Prediction Data Month-wise
@@ -136,5 +137,33 @@ def groupingdata(request):
             p.append(prediction_color_month_wise_query[i]["total_sales"])
         prediction_color_month_wise.append(p)
     print(prediction_color_month_wise)
+
+    # Historical Data - Region wise Sales
+
+    region_wise_query = Sales.objects.values('region').annotate(total_sales=Sum('sales'))
+    region_wise = []
+    for i in range(0,4):
+        region_wise.append(region_wise_query[i]["total_sales"])
+    print(region_wise)
+
+    # Historical Data - Color wise Sales
+
+    color_wise_query = Sales.objects.values('color').annotate(total_sales=Sum('sales'))
+    color_wise = []
+    for i in range(0,3):
+        color_wise.append(color_wise_query[i]["total_sales"])
+    print(color_wise)
+
+    # Historical Data - Yearly Sales 2013 -2021
+
+    yearly_query = Sales.objects.values('month').annotate(total_sales=Sum('sales'))
+    yearly_dict = dict()
+    for i in range(len(yearly_query)):
+        if yearly_query[i]['month'][-4:] not in yearly_dict:
+            yearly_dict[yearly_query[i]['month'][-4:]] = yearly_query[i]['total_sales']
+        else:
+            yearly_dict[yearly_query[i]['month'][-4:]] += yearly_query[i]['total_sales']
+    year_wise = list(yearly_dict.values())
+    print(year_wise)
 
     return HttpResponse("Done")
