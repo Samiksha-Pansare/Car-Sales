@@ -4688,8 +4688,8 @@
       margin-left: 0; }
   
   .dropdown-menu {
-    position: absolute;
-    z-index: 1000;
+    /* position: absolute;
+    z-index: 1000; */
     display: none;
     min-width: 10rem;
     padding: 0.5rem 0;
@@ -4702,12 +4702,12 @@
     background-clip: padding-box;
     border: 1px solid #ebedf2;
     border-radius: 0.25rem; }
-    .dropdown-menu[data-bs-popper] {
+    /* .dropdown-menu[data-bs-popper] {
       top: 100%;
       left: 0;
-      margin-top: 0.125rem; }
+      margin-top: 0.125rem; } */
   
-  .dropdown-menu-start {
+  /* .dropdown-menu-start {
     --bs-position: start; }
     .dropdown-menu-start[data-bs-popper] {
       right: auto;
@@ -4717,7 +4717,7 @@
     --bs-position: end; }
     .dropdown-menu-end[data-bs-popper] {
       right: 0;
-      left: auto; }
+      left: auto; } */
   
   @media (min-width: 576px) {
     .dropdown-menu-sm-start {
@@ -5222,8 +5222,8 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row; }
-        .navbar-expand-sm .navbar-nav .dropdown-menu {
-          position: absolute; }
+        /* .navbar-expand-sm .navbar-nav .dropdown-menu {
+          position: absolute; } */
         .navbar-expand-sm .navbar-nav .nav-link {
           padding-right: 0.5rem;
           padding-left: 0.5rem; }
@@ -5281,8 +5281,8 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row; }
-        .navbar-expand-md .navbar-nav .dropdown-menu {
-          position: absolute; }
+        /* .navbar-expand-md .navbar-nav .dropdown-menu {
+          position: absolute; } */
         .navbar-expand-md .navbar-nav .nav-link {
           padding-right: 0.5rem;
           padding-left: 0.5rem; }
@@ -5340,8 +5340,8 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row; }
-        .navbar-expand-lg .navbar-nav .dropdown-menu {
-          position: absolute; }
+        /* .navbar-expand-lg .navbar-nav .dropdown-menu {
+          position: absolute; } */
         .navbar-expand-lg .navbar-nav .nav-link {
           padding-right: 0.5rem;
           padding-left: 0.5rem; }
@@ -5399,8 +5399,8 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row; }
-        .navbar-expand-xl .navbar-nav .dropdown-menu {
-          position: absolute; }
+        /* .navbar-expand-xl .navbar-nav .dropdown-menu {
+          position: absolute; } */
         .navbar-expand-xl .navbar-nav .nav-link {
           padding-right: 0.5rem;
           padding-left: 0.5rem; }
@@ -5458,8 +5458,8 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
         flex-direction: row; }
-        .navbar-expand-xxl .navbar-nav .dropdown-menu {
-          position: absolute; }
+        /* .navbar-expand-xxl .navbar-nav .dropdown-menu {
+          position: absolute; } */
         .navbar-expand-xxl .navbar-nav .nav-link {
           padding-right: 0.5rem;
           padding-left: 0.5rem; }
@@ -5516,8 +5516,8 @@
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row; }
-      .navbar-expand .navbar-nav .dropdown-menu {
-        position: absolute; }
+      /* .navbar-expand .navbar-nav .dropdown-menu {
+        position: absolute; } */
       .navbar-expand .navbar-nav .nav-link {
         padding-right: 0.5rem;
         padding-left: 0.5rem; }
@@ -13778,7 +13778,7 @@
         position: relative; }
         .navbar .navbar-menu-wrapper .count-indicator .count-symbol,
         .navbar .navbar-menu-wrapper .count-indicator .count-number {
-          position: absolute;
+          /* position: absolute; */
           border-radius: 100%;
           border: 2px solid #ffffff; }
         .navbar .navbar-menu-wrapper .count-indicator .count-symbol {
@@ -13832,10 +13832,11 @@
           -webkit-box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 21px 0px rgba(0, 0, 0, 0.2); }
           .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown {
-            position: absolute;
+            /* position: absolute; */
             font-size: 0.9rem;
-            margin-top: 0;
-            padding: 0; }
+            /* margin-top: 0; */
+            /* padding: 0;  */
+          }
             .rtl .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown {
               right: auto;
               left: 0; }
@@ -13854,8 +13855,8 @@
             .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .dropdown-menu.navbar-dropdown .dropdown-divider {
               margin: 0; }
         @media (max-width: 991px) {
-          .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown {
-            position: static; }
+          /* .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown {
+            position: static; } */
             .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown {
               left: 20px;
               right: 20px;
@@ -13876,7 +13877,7 @@
             height: 32px;
             border-radius: 100%; }
           .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-img .availability-status {
-            position: absolute;
+            /* position: absolute; */
             width: 10px;
             height: 10px;
             border-radius: 100%;
@@ -13898,7 +13899,7 @@
             line-height: 1; }
           @media (max-width: 767px) {
             .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link .nav-profile-text {
-              display: none; } }
+              display: block; } }
         .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile .nav-link.dropdown-toggle:after {
           line-height: 2; }
         @media (min-width: 992px) {
@@ -14198,7 +14199,7 @@
               content: "\F054";
               font-family: "Material Design Icons";
               display: block;
-              position: absolute;
+              /* position: absolute; */
               left: 0px;
               top: 50%;
               -webkit-transform: translateY(-50%);
@@ -14289,7 +14290,7 @@
             background: #fcfcfc;
             padding: 0.5rem 1.4rem;
             left: 70px;
-            position: absolute;
+            /* position: absolute; */
             text-align: left;
             top: 0;
             bottom: 0;
