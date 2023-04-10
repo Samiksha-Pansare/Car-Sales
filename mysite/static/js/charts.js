@@ -1,3 +1,7 @@
+var my_var = {{region_wise}};
+
+console.log(my_var)
+
 $(function () {
     /* ChartJS
      * -------

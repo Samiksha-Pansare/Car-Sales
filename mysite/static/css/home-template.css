@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
 @-webkit-keyframes flash {
     0% {
       opacity: 1; }
@@ -1757,6 +1760,11 @@
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
   
+
+
+.nav-title {
+
+}
   hr {
     margin: 1rem 0;
     color: inherit;

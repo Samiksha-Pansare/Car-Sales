@@ -6,31 +6,50 @@ from django.db.models import Sum
 
 # Create your views here.
 def home(request):
-    # if 'username' in request.session:
-    #     context = {
-    #         'username':request.session['username']
-    #     }
-    # else:
-    #     context = {
-    #         'username':None
-    #     }
-    last_year_data_ungroup = Sales.objects.filter(date__iregex=r'2021$').all()
-    lyd_group_date = last_year_data_ungroup.values('date').annotate(total_sales=Sum('sales'))
-    sales_2021 = []
-    for i in range(0,12):
-        sales_2021.append(lyd_group_date[i]["total_sales"])
-    total_sales_2021 = sum(sales_2021)
-    current_year_data_ungroup = Predictions.objects.all()
-    cyd_group_date = current_year_data_ungroup.values('month').annotate(total_sales=Sum('prediction'))
-    sales_2022 = []
-    for i in range(0,12):
-        sales_2022.append(cyd_group_date[i]["total_sales"])
+    region_wise_query = Sales.objects.values('region').annotate(total_sales=Sum('sales'))
+    region_wise = []
+    for i in range(0,4):
+        region_wise.append(region_wise_query[i]["total_sales"])
+    print(region_wise)
+
+    # Historical Data - Color wise Sales
+
+    color_wise_query = Sales.objects.values('color').annotate(total_sales=Sum('sales'))
+    color_wise = []
+    for i in range(0,3):
+        color_wise.append(color_wise_query[i]["total_sales"])
+    print(color_wise)
+
+    # Historical Data - Yearly Sales 2013 -2021
+
+    yearly_query = Sales.objects.values('month').annotate(total_sales=Sum('sales'))
+    yearly_dict = dict()
+    for i in range(len(yearly_query)):
+        if yearly_query[i]['month'][-4:] not in yearly_dict:
+            yearly_dict[yearly_query[i]['month'][-4:]] = yearly_query[i]['total_sales']
+        else:
+            yearly_dict[yearly_query[i]['month'][-4:]] += yearly_query[i]['total_sales']
+    year_wise = list(yearly_dict.values())
+    print(year_wise)
     context = {
-        'sales_2021' : sales_2021,
-        'total_sales_2021' : total_sales_2021,
-        'sales_2022' : sales_2022
+        'region_wise' : region_wise,
+        'color_wise' : color_wise,
+        'year_wise' : year_wise,
+        "hello" : "hey"
     }
-    return render(request,'model.html', context)
+    return render(request,'home.html', context)
+    # last_year_data_ungroup = Sales.objects.filter(date__iregex=r'2021$').all()
+    # lyd_group_date = last_year_data_ungroup.values('date').annotate(total_sales=Sum('sales'))
+    # sales_2021 = []
+    # for i in range(0,12):
+    #     sales_2021.append(lyd_group_date[i]["total_sales"])
+    # total_sales_2021 = sum(sales_2021)
+    # current_year_data_ungroup = Predictions.objects.all()
+    # cyd_group_date = current_year_data_ungroup.values('month').annotate(total_sales=Sum('prediction'))
+    # sales_2022 = []
+    # for i in range(0,12):
+    #     sales_2022.append(cyd_group_date[i]["total_sales"])
+     # Historical Data - Region wise Sales
 
 def modelview(request):
     return render(request,"model.html")
