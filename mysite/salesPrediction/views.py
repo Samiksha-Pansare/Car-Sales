@@ -6,10 +6,23 @@ from django.db.models import Sum
 
 # Create your views here.
 def home(request):
-    region_wise_query = Sales.objects.values('region').annotate(total_sales=Sum('sales'))
-    region_wise = []
-    for i in range(0,4):
-        region_wise.append(region_wise_query[i]["total_sales"])
+
+    # Historical Data - Region wise Sales
+
+    models = ["Maruti Suzuki Alto 800","Maruti Suzuki Alto K10","Maruti Suzuki S-Presso","Maruti Suzuki Eeco","Maruti Suzuki Celerio","Maruti Suzuki Swift","Maruti Suzuki Grand Vitara","Maruti Suzuki XL6","Maruti Suzuki Brezza","Maruti Suzuki Dzire"]
+    regions = ['Mumbai','Pune','Nagpur','Nashik']
+    region_wise = dict()
+    for r in regions:
+        region_wise_query = Sales.objects.filter(region = r).values('model').annotate(total_sales=Sum('sales'))
+        sv = []
+        for i in range(len(region_wise_query)):
+            sv.append(region_wise_query[i]['total_sales'])
+        region_wise[r] = sv
+        
+    # region_wise_query = Sales.objects.values('region').annotate(total_sales=Sum('sales'))
+    # region_wise = []
+    # for i in range(0,4):
+    #     region_wise.append(region_wise_query[i]["total_sales"])
     print(region_wise)
 
     # Historical Data - Color wise Sales
@@ -31,11 +44,14 @@ def home(request):
             yearly_dict[yearly_query[i]['month'][-4:]] += yearly_query[i]['total_sales']
     year_wise = list(yearly_dict.values())
     print(year_wise)
-    context = {
+    
+    data = {
         'region_wise' : region_wise,
         'color_wise' : color_wise,
         'year_wise' : year_wise,
-        "hello" : "hey"
+    }
+    context = {
+        "data":data
     }
     return render(request,'home.html', context)
     # last_year_data_ungroup = Sales.objects.filter(date__iregex=r'2021$').all()
@@ -49,7 +65,7 @@ def home(request):
     # sales_2022 = []
     # for i in range(0,12):
     #     sales_2022.append(cyd_group_date[i]["total_sales"])
-     # Historical Data - Region wise Sales
+     
 
 def modelview(request):
     return render(request,"model.html")

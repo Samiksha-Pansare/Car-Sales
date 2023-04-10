@@ -1,6 +1,23 @@
-var my_var = {{region_wise}};
+// var my_var = {{region_wise}};
 
-console.log(my_var)
+// console.log(my_var)
+const data = JSON.parse(document.getElementById('data').textContent);
+console.log(data)
+
+const color_wise = Object.values(data["color_wise"])
+console.log(color_wise)
+
+const year_wise = Object.values(data["year_wise"])
+console.log(year_wise)
+
+const mumbai = Object.values(data["region_wise"]["Mumbai"])
+console.log(mumbai)
+const pune = Object.values(data["region_wise"]["Pune"])
+console.log(pune)
+const nashik = Object.values(data["region_wise"]["Nashik"])
+console.log(nashik)
+const nagpur = Object.values(data["region_wise"]["Nagpur"])
+console.log(nagpur)
 
 $(function () {
     /* ChartJS
@@ -9,10 +26,10 @@ $(function () {
      */
     'use strict';
     var data = {
-      labels: ["2013", "2014", "2014", "2015", "2016", "2017"],
+      labels: ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"],
       datasets: [{
-        label: '# of Votes',
-        data: [10, 19, 3, 5, 2, 3],
+        label: 'Number of Sales',
+        data: year_wise,
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
@@ -139,7 +156,7 @@ $(function () {
     };
     var doughnutPieData = {
       datasets: [{
-        data: [30, 40, 30],
+        data: color_wise,
         backgroundColor: [
           'rgba(255, 99, 132, 0.5)',
           'rgba(54, 162, 235, 0.5)',
@@ -160,9 +177,9 @@ $(function () {
   
       // These labels appear in the legend and in the tooltips when hovering different arcs
       labels: [
-        'Pink',
-        'Blue',
-        'Yellow',
+        'Black',
+        'Grey',
+        'White',
       ]
     };
     var doughnutPieOptions = {
@@ -460,14 +477,7 @@ $(function () {
     var barChartallData = {
     
         labels: [
-          "Absence of OB",
-          "Closeness",
-          "Credibility",
-          "Heritage",
-          "M Disclosure",
-          "Provenance",
-          "Reliability",
-          "Transparency"
+          "Maruti Suzuki Alto 800","Maruti Suzuki Alto K10","Maruti Suzuki S-Presso","Maruti Suzuki Eeco","Maruti Suzuki Celerio","Maruti Suzuki Swift","Maruti Suzuki Grand Vitara","Maruti Suzuki XL6","Maruti Suzuki Brezza","Maruti Suzuki Dzire"
         ],
         datasets: [
           {
@@ -479,28 +489,28 @@ $(function () {
             backgroundColor: "rgba(254, 112, 150, 1)",
             borderColor: "rgba(255, 191, 150, 1)",
             borderWidth: 1,
-            data: [3, 5, 6, 7,3, 5, 6, 7]
+            data: mumbai
           },
           {
             label: "Pune",
             backgroundColor: "rgba(154, 85, 255, 1)",
             borderColor: "rgba(218, 140, 255, 1)",
             borderWidth: 1,
-            data: [4, 7, 3, 6, 10,7,4,6]
+            data: pune
           },
           {
             label: "Nashik",
             backgroundColor: "rgba(54, 215, 232, 1)",
             borderColor: "rgba(177, 148, 250, 1)",
             borderWidth: 1,
-            data: [10,7,4,6,9,7,3,10]
+            data: nashik
           },
           {
             label: "Nagpur",
             backgroundColor: "rgba(6, 185, 157, 1)",
             borderColor: "rgba(132, 217, 210, 1)",
             borderWidth: 1,
-            data: [6,9,7,3,10,7,4,6]
+            data: nagpur
           }
         ],
         options: {
