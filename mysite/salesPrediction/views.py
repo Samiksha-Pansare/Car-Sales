@@ -66,6 +66,26 @@ def home(request):
     # for i in range(0,12):
     #     sales_2022.append(cyd_group_date[i]["total_sales"])
      
+def forecast(request):
+    if request.method == "POST":
+        color = request.POST.get('color')
+        region = request.POST.get('region')
+        model = request.POST.get('model')
+        sales_query = Predictions.objects.filter(color = color, region = region, model = model).all()
+        sales = []
+        for s in sales_query:
+            sales.append(s.prediction)
+        print(sales)
+        data = {
+        'sales' : sales,
+        }
+        context = {
+            "data":data
+        }
+        return render(request,'filter.html', context)
+    return render(request,'filter.html')
+
+
 
 def modelview(request):
     return render(request,"model.html")

@@ -6,5 +6,6 @@ urlpatterns = [
     path('/model',views.modelview,name="modelview"),
     path('/addhistorydata', views.addhistorydata, name = "addhistorydata"),
     path('/addpredictions', views.addpredictions, name = "addpredictions"),
-    path('/groupingdata', views.groupingdata, name = "groupingdata")
+    path('/groupingdata', views.groupingdata, name = "groupingdata"),
+    path('/forecast', views.forecast, name = "forecast")
 ]
