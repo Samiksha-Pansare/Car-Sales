@@ -345,9 +345,21 @@
                 </div>
               </div>
             </div>
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Forecast Graph</h4>
+                  <div class="grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <canvas id="barChartForecast" style="height:230px"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          {{ data }}
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
@@ -375,7 +387,7 @@
     </div>
     <!-- container-scroller -->
     <!-- Jinja -->
-    <p>{{ hello }}</p>
+    
     {{ data|json_script:"data" }}
 
     <!-- plugins:js -->
@@ -394,6 +406,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"
     ></script>
     <script src="../static/js/Chart.min.js"></script>
-    <script src="../static/js/charts.js"></script>
+    <script src="../static/js/filter-chart.js"></script>
   </body>
 </html>

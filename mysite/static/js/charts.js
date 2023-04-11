@@ -580,6 +580,15 @@ $(function () {
         options: options
       });
     }
+    if ($("#barChartForecast").length) {
+      var barChartCanvas = $("#barChartForecast").get(0).getContext("2d");
+      // This will get the first returned node in the jQuery collection.
+      var barChart = new Chart(barChartCanvas, {
+        type: 'bar',
+        data: data,
+        options: options
+      });
+    }
   
     if ($("#barChartDark").length) {
       var barChartCanvasDark = $("#barChartDark").get(0).getContext("2d");
