@@ -1,3 +1,5 @@
+
+
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +62,7 @@
                 aria-labelledby="profileDropdown"
                 style="margin-top: 400px"
               >
-                <a class="dropdown-item" href="#"> Maruti Suzuki Alto 800 </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Alto 800"> Maruti Suzuki Alto 800 </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#"> Maruti Suzuki Alto K10 </a>
                 <a class="dropdown-item" href="#"> Maruti Suzuki S-Presso </a>
@@ -89,28 +91,22 @@
         <!-- partial -->
         <div class="main-panel" style="width: 100vw">
           <div class="content-wrapper">
-            <div class="page-header">
-              <h3 class="page-title">
-                <span
-                  class="page-title-icon bg-gradient-primary text-white me-2"
-                >
-                  <i class="mdi mdi-home"></i>
-                </span>
-                Filter
-              </h3>
-              <!-- <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                  </li>
-                </ul>
-              </nav> -->
-            </div>
 
-            <div class="col-12 grid-margin stretch-card">
+            <div class="col-12 grid-margin d-flex  justify-content-center">
               <div class="card">
+                <div class="d-flex justify-content-center">
+                    <div class="page-header" style="margin-top: 20px;">
+                        <h3 class="page-title">
+                          <span
+                            class="page-title-icon bg-gradient-primary text-white me-2"
+                          >
+                            <i class="mdi mdi-home"></i>
+                          </span>
+                          Forecast
+                        </h3>
+                      </div>
+                </div>
                 <div class="card-body">
-                  <h4 class="card-title">Fill Out The Following Details</h4>
                   <!-- <p class="card-description"> Basic form elements </p> -->
                   <form
                     class="forms-sample"
@@ -118,228 +114,89 @@
                     method="POST"
                   >
                     {% csrf_token %}
-                    <div class="input-field col-12 col-sm-6">
-                      <div class="input-select">
-                        <label for="model">Select Model</label>
-                        <select id="model" data-trigger="" name="model">
-                          <option selected value="" name="model">
-                            Select Model
-                          </option>
-                          <option value="Maruti Suzuki Alto 800" name="model">
-                            Maruti Suzuki Alto 800
-                          </option>
-                          <option value="Maruti Suzuki Alto K10" name="model">
-                            Maruti Suzuki Alto K10
-                          </option>
-                          <option value="Maruti Suzuki S-Presso" name="model">
-                            Maruti Suzuki S-Presso
-                          </option>
-                          <option value="Maruti Suzuki Eeco" name="model">
-                            Maruti Suzuki Eeco
-                          </option>
-                          <option value="Maruti Suzuki Celerio" name="model">
-                            Maruti Suzuki Celerio
-                          </option>
-                          <option value="Maruti Suzuki Swift" name="model">
-                            Maruti Suzuki Swift
-                          </option>
-                          <option
-                            value="Maruti Suzuki Grand Vitara"
-                            name="model"
-                          >
-                            Maruti Suzuki Grand Vitara
-                          </option>
-                          <option value="Maruti Suzuki XL6" name="model">
-                            Maruti Suzuki XL6
-                          </option>
-                          <option value="Maruti Suzuki Brezza" name="model">
-                            Maruti Suzuki Brezza
-                          </option>
-                          <option value="Maruti Suzuki Dzire" name="model">
-                            Maruti Suzuki Dzire
-                          </option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="input-field col-12 col-sm-6">
-                      <div class="input-select">
-                        <label for="model">Select Color</label>
-                        <select id="color" data-trigger="" name="color">
-                          <option selected value="" name="color">
-                            Select Color
-                          </option>
-                          <option value="Black" name="color">Black</option>
-                          <option value="White" name="color">White</option>
-                          <option value="Grey" name="color">Grey</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="input-field col-12 col-sm-6">
-                      <div class="input-select">
-                        <label for="model">Select Region</label>
-                        <select id="region" data-trigger="" name="region">
-                          <option selected value="" name="region">
-                            Select Region
-                          </option>
-                          <option value="Mumbai" name="region">Mumbai</option>
-                          <option value="Pune" name="region">Pune</option>
-                          <option value="Nagpur" name="region">Nagpur</option>
-                          <option value="Nashik" name="region">Nashik</option>
-                        </select>
-                      </div>
-                    </div>
-                    <!-- <label for="exampleInputName1">Select Model</label>
-                    <div class="dropdown">
-                      <button
-                        class="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        id="dropdownMenuButton2"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Models
-                      </button>
-                      <ul
-                        class="dropdown-menu dropdown-menu-dark"
-                        aria-labelledby="dropdownMenuButton2"
-                      >
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki Alto 800
-                          </a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki Alto K10</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki S-Presso</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki Eeco</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki Celerio</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki Swift</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki S-Presso</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki Grand Vitara</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki XL6</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki Brezza</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Maruti Suzuki Dzire</a
-                          >
-                        </li>
-                      </ul>
-                    </div> -->
-                    <!-- <div class="form-group">
-                        <label for="exampleInputEmail3">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-                      </div> -->
-                    <!-- <label for="exampleInputName2">Select Color</label>
-                    <div class="dropdown">
-                      <button
-                        class="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        id="dropdownMenuButton3"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Color
-                      </button>
-                      <ul
-                        class="dropdown-menu dropdown-menu-dark"
-                        aria-labelledby="dropdownMenuButton3"
-                      >
-                        <li><a class="dropdown-item" href="#">White </a></li>
-                        <li><a class="dropdown-item" href="#">Gray</a></li>
-                        <li><a class="dropdown-item" href="#">Black</a></li>
-                      </ul>
-                    </div> -->
-                    <!-- </div>
-                      <div class="form-group">
-                        <label for="exampleInputPassword4">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
-                      </div> -->
-                    <!-- <label for="exampleInputName3">Select Region</label>
-                    <div class="dropdown">
-                      <button
-                        class="btn btn-secondary dropdown-toggle"
-                        type="button"
-                        id="dropdownMenuButton4"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Region
-                      </button>
-                      <ul
-                        class="dropdown-menu dropdown-menu-dark"
-                        aria-labelledby="dropdownMenuButton4"
-                      >
-                        <li><a class="dropdown-item" href="#">Mumbai </a></li>
-                        <li><a class="dropdown-item" href="#">Pune</a></li>
-                        <li><a class="dropdown-item" href="#">Nashik</a></li>
-                        <li><a class="dropdown-item" href="#">Nagpur</a></li>
-                      </ul>
-                    </div> -->
-                    <!-- <div class="form-group">
-                        <label for="exampleSelectGender">Gender</label>
-                        <select class="form-control" id="exampleSelectGender">
-                          <option>Male</option>
-                          <option>Female</option>
-                        </select>
-                      </div>
-                      <div class="form-group">
-                        <label>File upload</label>
-                        <input type="file" name="img[]" class="file-upload-default">
-                        <div class="input-group col-xs-12">
-                          <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-                          <span class="input-group-append">
-                            <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
-                          </span>
+                    <div class="d-flex justify-content-center">
+                        <div class="input-field col-12 col-sm-6" style="margin: 10px;">
+                        <div class="input-select">
+                            <label for="model" style="font-weight: bold;">Select Model</label>
+                            <select id="model" data-trigger="" name="model" style="padding: 10px; width: 100%;">
+                            <option selected value="" name="model">
+                                Select Model
+                            </option>
+                            <option value="Maruti Suzuki Alto 800" name="model">
+                                Maruti Suzuki Alto 800
+                            </option>
+                            <option value="Maruti Suzuki Alto K10" name="model">
+                                Maruti Suzuki Alto K10
+                            </option>
+                            <option value="Maruti Suzuki S-Presso" name="model">
+                                Maruti Suzuki S-Presso
+                            </option>
+                            <option value="Maruti Suzuki Eeco" name="model">
+                                Maruti Suzuki Eeco
+                            </option>
+                            <option value="Maruti Suzuki Celerio" name="model">
+                                Maruti Suzuki Celerio
+                            </option>
+                            <option value="Maruti Suzuki Swift" name="model">
+                                Maruti Suzuki Swift
+                            </option>
+                            <option
+                                value="Maruti Suzuki Grand Vitara"
+                                name="model"
+                            >
+                                Maruti Suzuki Grand Vitara
+                            </option>
+                            <option value="Maruti Suzuki XL6" name="model">
+                                Maruti Suzuki XL6
+                            </option>
+                            <option value="Maruti Suzuki Brezza" name="model">
+                                Maruti Suzuki Brezza
+                            </option>
+                            <option value="Maruti Suzuki Dzire" name="model">
+                                Maruti Suzuki Dzire
+                            </option>
+                            </select>
                         </div>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputCity1">City</label>
-                        <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleTextarea1">Textarea</label>
-                        <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                      </div> -->
-                    <button type="submit" class="btn btn-gradient-primary me-2">
-                      Forecast
-                    </button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="input-field col-12 col-sm-6"  style="margin: 10px;">
+                        <div class="input-select">
+                            <label for="model" style="font-weight: bold;">Select Color</label>
+                            <select id="color" data-trigger="" name="color" style="padding: 10px; width: 100%;">
+                            <option selected value="" name="color">
+                                Select Color
+                            </option>
+                            <option value="Black" name="color">Black</option>
+                            <option value="White" name="color">White</option>
+                            <option value="Grey" name="color">Grey</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="input-field col-12 col-sm-6"  style="margin: 10px;">
+                        <div class="input-select">
+                            <label for="model"  style="font-weight: bold;">Select Region</label>
+                            <select id="region" data-trigger="" name="region" style="padding: 10px; width: 100%;">
+                            <option selected value="" name="region">
+                                Select Region
+                            </option>
+                            <option value="Mumbai" name="region">Mumbai</option>
+                            <option value="Pune" name="region">Pune</option>
+                            <option value="Nagpur" name="region">Nagpur</option>
+                            <option value="Nashik" name="region">Nashik</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-gradient-primary me-2">
+                            Forecast
+                        </button>
+                    </div>
+                    
                     <!-- <button class="btn btn-light">Cancel</button> -->
                   </form>
                 </div>
