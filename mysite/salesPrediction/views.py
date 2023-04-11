@@ -176,7 +176,7 @@ def modelforecast(request):
     return render(request, 'alto-forecast.html')
 
 
-def groupingdata(request):
+def groupingdata(request): 
 
     # Prediction Data Month-wise
 
