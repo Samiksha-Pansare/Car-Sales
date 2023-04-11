@@ -71,13 +71,15 @@ def forecast(request):
     return render(request,'filter.html')
 
 
-
 def modelview(request):
     return render(request,"model.html")
 
 def modelpage(request, model):
+    sales = Sales.objects.filter(model = model).values('model').annotate(total_sales=Sum('sales'))
+    total_sales = sales[0]['total_sales']
     data = {
-        "model":model
+        "model":model,
+        "total_sales":total_sales
     }
     context= {
         "data":data
@@ -125,10 +127,10 @@ def addpredictions(request):
     return HttpResponse("Prediction Data Added")
 
 
-def modelinsights(request):
+def modelinsights(request, model):
     # Maruti Suzuki Alto 800 - Color-wise
 
-    color_wise_query = Sales.objects.filter(model = "Maruti Suzuki Alto 800").values('color').annotate(total_sales=Sum('sales'))
+    color_wise_query = Sales.objects.filter(model = model).values('color').annotate(total_sales=Sum('sales'))
     color_wise = []
     for i in range(0,3):
         color_wise.append(color_wise_query[i]["total_sales"])
@@ -136,7 +138,7 @@ def modelinsights(request):
 
     # Maruti Suzuki Alto 800 - Year-wise
 
-    yearly_query = Sales.objects.filter(model = "Maruti Suzuki Alto 800").values('month').annotate(total_sales=Sum('sales'))
+    yearly_query = Sales.objects.filter(model = model).values('month').annotate(total_sales=Sum('sales'))
     yearly_dict = dict()
     for i in range(len(yearly_query)):
         if yearly_query[i]['month'][-4:] not in yearly_dict:
@@ -151,7 +153,7 @@ def modelinsights(request):
     regions = ['Mumbai','Pune','Nagpur','Nashik']
     region_wise = dict()
     for r in regions:
-        region_wise_query = Sales.objects.filter(model = "Maruti Suzuki Alto 800", region = r).values('month').annotate(total_sales=Sum('sales'))
+        region_wise_query = Sales.objects.filter(model = model, region = r).values('month').annotate(total_sales=Sum('sales'))
         yearly_dict = dict()
         for i in range(len(region_wise_query)):
             if region_wise_query[i]['month'][-4:] not in yearly_dict:
@@ -164,7 +166,8 @@ def modelinsights(request):
     data = {
         "region_wise":region_wise,
         "color_wise": color_wise,
-        "year_wise":year_wise
+        "year_wise":year_wise,
+        "model":model
     }
     context = {
         "data":data

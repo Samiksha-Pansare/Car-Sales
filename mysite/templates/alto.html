@@ -68,23 +68,28 @@
                 aria-labelledby="profileDropdown"
                 style="margin-top: 400px"
               >
-                <a class="dropdown-item" href="#"> Maruti Suzuki Alto 800 </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Alto 800"
+                >
+                  Maruti Suzuki Alto 800
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"> Maruti Suzuki Alto K10 </a>
-                <a class="dropdown-item" href="#"> Maruti Suzuki S-Presso </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Alto K10"> Maruti Suzuki Alto K10 </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki S-Presso"> Maruti Suzuki S-Presso </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"> Maruti Suzuki Eeco </a>
-                <a class="dropdown-item" href="#"> Maruti Suzuki Celerio </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Eeco"> Maruti Suzuki Eeco </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Celerio> Maruti Suzuki Celerio" </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"> Maruti Suzuki Swift </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Swift"> Maruti Suzuki Swift </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Grand Vitara">
                   Maruti Suzuki Grand Vitara
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"> Maruti Suzuki XL6 </a>
-                <a class="dropdown-item" href="#"> Maruti Suzuki Brezza </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki XL6"> Maruti Suzuki XL6 </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Brezza"> Maruti Suzuki Brezza </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"> Maruti Suzuki Dzire </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Dzire"> Maruti Suzuki Dzire </a>
               </div>
             </li>
           </ul>
@@ -103,13 +108,13 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="./alto.html">
+              <a class="nav-link" href="/sales">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/sales/modelinsights">
+              <a class="nav-link" href="/sales/modelinsights/{{data.model}}">
                 <span class="menu-title">Insights</span>
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </a>
@@ -138,7 +143,7 @@
                 >
                   <i class="mdi mdi-home"></i>
                 </span>
-                Maruti Suzuki Alto 800
+                {{data.model}}
               </h3>
             </div>
             <div class="row">
@@ -154,7 +159,7 @@
                       Total Sales
                       <i class="mdi mdi-chart-line mdi-24px float-right"></i>
                     </h4>
-                    <h2 class="mb-5">95,5741</h2>
+                    <h2 class="mb-5">{{data.total_sales}}</h2>
                     <!-- <h6 class="card-text">Increased by 60%</h6> -->
                   </div>
                 </div>
@@ -218,8 +223,6 @@
               </div>
             </div>
           </div>
-
-          {{data}}
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
