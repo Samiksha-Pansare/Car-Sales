@@ -1,0 +1,267 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>AutoEnvision</title>
+    <!-- plugins:css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="../static/css/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="../static/css/vendor.bundle.base.css" />
+    <link rel="stylesheet" href="../static/css/home-template.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav
+        class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row"
+      >
+        <div
+          class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
+        >
+          <h1 class="nav-title">AutoEnvision</h1>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <div class="search-field d-none d-md-block"></div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="profileDropdown"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">Models</p>
+                </div>
+              </a>
+              <div
+                class="dropdown-menu navbar-dropdown"
+                aria-labelledby="profileDropdown"
+                style="margin-top: 400px"
+              >
+                <a class="dropdown-item" href="#"> Maruti Suzuki Alto 800 </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> Maruti Suzuki Alto K10 </a>
+                <a class="dropdown-item" href="#"> Maruti Suzuki S-Presso </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> Maruti Suzuki Eeco </a>
+                <a class="dropdown-item" href="#"> Maruti Suzuki Celerio </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> Maruti Suzuki Swift </a>
+                <a class="dropdown-item" href="#">
+                  Maruti Suzuki Grand Vitara
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> Maruti Suzuki XL6 </a>
+                <a class="dropdown-item" href="#"> Maruti Suzuki Brezza </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"> Maruti Suzuki Dzire </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+
+        <!-- partial -->
+        <div class="main-panel" style="width: 100vw">
+          <div class="content-wrapper">
+
+            <div class="col-12 grid-margin d-flex  justify-content-center">
+              <div class="card">
+                <div class="d-flex justify-content-center">
+                    <div class="page-header" style="margin-top: 20px;">
+                        <h3 class="page-title">
+                          <span
+                            class="page-title-icon bg-gradient-primary text-white me-2"
+                          >
+                            <i class="mdi mdi-home"></i>
+                          </span>
+                          Forecast
+                        </h3>
+                      </div>
+                </div>
+                <div class="card-body">
+                  <!-- <p class="card-description"> Basic form elements </p> -->
+                  <form
+                    class="forms-sample"
+                    action="/sales/forecast"
+                    method="POST"
+                  >
+                    {% csrf_token %}
+                    <div class="d-flex justify-content-center">
+                        <div class="input-field col-12 col-sm-6" style="margin: 10px;">
+                        <div class="input-select">
+                            <label for="model" style="font-weight: bold;">Select Model</label>
+                            <select id="model" data-trigger="" name="model" style="padding: 10px; width: 100%;">
+                            <option selected value="" name="model">
+                                Select Model
+                            </option>
+                            <option value="Maruti Suzuki Alto 800" name="model">
+                                Maruti Suzuki Alto 800
+                            </option>
+                            <option value="Maruti Suzuki Alto K10" name="model">
+                                Maruti Suzuki Alto K10
+                            </option>
+                            <option value="Maruti Suzuki S-Presso" name="model">
+                                Maruti Suzuki S-Presso
+                            </option>
+                            <option value="Maruti Suzuki Eeco" name="model">
+                                Maruti Suzuki Eeco
+                            </option>
+                            <option value="Maruti Suzuki Celerio" name="model">
+                                Maruti Suzuki Celerio
+                            </option>
+                            <option value="Maruti Suzuki Swift" name="model">
+                                Maruti Suzuki Swift
+                            </option>
+                            <option
+                                value="Maruti Suzuki Grand Vitara"
+                                name="model"
+                            >
+                                Maruti Suzuki Grand Vitara
+                            </option>
+                            <option value="Maruti Suzuki XL6" name="model">
+                                Maruti Suzuki XL6
+                            </option>
+                            <option value="Maruti Suzuki Brezza" name="model">
+                                Maruti Suzuki Brezza
+                            </option>
+                            <option value="Maruti Suzuki Dzire" name="model">
+                                Maruti Suzuki Dzire
+                            </option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="input-field col-12 col-sm-6"  style="margin: 10px;">
+                        <div class="input-select">
+                            <label for="model" style="font-weight: bold;">Select Color</label>
+                            <select id="color" data-trigger="" name="color" style="padding: 10px; width: 100%;">
+                            <option selected value="" name="color">
+                                Select Color
+                            </option>
+                            <option value="Black" name="color">Black</option>
+                            <option value="White" name="color">White</option>
+                            <option value="Grey" name="color">Grey</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <div class="input-field col-12 col-sm-6"  style="margin: 10px;">
+                        <div class="input-select">
+                            <label for="model"  style="font-weight: bold;">Select Region</label>
+                            <select id="region" data-trigger="" name="region" style="padding: 10px; width: 100%;">
+                            <option selected value="" name="region">
+                                Select Region
+                            </option>
+                            <option value="Mumbai" name="region">Mumbai</option>
+                            <option value="Pune" name="region">Pune</option>
+                            <option value="Nagpur" name="region">Nagpur</option>
+                            <option value="Nashik" name="region">Nashik</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-gradient-primary me-2">
+                            Forecast
+                        </button>
+                    </div>
+                    
+                    <!-- <button class="btn btn-light">Cancel</button> -->
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Forecast Graph</h4>
+                  <div class="grid-margin stretch-card">
+                    <div class="card">
+                      <div class="card-body">
+                        <canvas id="barChartForecast" style="height:230px"></canvas>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+              <span
+                class="text-muted d-block text-center text-sm-start d-sm-inline-block"
+                >Copyright © bootstrapdash.com 2021</span
+              >
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end">
+                Free
+                <a
+                  href="https://www.bootstrapdash.com/bootstrap-admin-template/"
+                  target="_blank"
+                  >Bootstrap admin template</a
+                >
+                from Bootstrapdash.com</span
+              >
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- Jinja -->
+    
+    {{ data|json_script:"data" }}
+
+    <!-- plugins:js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../static/js/vendor-bundle.js"></script>
+    <script src="../static/js/misc.js"></script>
+    <script src="../static/js/offcanvas.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>  -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"
+    ></script>
+    <script src="../static/js/Chart.min.js"></script>
+    <script src="../static/js/filter-chart.js"></script>
+  </body>
+</html>
