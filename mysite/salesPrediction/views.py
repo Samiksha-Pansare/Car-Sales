@@ -18,11 +18,6 @@ def home(request):
         for i in range(len(region_wise_query)):
             sv.append(region_wise_query[i]['total_sales'])
         region_wise[r] = sv
-        
-    # region_wise_query = Sales.objects.values('region').annotate(total_sales=Sum('sales'))
-    # region_wise = []
-    # for i in range(0,4):
-    #     region_wise.append(region_wise_query[i]["total_sales"])
     print(region_wise)
 
     # Historical Data - Color wise Sales
@@ -54,17 +49,7 @@ def home(request):
         "data":data
     }
     return render(request,'home.html', context)
-    # last_year_data_ungroup = Sales.objects.filter(date__iregex=r'2021$').all()
-    # lyd_group_date = last_year_data_ungroup.values('date').annotate(total_sales=Sum('sales'))
-    # sales_2021 = []
-    # for i in range(0,12):
-    #     sales_2021.append(lyd_group_date[i]["total_sales"])
-    # total_sales_2021 = sum(sales_2021)
-    # current_year_data_ungroup = Predictions.objects.all()
-    # cyd_group_date = current_year_data_ungroup.values('month').annotate(total_sales=Sum('prediction'))
-    # sales_2022 = []
-    # for i in range(0,12):
-    #     sales_2022.append(cyd_group_date[i]["total_sales"])
+    
      
 def forecast(request):
     if request.method == "POST":
@@ -89,6 +74,15 @@ def forecast(request):
 
 def modelview(request):
     return render(request,"model.html")
+
+def modelpage(request, model):
+    data = {
+        "model":model
+    }
+    context= {
+        "data":data
+    }
+    return render(request,"alto.html", context)
 
 def addhistorydata(request):
     # Load the entire workbook.
@@ -129,6 +123,57 @@ def addpredictions(request):
         db.save()
     print("Prediction Data Added")
     return HttpResponse("Prediction Data Added")
+
+
+def modelinsights(request):
+    # Maruti Suzuki Alto 800 - Color-wise
+
+    color_wise_query = Sales.objects.filter(model = "Maruti Suzuki Alto 800").values('color').annotate(total_sales=Sum('sales'))
+    color_wise = []
+    for i in range(0,3):
+        color_wise.append(color_wise_query[i]["total_sales"])
+    print(color_wise)
+
+    # Maruti Suzuki Alto 800 - Year-wise
+
+    yearly_query = Sales.objects.filter(model = "Maruti Suzuki Alto 800").values('month').annotate(total_sales=Sum('sales'))
+    yearly_dict = dict()
+    for i in range(len(yearly_query)):
+        if yearly_query[i]['month'][-4:] not in yearly_dict:
+            yearly_dict[yearly_query[i]['month'][-4:]] = yearly_query[i]['total_sales']
+        else:
+            yearly_dict[yearly_query[i]['month'][-4:]] += yearly_query[i]['total_sales']
+    year_wise = list(yearly_dict.values())
+    print(year_wise)
+
+    # Maruti Suzuki Alto 800 Yearly Region-wise
+
+    regions = ['Mumbai','Pune','Nagpur','Nashik']
+    region_wise = dict()
+    for r in regions:
+        region_wise_query = Sales.objects.filter(model = "Maruti Suzuki Alto 800", region = r).values('month').annotate(total_sales=Sum('sales'))
+        yearly_dict = dict()
+        for i in range(len(yearly_query)):
+            if yearly_query[i]['month'][-4:] not in yearly_dict:
+                yearly_dict[yearly_query[i]['month'][-4:]] = yearly_query[i]['total_sales']
+            else:
+                yearly_dict[yearly_query[i]['month'][-4:]] += yearly_query[i]['total_sales']
+        region_wise[r] = list(yearly_dict.values())
+    print(region_wise)
+
+    data = {
+        "region_wise":region_wise,
+        "color_wise": color_wise,
+        "year_wise":year_wise
+    }
+    context = {
+        "data":data
+    }
+    return render(request, 'alto-insights.html', data)
+
+
+def modelforecast(request):
+    return render(request, 'alto-forecast.html')
 
 
 def groupingdata(request):
@@ -222,3 +267,15 @@ def groupingdata(request):
     print(year_wise)
 
     return HttpResponse("Done")
+
+# last_year_data_ungroup = Sales.objects.filter(date__iregex=r'2021$').all()
+    # lyd_group_date = last_year_data_ungroup.values('date').annotate(total_sales=Sum('sales'))
+    # sales_2021 = []
+    # for i in range(0,12):
+    #     sales_2021.append(lyd_group_date[i]["total_sales"])
+    # total_sales_2021 = sum(sales_2021)
+    # current_year_data_ungroup = Predictions.objects.all()
+    # cyd_group_date = current_year_data_ungroup.values('month').annotate(total_sales=Sum('prediction'))
+    # sales_2022 = []
+    # for i in range(0,12):
+    #     sales_2022.append(cyd_group_date[i]["total_sales"])

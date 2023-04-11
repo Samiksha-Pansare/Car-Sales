@@ -7,5 +7,7 @@ urlpatterns = [
     path('/addhistorydata', views.addhistorydata, name = "addhistorydata"),
     path('/addpredictions', views.addpredictions, name = "addpredictions"),
     path('/groupingdata', views.groupingdata, name = "groupingdata"),
-    path('/forecast', views.forecast, name = "forecast")
+    path('/forecast', views.forecast, name = "forecast"),
+    path('/modelpage/<model>', views.modelpage, name = "modelpage"),
+    path('/modelinsights', views.modelinsights, name = "modelinsights")
 ]
