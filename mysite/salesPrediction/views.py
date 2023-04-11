@@ -153,11 +153,11 @@ def modelinsights(request):
     for r in regions:
         region_wise_query = Sales.objects.filter(model = "Maruti Suzuki Alto 800", region = r).values('month').annotate(total_sales=Sum('sales'))
         yearly_dict = dict()
-        for i in range(len(yearly_query)):
-            if yearly_query[i]['month'][-4:] not in yearly_dict:
-                yearly_dict[yearly_query[i]['month'][-4:]] = yearly_query[i]['total_sales']
+        for i in range(len(region_wise_query)):
+            if region_wise_query[i]['month'][-4:] not in yearly_dict:
+                yearly_dict[region_wise_query[i]['month'][-4:]] = region_wise_query[i]['total_sales']
             else:
-                yearly_dict[yearly_query[i]['month'][-4:]] += yearly_query[i]['total_sales']
+                yearly_dict[region_wise_query[i]['month'][-4:]] += region_wise_query[i]['total_sales']
         region_wise[r] = list(yearly_dict.values())
     print(region_wise)
 
@@ -169,7 +169,7 @@ def modelinsights(request):
     context = {
         "data":data
     }
-    return render(request, 'alto-insights.html', data)
+    return render(request, 'alto-insights.html', context)
 
 
 def modelforecast(request):
