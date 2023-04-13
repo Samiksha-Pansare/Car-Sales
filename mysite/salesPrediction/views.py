@@ -7,6 +7,27 @@ from django.db.models import Sum
 # Create your views here.
 def home(request):
 
+    totalsales = Sales.objects.aggregate(Sum('sales'))
+    print(totalsales)
+
+    highest_query = Sales.objects.values('region').annotate(total_sales=Sum('sales'))
+    highest = highest_query[0]['total_sales']
+    highest_region = highest_query[0]['region']
+    
+    for i in range(len(highest_query)):
+        if highest_query[i]['total_sales'] > highest:
+            highest_region = highest_query[i]['region']
+            highest = highest_query[i]['total_sales']
+
+    highest_query = Sales.objects.values('model').annotate(total_sales=Sum('sales'))
+    mhighest = highest_query[0]['total_sales']
+    highest_model = highest_query[0]['model']
+    
+    for i in range(len(highest_query)):
+        if highest_query[i]['total_sales'] > mhighest:
+            highest_model = highest_query[i]['model']
+            mhighest = highest_query[i]['total_sales']
+
     # Historical Data - Region wise Sales
 
     models = ["Maruti Suzuki Alto 800","Maruti Suzuki Alto K10","Maruti Suzuki S-Presso","Maruti Suzuki Eeco","Maruti Suzuki Celerio","Maruti Suzuki Swift","Maruti Suzuki Grand Vitara","Maruti Suzuki XL6","Maruti Suzuki Brezza","Maruti Suzuki Dzire"]
@@ -18,7 +39,6 @@ def home(request):
         for i in range(len(region_wise_query)):
             sv.append(region_wise_query[i]['total_sales'])
         region_wise[r] = sv
-    print(region_wise)
 
     # Historical Data - Color wise Sales
 
@@ -26,7 +46,6 @@ def home(request):
     color_wise = []
     for i in range(0,3):
         color_wise.append(color_wise_query[i]["total_sales"])
-    print(color_wise)
 
     # Historical Data - Yearly Sales 2013 -2021
 
@@ -38,13 +57,18 @@ def home(request):
         else:
             yearly_dict[yearly_query[i]['month'][-4:]] += yearly_query[i]['total_sales']
     year_wise = list(yearly_dict.values())
-    print(year_wise)
     
     data = {
         'region_wise' : region_wise,
         'color_wise' : color_wise,
         'year_wise' : year_wise,
+        'totalsales':totalsales['sales__sum'],
+        'highest':highest,
+        'highest_region':highest_region,
+        'mhighest':mhighest,
+        'highest_model':highest_model
     }
+
     context = {
         "data":data
     }
@@ -70,62 +94,36 @@ def forecast(request):
         return render(request,'filter.html', context)
     return render(request,'filter.html')
 
-
-def modelview(request):
-    return render(request,"model.html")
-
 def modelpage(request, model):
     sales = Sales.objects.filter(model = model).values('model').annotate(total_sales=Sum('sales'))
+
+    predicted_sales = Predictions.objects.filter(model = model).values('model').annotate(total_sales=Sum('prediction'))
+
     total_sales = sales[0]['total_sales']
+    predicted_sales = predicted_sales[0]['total_sales']
+
+    highest_query = Predictions.objects.filter(model = model).values('month').annotate(total_sales=Sum('prediction'))
+    highest = highest_query[0]['total_sales']
+    highest_month = '01'
+
+    for i in range(len(highest_query)):
+        if highest_query[i]['total_sales'] > highest:
+            highest_month = highest_query[i]['month'][3:5]
+            highest = highest_query[i]['total_sales']
+
+    helper = {
+        '01':"January",'02':"February",'03':"March",'04':"April",'05':"May",'06':"June",'07':"July",'08':"August",'09':"September",'10':"October",'11':"November",'12':"December"}
     data = {
         "model":model,
-        "total_sales":total_sales
+        "total_sales":total_sales,
+        "predicted_sales":predicted_sales,
+        "highest":highest,
+        "highest_month":helper[highest_month]
     }
     context= {
         "data":data
     }
     return render(request,"alto.html", context)
-
-def addhistorydata(request):
-    # Load the entire workbook.
-    wb = load_workbook("data/monthly-car-sales-v3.xlsx", data_only=True)
-    # Load one worksheet.
-    ws = wb['Worksheet']
-    all_rows = list(ws.rows)
-
-    # Pull information from specific cells.
-    for row in all_rows[1:]:
-        model = row[0].value
-        month = row[1].value
-        sales = row[2].value
-        color = row[3].value
-        region = row[4].value
-        date = row[5].value
-        db = Sales(model = model, month = month, sales = sales, color= color, region = region, date = date)
-        db.save()
-    print("Sales Data Added")
-    return HttpResponse("Sales Data Added")
-
-
-def addpredictions(request):
-    # Load the entire workbook.
-    wb = load_workbook("data/Predictions-2022.xlsx", data_only=True)
-    # Load one worksheet.
-    ws = wb['Worksheet']
-    all_rows = list(ws.rows)
-
-    # Pull information from specific cells.
-    for row in all_rows[1:]:
-        model = row[0].value
-        color = row[1].value
-        region = row[2].value
-        month = row[3].value
-        prediction = row[4].value
-        db = Predictions(model = model, month = month, prediction = prediction, color= color, region = region)
-        db.save()
-    print("Prediction Data Added")
-    return HttpResponse("Prediction Data Added")
-
 
 def modelinsights(request, model):
     # Maruti Suzuki Alto 800 - Color-wise
@@ -177,6 +175,23 @@ def modelinsights(request, model):
 
 def modelforecast(request):
     return render(request, 'alto-forecast.html')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def groupingdata(request): 
@@ -271,14 +286,4 @@ def groupingdata(request):
 
     return HttpResponse("Done")
 
-# last_year_data_ungroup = Sales.objects.filter(date__iregex=r'2021$').all()
-    # lyd_group_date = last_year_data_ungroup.values('date').annotate(total_sales=Sum('sales'))
-    # sales_2021 = []
-    # for i in range(0,12):
-    #     sales_2021.append(lyd_group_date[i]["total_sales"])
-    # total_sales_2021 = sum(sales_2021)
-    # current_year_data_ungroup = Predictions.objects.all()
-    # cyd_group_date = current_year_data_ungroup.values('month').annotate(total_sales=Sum('prediction'))
-    # sales_2022 = []
-    # for i in range(0,12):
-    #     sales_2022.append(cyd_group_date[i]["total_sales"])
+

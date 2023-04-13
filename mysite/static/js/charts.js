@@ -560,7 +560,7 @@ $(function () {
         },
         title: {
           display: true,
-          text: "Chart.js Bar Chart"
+          text: "Bar Chart"
         },
         scales: {
           yAxes: [{

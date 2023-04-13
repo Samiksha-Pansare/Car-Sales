@@ -106,21 +106,64 @@
                   Maruti Suzuki Alto 800
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Alto K10"> Maruti Suzuki Alto K10 </a>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki S-Presso"> Maruti Suzuki S-Presso </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Alto K10"
+                >
+                  Maruti Suzuki Alto K10
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki S-Presso"
+                >
+                  Maruti Suzuki S-Presso
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Eeco"> Maruti Suzuki Eeco </a>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Celerio> Maruti Suzuki Celerio" </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Eeco"
+                >
+                  Maruti Suzuki Eeco
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Celerio"
+                >
+                  Maruti Suzuki Celerio
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Swift"> Maruti Suzuki Swift </a>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Grand Vitara">
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Swift"
+                >
+                  Maruti Suzuki Swift
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Grand Vitara"
+                >
                   Maruti Suzuki Grand Vitara
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki XL6"> Maruti Suzuki XL6 </a>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Brezza"> Maruti Suzuki Brezza </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki XL6"
+                >
+                  Maruti Suzuki XL6
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Brezza"
+                >
+                  Maruti Suzuki Brezza
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Dzire"> Maruti Suzuki Dzire </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Dzire"
+                >
+                  Maruti Suzuki Dzire
+                </a>
               </div>
             </li>
           </ul>
@@ -152,7 +195,7 @@
             </li> -->
             <li class="nav-item">
               <a class="nav-link" href="/sales/forecast">
-                <span class="menu-title"> Overall Forecast</span>
+                <span class="menu-title"> Forecast</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>
             </li>
@@ -188,10 +231,10 @@
                       alt="circle-image"
                     />
                     <h4 class="font-weight-normal mb-3">
-                      Total Sales
+                      Total Sales 2013-2021
                       <i class="mdi mdi-chart-line mdi-24px float-right"></i>
                     </h4>
-                    <h2 class="mb-5">95,5741</h2>
+                    <h2 class="mb-5">{{data.totalsales}}</h2>
                     <!-- <h6 class="card-text">Increased by 60%</h6> -->
                   </div>
                 </div>
@@ -205,12 +248,10 @@
                       alt="circle-image"
                     />
                     <h4 class="font-weight-normal mb-3">
-                      Total Models
-                      <i
-                        class="mdi mdi-bookmark-outline mdi-24px float-right"
-                      ></i>
+                      Highest Sale - {{data.highest_model}}
+                      <i class="mdi mdi-24px float-right"></i>
                     </h4>
-                    <h2 class="mb-5">10</h2>
+                    <h2 class="mb-5">{{data.mhighest}}</h2>
                     <!-- <h6 class="card-text">Decreased by 10%</h6> -->
                   </div>
                 </div>
@@ -226,10 +267,10 @@
                       alt="circle-image"
                     />
                     <h4 class="font-weight-normal mb-3">
-                      Regions
-                      <i class="mdi mdi-diamond mdi-24px float-right"></i>
+                      Region with Highest Sale - {{data.highest_region}}
+                      <i class="mdi mdi-24px float-right"></i>
                     </h4>
-                    <h2 class="mb-5">4</h2>
+                    <h2 class="mb-5">{{data.highest}}</h2>
                     <!-- <h6 class="card-text">Increased by 5%</h6> -->
                   </div>
                 </div>
@@ -240,7 +281,9 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="clearfix">
-                      <h4 class="card-title float-left">Region wise Data for Models</h4>
+                      <h4 class="card-title float-left">
+                        Region wise Data for Models
+                      </h4>
                       <div
                         id="visit-sale-chart-legend"
                         class="rounded-legend legend-horizontal legend-top-right float-right"
@@ -289,21 +332,7 @@
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
-            <div class="container-fluid d-flex justify-content-between">
-              <span
-                class="text-muted d-block text-center text-sm-start d-sm-inline-block"
-                >Copyright © bootstrapdash.com 2021</span
-              >
-              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end">
-                Free
-                <a
-                  href="https://www.bootstrapdash.com/bootstrap-admin-template/"
-                  target="_blank"
-                  >Bootstrap admin template</a
-                >
-                from Bootstrapdash.com</span
-              >
-            </div>
+            <div class="container-fluid d-flex justify-content-between"></div>
           </footer>
           <!-- partial -->
         </div>

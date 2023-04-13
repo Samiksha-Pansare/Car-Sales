@@ -1,5 +1,3 @@
-
-
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +38,9 @@
         <div
           class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center"
         >
-          <a href="/sales" style="text-decoration: none;"><h1 class="nav-title">AutoEnvision</h1></a>
+          <a href="/sales" style="text-decoration: none; color: black"
+            ><h1 class="nav-title">AutoEnvision</h1></a
+          >
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <div class="search-field d-none d-md-block"></div>
@@ -69,21 +69,64 @@
                   Maruti Suzuki Alto 800
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Alto K10"> Maruti Suzuki Alto K10 </a>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki S-Presso"> Maruti Suzuki S-Presso </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Alto K10"
+                >
+                  Maruti Suzuki Alto K10
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki S-Presso"
+                >
+                  Maruti Suzuki S-Presso
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Eeco"> Maruti Suzuki Eeco </a>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Celerio> Maruti Suzuki Celerio" </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Eeco"
+                >
+                  Maruti Suzuki Eeco
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Celerio"
+                >
+                  Maruti Suzuki Celerio
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Swift"> Maruti Suzuki Swift </a>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Grand Vitara">
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Swift"
+                >
+                  Maruti Suzuki Swift
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Grand Vitara"
+                >
                   Maruti Suzuki Grand Vitara
                 </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki XL6"> Maruti Suzuki XL6 </a>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Brezza"> Maruti Suzuki Brezza </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki XL6"
+                >
+                  Maruti Suzuki XL6
+                </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Brezza"
+                >
+                  Maruti Suzuki Brezza
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Dzire"> Maruti Suzuki Dzire </a>
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Dzire"
+                >
+                  Maruti Suzuki Dzire
+                </a>
               </div>
             </li>
           </ul>
@@ -96,20 +139,19 @@
         <!-- partial -->
         <div class="main-panel" style="width: 100vw">
           <div class="content-wrapper">
-
-            <div class="col-12 grid-margin d-flex  justify-content-center">
+            <div class="col-12 grid-margin d-flex justify-content-center">
               <div class="card">
                 <div class="d-flex justify-content-center">
-                    <div class="page-header" style="margin-top: 20px;">
-                        <h3 class="page-title">
-                          <span
-                            class="page-title-icon bg-gradient-primary text-white me-2"
-                          >
-                            <i class="mdi mdi-home"></i>
-                          </span>
-                          Forecast
-                        </h3>
-                      </div>
+                  <div class="page-header" style="margin-top: 20px">
+                    <h3 class="page-title">
+                      <span
+                        class="page-title-icon bg-gradient-primary text-white me-2"
+                      >
+                        <i class="mdi mdi-home"></i>
+                      </span>
+                      Forecast
+                    </h3>
+                  </div>
                 </div>
                 <div class="card-body">
                   <!-- <p class="card-description"> Basic form elements </p> -->
@@ -120,88 +162,121 @@
                   >
                     {% csrf_token %}
                     <div class="d-flex justify-content-center">
-                        <div class="input-field col-12 col-sm-6" style="margin: 10px;">
+                      <div
+                        class="input-field col-12 col-sm-6"
+                        style="margin: 10px"
+                      >
                         <div class="input-select">
-                            <label for="model" style="font-weight: bold;">Select Model</label>
-                            <select id="model" data-trigger="" name="model" style="padding: 10px; width: 100%;">
+                          <label for="model" style="font-weight: bold"
+                            >Select Model</label
+                          >
+                          <select
+                            id="model"
+                            data-trigger=""
+                            name="model"
+                            style="padding: 10px; width: 100%"
+                          >
                             <option selected value="" name="model">
-                                Select Model
+                              Select Model
                             </option>
                             <option value="Maruti Suzuki Alto 800" name="model">
-                                Maruti Suzuki Alto 800
+                              Maruti Suzuki Alto 800
                             </option>
                             <option value="Maruti Suzuki Alto K10" name="model">
-                                Maruti Suzuki Alto K10
+                              Maruti Suzuki Alto K10
                             </option>
                             <option value="Maruti Suzuki S-Presso" name="model">
-                                Maruti Suzuki S-Presso
+                              Maruti Suzuki S-Presso
                             </option>
                             <option value="Maruti Suzuki Eeco" name="model">
-                                Maruti Suzuki Eeco
+                              Maruti Suzuki Eeco
                             </option>
                             <option value="Maruti Suzuki Celerio" name="model">
-                                Maruti Suzuki Celerio
+                              Maruti Suzuki Celerio
                             </option>
                             <option value="Maruti Suzuki Swift" name="model">
-                                Maruti Suzuki Swift
+                              Maruti Suzuki Swift
                             </option>
                             <option
-                                value="Maruti Suzuki Grand Vitara"
-                                name="model"
+                              value="Maruti Suzuki Grand Vitara"
+                              name="model"
                             >
-                                Maruti Suzuki Grand Vitara
+                              Maruti Suzuki Grand Vitara
                             </option>
                             <option value="Maruti Suzuki XL6" name="model">
-                                Maruti Suzuki XL6
+                              Maruti Suzuki XL6
                             </option>
                             <option value="Maruti Suzuki Brezza" name="model">
-                                Maruti Suzuki Brezza
+                              Maruti Suzuki Brezza
                             </option>
                             <option value="Maruti Suzuki Dzire" name="model">
-                                Maruti Suzuki Dzire
+                              Maruti Suzuki Dzire
                             </option>
-                            </select>
+                          </select>
                         </div>
-                        </div>
+                      </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <div class="input-field col-12 col-sm-6"  style="margin: 10px;">
+                      <div
+                        class="input-field col-12 col-sm-6"
+                        style="margin: 10px"
+                      >
                         <div class="input-select">
-                            <label for="model" style="font-weight: bold;">Select Color</label>
-                            <select id="color" data-trigger="" name="color" style="padding: 10px; width: 100%;">
+                          <label for="model" style="font-weight: bold"
+                            >Select Color</label
+                          >
+                          <select
+                            id="color"
+                            data-trigger=""
+                            name="color"
+                            style="padding: 10px; width: 100%"
+                          >
                             <option selected value="" name="color">
-                                Select Color
+                              Select Color
                             </option>
                             <option value="Black" name="color">Black</option>
                             <option value="White" name="color">White</option>
                             <option value="Grey" name="color">Grey</option>
-                            </select>
+                          </select>
                         </div>
-                        </div>
+                      </div>
                     </div>
 
                     <div class="d-flex justify-content-center">
-                        <div class="input-field col-12 col-sm-6"  style="margin: 10px;">
+                      <div
+                        class="input-field col-12 col-sm-6"
+                        style="margin: 10px"
+                      >
                         <div class="input-select">
-                            <label for="model"  style="font-weight: bold;">Select Region</label>
-                            <select id="region" data-trigger="" name="region" style="padding: 10px; width: 100%;">
+                          <label for="model" style="font-weight: bold"
+                            >Select Region</label
+                          >
+                          <select
+                            id="region"
+                            data-trigger=""
+                            name="region"
+                            style="padding: 10px; width: 100%"
+                          >
                             <option selected value="" name="region">
-                                Select Region
+                              Select Region
                             </option>
                             <option value="Mumbai" name="region">Mumbai</option>
                             <option value="Pune" name="region">Pune</option>
                             <option value="Nagpur" name="region">Nagpur</option>
                             <option value="Nashik" name="region">Nashik</option>
-                            </select>
+                          </select>
                         </div>
-                        </div>
+                      </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="submit" class="btn btn-gradient-primary me-2">
-                            Forecast
-                        </button>
+                      <button
+                        type="submit"
+                        class="btn btn-gradient-primary me-2"
+                      >
+                        Forecast
+                      </button>
                     </div>
-                    
+
                     <!-- <button class="btn btn-light">Cancel</button> -->
                   </form>
                 </div>
@@ -214,7 +289,10 @@
                   <div class="grid-margin stretch-card">
                     <div class="card">
                       <div class="card-body">
-                        <canvas id="barChartForecast" style="height:230px"></canvas>
+                        <canvas
+                          id="barChartForecast"
+                          style="height: 230px"
+                        ></canvas>
                       </div>
                     </div>
                   </div>
@@ -225,21 +303,7 @@
           <!-- content-wrapper ends -->
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
-            <div class="container-fluid d-flex justify-content-between">
-              <span
-                class="text-muted d-block text-center text-sm-start d-sm-inline-block"
-                >Copyright © bootstrapdash.com 2021</span
-              >
-              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end">
-                Free
-                <a
-                  href="https://www.bootstrapdash.com/bootstrap-admin-template/"
-                  target="_blank"
-                  >Bootstrap admin template</a
-                >
-                from Bootstrapdash.com</span
-              >
-            </div>
+            <div class="container-fluid d-flex justify-content-between"></div>
           </footer>
           <!-- partial -->
         </div>
@@ -249,7 +313,7 @@
     </div>
     <!-- container-scroller -->
     <!-- Jinja -->
-    
+
     {{ data|json_script:"data" }}
 
     <!-- plugins:js -->

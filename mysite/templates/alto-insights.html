@@ -88,15 +88,15 @@
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="./alto-forecast.html">
                 <span class="menu-title">Model Forecast</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="/sales/forecast">
-                <span class="menu-title"> Overall Forecast</span>
+                <span class="menu-title"> Forecast</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>
             </li>
@@ -109,8 +109,7 @@
               <h3 class="page-title">
                 <span class="page-title-icon bg-gradient-primary text-white me-2">
                   <i class="mdi mdi-chart-bar"></i>
-                </span> Current Data
-              </h3>
+                </span>{{data.model}} 2013-2021 Insights
              
             </div>
          
@@ -120,7 +119,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="clearfix">
-                      <h4 class="card-title float-left">Region wise Data</h4>
+                      <h4 class="card-title float-left">Yearly Region-wise Data</h4>
                       <div id="visit-sale-chart-legend" class="rounded-legend legend-horizontal legend-top-right float-right"></div>
                     </div>
                     <canvas id="RegionChart" class="mt-4"></canvas>
@@ -164,8 +163,6 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="container-fluid d-flex justify-content-between">
-              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
             </div>
           </footer>
           <!-- partial -->
@@ -177,7 +174,6 @@
     <!-- container-scroller -->
     <!-- Jinja -->
     <p>
-      {{data}}
     </p>
     
     {{ data|json_script:"data" }}
