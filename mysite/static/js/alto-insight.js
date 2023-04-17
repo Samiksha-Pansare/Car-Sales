@@ -1,23 +1,23 @@
 // var my_var = {{region_wise}};
 
 // console.log(my_var)
-const data = JSON.parse(document.getElementById('data').textContent);
-console.log(data)
+// const data = JSON.parse(document.getElementById('data').textContent);
+// console.log(data)
 
-const color_wise = Object.values(data["color_wise"])
-console.log(color_wise)
+// const color_wise = Object.values(data["color_wise"])
+// console.log(color_wise)
 
-const year_wise = Object.values(data["year_wise"])
-console.log(year_wise)
+// const year_wise = Object.values(data["year_wise"])
+// console.log(year_wise)
 
-const mumbai = Object.values(data["region_wise"]["Mumbai"])
-console.log(mumbai)
-const pune = Object.values(data["region_wise"]["Pune"])
-console.log(pune)
-const nashik = Object.values(data["region_wise"]["Nashik"])
-console.log(nashik)
-const nagpur = Object.values(data["region_wise"]["Nagpur"])
-console.log(nagpur)
+// const mumbai = Object.values(data["region_wise"]["Mumbai"])
+// console.log(mumbai)
+// const pune = Object.values(data["region_wise"]["Pune"])
+// console.log(pune)
+// const nashik = Object.values(data["region_wise"]["Nashik"])
+// console.log(nashik)
+// const nagpur = Object.values(data["region_wise"]["Nagpur"])
+// console.log(nagpur)
 
 $(function () {
     /* ChartJS
