@@ -476,7 +476,7 @@ $(function () {
 
     var barChartallData = {
     
-        labels: ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"],
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
         datasets: [
           {
             pointRadius: 0,

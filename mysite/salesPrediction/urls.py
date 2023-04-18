@@ -6,5 +6,6 @@ urlpatterns = [
     path('/groupingdata', views.groupingdata, name = "groupingdata"),
     path('/forecast', views.forecast, name = "forecast"),
     path('/modelpage/<model>', views.modelpage, name = "modelpage"),
-    path('/modelinsights/<model>', views.modelinsights, name = "modelinsights")
+    path('/modelinsights/<model>', views.modelinsights, name = "modelinsights"),
+    path('/modelforecast/<model>', views.modelforecast, name = "modelforecast")
 ]

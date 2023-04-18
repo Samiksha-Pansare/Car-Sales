@@ -173,8 +173,24 @@ def modelinsights(request, model):
     return render(request, 'alto-insights.html', context)
 
 
-def modelforecast(request):
-    return render(request, 'alto-forecast.html')
+def modelforecast(request, model):
+    regions = ['Mumbai','Pune','Nagpur','Nashik']
+    region_wise = dict()
+    for r in regions:
+        region_wise_query = Predictions.objects.filter(model= model, region = r).values('month').annotate(total_sales=Sum('prediction'))
+        sv = []
+        for i in range(len(region_wise_query)):
+            sv.append(region_wise_query[i]['total_sales'])
+        region_wise[r] = sv
+
+    data = {
+        "model":model,
+        "region_wise":region_wise
+    }
+    context = {
+        "data":data
+    }
+    return render(request, 'alto-forecast.html', context)
 
 
 
