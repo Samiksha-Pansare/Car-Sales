@@ -4,11 +4,11 @@
 const data = JSON.parse(document.getElementById('data').textContent);
 console.log("Data: ",data)
 
-const color_wise = Object.values(data["color_wise"])
-console.log(color_wise)
+const color_wise_pie = Object.values(data["color_wise_pie"])
+console.log(color_wise_pie)
 
-const year_wise = Object.values(data["year_wise"])
-console.log(year_wise)
+const region_wise_pie = Object.values(data["region_wise_pie"])
+console.log(region_wise_pie)
 
 const mumbai = Object.values(data["region_wise"]["Mumbai"])
 console.log(mumbai)
@@ -18,6 +18,13 @@ const nashik = Object.values(data["region_wise"]["Nashik"])
 console.log(nashik)
 const nagpur = Object.values(data["region_wise"]["Nagpur"])
 console.log(nagpur)
+
+const black = Object.values(data["color_wise"]["Black"])
+console.log(black)
+const white = Object.values(data["color_wise"]["White"])
+console.log(white)
+const grey = Object.values(data["color_wise"]["Grey"])
+console.log(grey)
 
 $(function () {
     /* ChartJS
@@ -29,7 +36,7 @@ $(function () {
       labels: ["2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"],
       datasets: [{
         label: 'Number of Sales',
-        data: year_wise,
+        data: [],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(54, 162, 235, 0.2)',
@@ -75,11 +82,12 @@ $(function () {
         fill: false
       }]
     };
+
     var multiLineData = {
-      labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+      labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
       datasets: [{
-        label: 'Dataset 1',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'White',
+        data: white,
         borderColor: [
           '#587ce4'
         ],
@@ -87,8 +95,8 @@ $(function () {
         fill: false
       },
       {
-        label: 'Dataset 2',
-        data: [5, 23, 7, 12, 42, 23],
+        label: 'Black',
+        data: black,
         borderColor: [
           '#ede190'
         ],
@@ -96,8 +104,8 @@ $(function () {
         fill: false
       },
       {
-        label: 'Dataset 3',
-        data: [15, 10, 21, 32, 12, 33],
+        label: 'Grey',
+        data: grey,
         borderColor: [
           '#f44252'
         ],
@@ -115,7 +123,7 @@ $(function () {
         }]
       },
       legend: {
-        display: false
+        display: true
       },
       elements: {
         point: {
@@ -156,7 +164,7 @@ $(function () {
     };
     var doughnutPieData = {
       datasets: [{
-        data: color_wise,
+        data: color_wise_pie,
         backgroundColor: [
           'rgba(255, 99, 132, 0.5)',
           'rgba(54, 162, 235, 0.5)',
@@ -181,6 +189,31 @@ $(function () {
         'Grey',
         'White',
       ]
+    };
+
+    var pieData = {
+      datasets: [{
+        data: region_wise_pie,
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.5)',
+          'rgba(54, 162, 235, 0.5)',
+          'rgba(255, 206, 86, 0.5)',
+          'rgba(75, 192, 192, 0.5)',
+          'rgba(153, 102, 255, 0.5)',
+          'rgba(255, 159, 64, 0.5)',
+        ],
+        borderColor: [
+          'rgba(255,99,132,1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+      }],
+  
+      // These labels appear in the legend and in the tooltips when hovering different arcs
+      labels: ['Mumbai','Pune','Nagpur','Nashik']
     };
     var doughnutPieOptions = {
       responsive: true,
@@ -647,7 +680,7 @@ $(function () {
       var pieChartCanvas = $("#pieChart").get(0).getContext("2d");
       var pieChart = new Chart(pieChartCanvas, {
         type: 'pie',
-        data: doughnutPieData,
+        data: pieData,
         options: doughnutPieOptions
       });
     }

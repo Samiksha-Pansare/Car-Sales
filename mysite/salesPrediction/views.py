@@ -183,9 +183,35 @@ def modelforecast(request, model):
             sv.append(region_wise_query[i]['total_sales'])
         region_wise[r] = sv
 
+    colors = ["White", "Black", "Grey"]
+    color_wise = dict()
+    for c in colors:
+        color_query = Predictions.objects.filter(model=  model, color = c).values('month').annotate(total_sales=Sum('prediction'))
+        cv = []
+        for i in range(len(color_query)):
+            cv.append(color_query[i]['total_sales'])
+        color_wise[c] = cv
+
+    color_wise_query = Predictions.objects.filter(model = model).values('color').annotate(total_sales=Sum('prediction'))
+    color_wise_pie = []
+    for i in range(0,3):
+        color_wise_pie.append(color_wise_query[i]["total_sales"])
+    print(color_wise_pie)
+
+    region_wise_query = Predictions.objects.filter(model = model).values('region').annotate(total_sales=Sum('prediction'))
+    region_wise_pie = []
+    for i in range(0,4):
+        region_wise_pie.append(region_wise_query[i]["total_sales"])
+    print(region_wise_pie)
+
+
+
     data = {
         "model":model,
-        "region_wise":region_wise
+        "region_wise":region_wise,
+        "color_wise":color_wise,
+        "color_wise_pie":color_wise_pie,
+        "region_wise_pie":region_wise_pie
     }
     context = {
         "data":data

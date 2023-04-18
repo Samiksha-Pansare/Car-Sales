@@ -88,15 +88,15 @@
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="./alto-forecast.html">
+            <li class="nav-item">
+              <a class="nav-link" href="/sales/modelforecast/{{data.model}}">
                 <span class="menu-title">Model Forecast</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>
-            </li> -->
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="/sales/forecast">
-                <span class="menu-title"> Forecast</span>
+                <span class="menu-title">Overall Forecast</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>
             </li>
@@ -148,9 +148,9 @@
               <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Color wise Chart</h4>
+                    <h4 class="card-title">Region wise Chart</h4>
                     <canvas
-                      id="all-data-doughnutChart"
+                      id="pieChart"
                       style="height: 250px"
                     ></canvas>
                     <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
