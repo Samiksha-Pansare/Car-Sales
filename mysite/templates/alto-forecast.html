@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>AutoEnvision</title>
+    <base href="/" />
     <!-- plugins:css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
@@ -34,32 +36,33 @@
                   <p class="mb-1 text-black">Models</p>
                 </div>
               </a>
-              <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown" style="margin-top: 400px;">
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki Alto 800 </a>
+              <div
+                class="dropdown-menu navbar-dropdown"
+                aria-labelledby="profileDropdown"
+                style="margin-top: 400px"
+              >
+                <a
+                  class="dropdown-item"
+                  href="/sales/modelpage/Maruti Suzuki Alto 800"
+                >
+                  Maruti Suzuki Alto 800
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki Alto K10 </a>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki S-Presso </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Alto K10"> Maruti Suzuki Alto K10 </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki S-Presso"> Maruti Suzuki S-Presso </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki Eeco </a>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki Celerio </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Eeco"> Maruti Suzuki Eeco </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Celerio> Maruti Suzuki Celerio" </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki Swift </a>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki Grand Vitara </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Swift"> Maruti Suzuki Swift </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Grand Vitara">
+                  Maruti Suzuki Grand Vitara
+                </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki XL6 </a>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki Brezza </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki XL6"> Maruti Suzuki XL6 </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Brezza"> Maruti Suzuki Brezza </a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  Maruti Suzuki Dzire </a>
+                <a class="dropdown-item" href="/sales/modelpage/Maruti Suzuki Dzire"> Maruti Suzuki Dzire </a>
               </div>
             </li>
           </ul>
@@ -74,20 +77,26 @@
         <nav class="sidebar sidebar-offcanvas" id="sidebar">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link" href="./alto.html">
+              <a class="nav-link" href="/sales">
                 <span class="menu-title">Dashboard</span>
                 <i class="mdi mdi-home menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./alto-insights.html">
-                <span class="menu-title">Insights</span>
+              <a class="nav-link" href="/sales/modelinsights/{{data.model}}">
+                <span class="menu-title">Model Insights</span>
                 <i class="mdi mdi-chart-bar menu-icon"></i>
               </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="./alto-forecast.html">
-                <span class="menu-title">Forecast</span>
+                <span class="menu-title">Model Forecast</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="/sales/forecast">
+                <span class="menu-title"> Forecast</span>
                 <i class="mdi mdi-table-large menu-icon"></i>
               </a>
             </li>
@@ -99,52 +108,21 @@
             <div class="page-header">
               <h3 class="page-title">
                 <span class="page-title-icon bg-gradient-primary text-white me-2">
-                  <i class="mdi mdi-table-large"></i>
-                </span> Future Predictions
-              </h3>
-              <!-- <nav aria-label="breadcrumb">
-                <ul class="breadcrumb">
-                  <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                  </li>
-                </ul>
-              </nav> -->
+                  <i class="mdi mdi-chart-bar"></i>
+                  </span>{{data.model}} 2013-2021 Insights
+             
             </div>
-            <div class="row">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="clearfix">
-                      <h4 class="card-title float-left">Region wise Data</h4>
-                      <div id="visit-sale-chart-legend" class="rounded-legend legend-horizontal legend-top-right float-right"></div>
-                    </div>
-                    <canvas id="RegionChart" class="mt-4"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
-            <div class="row">
-              <div class="col-12 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="clearfix">
-                      <h4 class="card-title float-left">Color wise Data</h4>
-                      <div id="visit-sale-chart-legend" class="rounded-legend legend-horizontal legend-top-right float-right"></div>
-                    </div>
-                    <canvas id="AllDatalineChart" style="height:250px"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+         
+             
             <div class="row">
               <div class="col-md-7 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Color wise Chart</h4>
-                    <canvas id="all-data-doughnutChart" style="height:250px"></canvas>
-                    <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
+                    <div class="clearfix">
+                      <h4 class="card-title float-left">Yearly Region-wise Data</h4>
+                      <div id="visit-sale-chart-legend" class="rounded-legend legend-horizontal legend-top-right float-right"></div>
+                    </div>
+                    <canvas id="RegionChart" class="mt-4"></canvas>
                   </div>
                 </div>
               </div>
@@ -152,8 +130,27 @@
                 <div class="card">
                   <div class="card-body">
                     <h4 class="card-title">Color wise Chart</h4>
-                    <canvas id="all-data-doughnutChart" style="height:250px"></canvas>
+                    <canvas
+                      id="all-data-doughnutChart"
+                      style="height: 250px"
+                    ></canvas>
                     <div id="traffic-chart-legend" class="rounded-legend legend-vertical legend-bottom-left pt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="clearfix">
+                      <h4 class="card-title float-left">Year wise Data</h4>
+                      <div id="visit-sale-chart-legend" class="rounded-legend legend-horizontal legend-top-right float-right"></div>
+                    </div>
+                    <canvas
+                      id="linechart-multi"
+                      style="height: 250px"
+                    ></canvas>
                   </div>
                 </div>
               </div>
@@ -166,8 +163,6 @@
           <!-- partial:partials/_footer.html -->
           <footer class="footer">
             <div class="container-fluid d-flex justify-content-between">
-              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
-              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
             </div>
           </footer>
           <!-- partial -->
@@ -178,7 +173,11 @@
     </div>
     <!-- container-scroller -->
     <!-- Jinja -->
-  
+    <p>
+    </p>
+    
+    {{ data|json_script:"data" }}
+    
     <!-- plugins:js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -188,7 +187,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>  -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="../static/js/Chart.min.js"></script>
-    <script src="../static/js/charts.js"></script> 
+    <script src="../static/js/alto-forecast.js"></script> 
     
    
     
